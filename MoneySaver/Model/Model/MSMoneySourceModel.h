@@ -15,7 +15,7 @@ typedef NS_ENUM(NSUInteger, MoneySourceModelType) {
     SourceModelCashType,
 };
 
-@interface MoneySourceModel : MTLModel <MTLJSONSerializing>
+@interface MSMoneySourceModel : MTLModel <MTLJSONSerializing>
 
 
 @property (nonatomic, assign) MoneySourceModelType sourceType; /**< 资金来源 */

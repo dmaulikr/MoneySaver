@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MTLFMDBAdapter.h>
 
-@interface SqliteDataBaseClient : NSObject
+@interface MSSqliteDataBaseClient : NSObject
 
 + (instancetype)shareSqliteDataBaseClient;
 

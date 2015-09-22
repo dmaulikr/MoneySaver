@@ -6,10 +6,10 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "AccountDataModel.h"
+#import "MSAccountDataModel.h"
 
 
-@implementation AccountRequestModel
+@implementation MSAccountRequestModel
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
@@ -23,7 +23,7 @@
 
 @end
 
-@implementation AccountDataModel
+@implementation MSAccountDataModel
 
 
 #pragma mark - MTLJSONSerializing
@@ -44,7 +44,7 @@
 
 + (NSDictionary *)FMDBColumnsByPropertyKey
 {
-    return [AccountDataModel JSONKeyPathsByPropertyKey];
+    return [MSAccountDataModel JSONKeyPathsByPropertyKey];
 }
 
 + (NSArray *)FMDBPrimaryKeys
@@ -54,7 +54,7 @@
 
 + (NSString *)FMDBTableName
 {
-    return @"AccountDataModel";
+    return @"MSAccountDataModel";
 }
 
 @end

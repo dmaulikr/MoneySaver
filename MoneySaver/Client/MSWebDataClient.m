@@ -6,9 +6,9 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "WebDataClient.h"
+#import "MSWebDataClient.h"
 
-@implementation WebDataClient
+@implementation MSWebDataClient
 
 //+ (void)callFunctionInBackground:(NSString *)function withParameters:(NSDictionary *)parameters block:(BmobIdResultBlock)block;
 

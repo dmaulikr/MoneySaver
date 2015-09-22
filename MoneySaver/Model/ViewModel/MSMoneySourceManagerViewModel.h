@@ -6,9 +6,9 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "BaseClassViewModel.h"
-#import "MoneySourceViewModel.h"
+#import "MSBaseClassViewModel.h"
+#import "MSMoneySourceViewModel.h"
 
-@interface MoneySourceManagerViewModel : BaseClassViewModel
+@interface MSMoneySourceManagerViewModel : MSBaseClassViewModel
 
 @end

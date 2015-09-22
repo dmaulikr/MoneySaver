@@ -6,18 +6,18 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "SqliteDataBaseClient.h"
+#import "MSSqliteDataBaseClient.h"
 #import "FMEncryptDatabaseQueue.h"
 
-static SqliteDataBaseClient *_defaultDataBaseClient;
+static MSSqliteDataBaseClient *_defaultDataBaseClient;
 
-@interface SqliteDataBaseClient ()
+@interface MSSqliteDataBaseClient ()
 
 @property (nonatomic, strong) FMEncryptDatabaseQueue *queue;
 
 @end
 
-@implementation SqliteDataBaseClient
+@implementation MSSqliteDataBaseClient
 
 #pragma mark - Init
 
@@ -26,7 +26,7 @@ static SqliteDataBaseClient *_defaultDataBaseClient;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         if (_defaultDataBaseClient) {
-            _defaultDataBaseClient = [SqliteDataBaseClient new];
+            _defaultDataBaseClient = [MSSqliteDataBaseClient new];
         }
     });
     return _defaultDataBaseClient;
@@ -42,7 +42,7 @@ static SqliteDataBaseClient *_defaultDataBaseClient;
 {
     self = [super init];
     if (self) {
-        _queue = [FMEncryptDatabaseQueue databaseQueueWithPath:[SqliteDataBaseClient dataBasePath]];
+        _queue = [FMEncryptDatabaseQueue databaseQueueWithPath:[MSSqliteDataBaseClient dataBasePath]];
     }
     return self;
 }

@@ -6,12 +6,12 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "BmobObjectAdapter.h"
+#import "MSBmobObjectAdapter.h"
 #import <BmobACL.h>
 #import <BmobUser.h>
 
 
-@implementation BmobObjectAdapter
+@implementation MSBmobObjectAdapter
 
 + (BmobObject *)bmobObjectFromModel:(id <MTLJSONSerializing,MTLFMDBSerializing>)model error:(NSError **)error
 {

@@ -12,7 +12,7 @@
 #import <MTLFMDBAdapter.h>
 
 
-@interface BmobObjectAdapter : NSObject
+@interface MSBmobObjectAdapter : NSObject
 
 + (BmobObject *)bmobObjectFromModel:(id <MTLJSONSerializing,MTLFMDBSerializing>)model error:(NSError **)error;
 

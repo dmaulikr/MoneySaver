@@ -8,56 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		0474DC344D77E677CC7AEE49 /* libPods-MoneySaver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC39D14C939FE7DCC37D7C3 /* libPods-MoneySaver.a */; };
-		6A0A539B1BAFB7F2004AD688 /* WebDataClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539A1BAFB7F2004AD688 /* WebDataClient.m */; settings = {ASSET_TAGS = (); }; };
-		6A0A53A01BAFB8C8004AD688 /* BaseProjectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539F1BAFB8C8004AD688 /* BaseProjectViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A0A53A31BAFB8E3004AD688 /* MoneySourceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A53A21BAFB8E3004AD688 /* MoneySourceViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A68B1CB1BAFB4B3009BA468 /* ProjectManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CA1BAFB4B3009BA468 /* ProjectManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A68B1CE1BAFB4C5009BA468 /* AccountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CD1BAFB4C5009BA468 /* AccountViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A68B1D11BAFB4E3009BA468 /* MoneySourceManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D01BAFB4E3009BA468 /* MoneySourceManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A68B1D41BAFB545009BA468 /* SqliteDataBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D31BAFB545009BA468 /* SqliteDataBaseClient.m */; settings = {ASSET_TAGS = (); }; };
+		6A0A539B1BAFB7F2004AD688 /* MSWebDataClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539A1BAFB7F2004AD688 /* MSWebDataClient.m */; settings = {ASSET_TAGS = (); }; };
+		6A0A53A01BAFB8C8004AD688 /* MSBaseProjectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539F1BAFB8C8004AD688 /* MSBaseProjectViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A0A53A31BAFB8E3004AD688 /* MSMoneySourceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A53A21BAFB8E3004AD688 /* MSMoneySourceViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A68B1CB1BAFB4B3009BA468 /* MSProjectManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CA1BAFB4B3009BA468 /* MSProjectManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A68B1CE1BAFB4C5009BA468 /* MSAccountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CD1BAFB4C5009BA468 /* MSAccountViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A68B1D11BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D01BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A68B1D41BAFB545009BA468 /* MSSqliteDataBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D31BAFB545009BA468 /* MSSqliteDataBaseClient.m */; settings = {ASSET_TAGS = (); }; };
 		6A68B1D71BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql in Resources */ = {isa = PBXBuildFile; fileRef = 6A68B1D61BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql */; settings = {ASSET_TAGS = (); }; };
-		6A85D99D1BAFB14C0049D988 /* AccountDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9981BAFB14C0049D988 /* AccountDataModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A85D99E1BAFB14C0049D988 /* BaseProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99A1BAFB14C0049D988 /* BaseProjectModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A85D99F1BAFB14C0049D988 /* MoneySourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99C1BAFB14C0049D988 /* MoneySourceModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A85D9A31BAFB1850049D988 /* BaseClassViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9A21BAFB1850049D988 /* BaseClassViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A85D99D1BAFB14C0049D988 /* MSAccountDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9981BAFB14C0049D988 /* MSAccountDataModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A85D99E1BAFB14C0049D988 /* MSBaseProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99A1BAFB14C0049D988 /* MSBaseProjectModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A85D99F1BAFB14C0049D988 /* MSMoneySourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99C1BAFB14C0049D988 /* MSMoneySourceModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A85D9A31BAFB1850049D988 /* MSBaseClassViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9A21BAFB1850049D988 /* MSBaseClassViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A9095AC1BAF92D000672A05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9095AB1BAF92D000672A05 /* main.m */; };
-		6A9095AF1BAF92D000672A05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9095AE1BAF92D000672A05 /* AppDelegate.m */; };
+		6A9095AF1BAF92D000672A05 /* MSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */; };
 		6AF84D8A1BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D891BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
 		6AF84D8D1BAFD71000B061A5 /* FMEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8C1BAFD71000B061A5 /* FMEncryptDatabase.m */; settings = {ASSET_TAGS = (); }; };
 		6AF84D901BAFD75100B061A5 /* FMEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8F1BAFD75100B061A5 /* FMEncryptHelper.m */; settings = {ASSET_TAGS = (); }; };
-		6AF84D9E1BB0053000B061A5 /* BmobObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D9D1BB0053000B061A5 /* BmobObjectAdapter.m */; settings = {ASSET_TAGS = (); }; };
+		6AF84D9E1BB0053000B061A5 /* MSBmobObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D9D1BB0053000B061A5 /* MSBmobObjectAdapter.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FC39D14C939FE7DCC37D7C3 /* libPods-MoneySaver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoneySaver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD1E6C10112F55358EE6C12 /* Pods-MoneySaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneySaver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneySaver/Pods-MoneySaver.debug.xcconfig"; sourceTree = "<group>"; };
-		6A0A53991BAFB7F2004AD688 /* WebDataClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebDataClient.h; sourceTree = "<group>"; };
-		6A0A539A1BAFB7F2004AD688 /* WebDataClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebDataClient.m; sourceTree = "<group>"; };
-		6A0A539E1BAFB8C8004AD688 /* BaseProjectViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseProjectViewModel.h; sourceTree = "<group>"; };
-		6A0A539F1BAFB8C8004AD688 /* BaseProjectViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseProjectViewModel.m; sourceTree = "<group>"; };
-		6A0A53A11BAFB8E3004AD688 /* MoneySourceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneySourceViewModel.h; sourceTree = "<group>"; };
-		6A0A53A21BAFB8E3004AD688 /* MoneySourceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneySourceViewModel.m; sourceTree = "<group>"; };
-		6A68B1C91BAFB4B3009BA468 /* ProjectManagerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectManagerViewModel.h; sourceTree = "<group>"; };
-		6A68B1CA1BAFB4B3009BA468 /* ProjectManagerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectManagerViewModel.m; sourceTree = "<group>"; };
-		6A68B1CC1BAFB4C5009BA468 /* AccountViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewModel.h; sourceTree = "<group>"; };
-		6A68B1CD1BAFB4C5009BA468 /* AccountViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewModel.m; sourceTree = "<group>"; };
-		6A68B1CF1BAFB4E3009BA468 /* MoneySourceManagerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneySourceManagerViewModel.h; sourceTree = "<group>"; };
-		6A68B1D01BAFB4E3009BA468 /* MoneySourceManagerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneySourceManagerViewModel.m; sourceTree = "<group>"; };
-		6A68B1D21BAFB545009BA468 /* SqliteDataBaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteDataBaseClient.h; sourceTree = "<group>"; };
-		6A68B1D31BAFB545009BA468 /* SqliteDataBaseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteDataBaseClient.m; sourceTree = "<group>"; };
+		6A0A53991BAFB7F2004AD688 /* MSWebDataClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWebDataClient.h; sourceTree = "<group>"; };
+		6A0A539A1BAFB7F2004AD688 /* MSWebDataClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWebDataClient.m; sourceTree = "<group>"; };
+		6A0A539E1BAFB8C8004AD688 /* MSBaseProjectViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBaseProjectViewModel.h; sourceTree = "<group>"; };
+		6A0A539F1BAFB8C8004AD688 /* MSBaseProjectViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBaseProjectViewModel.m; sourceTree = "<group>"; };
+		6A0A53A11BAFB8E3004AD688 /* MSMoneySourceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMoneySourceViewModel.h; sourceTree = "<group>"; };
+		6A0A53A21BAFB8E3004AD688 /* MSMoneySourceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMoneySourceViewModel.m; sourceTree = "<group>"; };
+		6A68B1C91BAFB4B3009BA468 /* MSProjectManagerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectManagerViewModel.h; sourceTree = "<group>"; };
+		6A68B1CA1BAFB4B3009BA468 /* MSProjectManagerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectManagerViewModel.m; sourceTree = "<group>"; };
+		6A68B1CC1BAFB4C5009BA468 /* MSAccountViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAccountViewModel.h; sourceTree = "<group>"; };
+		6A68B1CD1BAFB4C5009BA468 /* MSAccountViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAccountViewModel.m; sourceTree = "<group>"; };
+		6A68B1CF1BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMoneySourceManagerViewModel.h; sourceTree = "<group>"; };
+		6A68B1D01BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMoneySourceManagerViewModel.m; sourceTree = "<group>"; };
+		6A68B1D21BAFB545009BA468 /* MSSqliteDataBaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSqliteDataBaseClient.h; sourceTree = "<group>"; };
+		6A68B1D31BAFB545009BA468 /* MSSqliteDataBaseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSqliteDataBaseClient.m; sourceTree = "<group>"; };
 		6A68B1D61BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SqliteCreaterV1.0.0.sql; sourceTree = "<group>"; };
-		6A85D9971BAFB14C0049D988 /* AccountDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountDataModel.h; sourceTree = "<group>"; };
-		6A85D9981BAFB14C0049D988 /* AccountDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountDataModel.m; sourceTree = "<group>"; };
-		6A85D9991BAFB14C0049D988 /* BaseProjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseProjectModel.h; sourceTree = "<group>"; };
-		6A85D99A1BAFB14C0049D988 /* BaseProjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseProjectModel.m; sourceTree = "<group>"; };
-		6A85D99B1BAFB14C0049D988 /* MoneySourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneySourceModel.h; sourceTree = "<group>"; };
-		6A85D99C1BAFB14C0049D988 /* MoneySourceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneySourceModel.m; sourceTree = "<group>"; };
-		6A85D9A11BAFB1850049D988 /* BaseClassViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseClassViewModel.h; sourceTree = "<group>"; };
-		6A85D9A21BAFB1850049D988 /* BaseClassViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseClassViewModel.m; sourceTree = "<group>"; };
+		6A85D9971BAFB14C0049D988 /* MSAccountDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAccountDataModel.h; sourceTree = "<group>"; };
+		6A85D9981BAFB14C0049D988 /* MSAccountDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAccountDataModel.m; sourceTree = "<group>"; };
+		6A85D9991BAFB14C0049D988 /* MSBaseProjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBaseProjectModel.h; sourceTree = "<group>"; };
+		6A85D99A1BAFB14C0049D988 /* MSBaseProjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBaseProjectModel.m; sourceTree = "<group>"; };
+		6A85D99B1BAFB14C0049D988 /* MSMoneySourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMoneySourceModel.h; sourceTree = "<group>"; };
+		6A85D99C1BAFB14C0049D988 /* MSMoneySourceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMoneySourceModel.m; sourceTree = "<group>"; };
+		6A85D9A11BAFB1850049D988 /* MSBaseClassViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBaseClassViewModel.h; sourceTree = "<group>"; };
+		6A85D9A21BAFB1850049D988 /* MSBaseClassViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBaseClassViewModel.m; sourceTree = "<group>"; };
 		6A9095A71BAF92D000672A05 /* MoneySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9095AB1BAF92D000672A05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6A9095AD1BAF92D000672A05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6A9095AE1BAF92D000672A05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6A9095AD1BAF92D000672A05 /* MSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAppDelegate.h; sourceTree = "<group>"; };
+		6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAppDelegate.m; sourceTree = "<group>"; };
 		6A9095B51BAF92D000672A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A9095BC1BAF933600672A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AF84D881BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptDatabaseQueue.h; sourceTree = "<group>"; };
@@ -67,8 +67,8 @@
 		6AF84D8E1BAFD75100B061A5 /* FMEncryptHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptHelper.h; sourceTree = "<group>"; };
 		6AF84D8F1BAFD75100B061A5 /* FMEncryptHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptHelper.m; sourceTree = "<group>"; };
 		6AF84D9A1BAFF36800B061A5 /* ConfigureConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigureConstants.h; sourceTree = "<group>"; };
-		6AF84D9C1BB0053000B061A5 /* BmobObjectAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BmobObjectAdapter.h; sourceTree = "<group>"; };
-		6AF84D9D1BB0053000B061A5 /* BmobObjectAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BmobObjectAdapter.m; sourceTree = "<group>"; };
+		6AF84D9C1BB0053000B061A5 /* MSBmobObjectAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBmobObjectAdapter.h; sourceTree = "<group>"; };
+		6AF84D9D1BB0053000B061A5 /* MSBmobObjectAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBmobObjectAdapter.m; sourceTree = "<group>"; };
 		9B23B3F69596401F1FA10E7E /* Pods-MoneySaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneySaver.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneySaver/Pods-MoneySaver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,10 +103,10 @@
 		6A68B1D51BAFB664009BA468 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				6A68B1C91BAFB4B3009BA468 /* ProjectManagerViewModel.h */,
-				6A68B1CA1BAFB4B3009BA468 /* ProjectManagerViewModel.m */,
-				6A68B1CF1BAFB4E3009BA468 /* MoneySourceManagerViewModel.h */,
-				6A68B1D01BAFB4E3009BA468 /* MoneySourceManagerViewModel.m */,
+				6A68B1C91BAFB4B3009BA468 /* MSProjectManagerViewModel.h */,
+				6A68B1CA1BAFB4B3009BA468 /* MSProjectManagerViewModel.m */,
+				6A68B1CF1BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.h */,
+				6A68B1D01BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -114,12 +114,12 @@
 		6A85D9961BAFB14C0049D988 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6A85D9971BAFB14C0049D988 /* AccountDataModel.h */,
-				6A85D9981BAFB14C0049D988 /* AccountDataModel.m */,
-				6A85D9991BAFB14C0049D988 /* BaseProjectModel.h */,
-				6A85D99A1BAFB14C0049D988 /* BaseProjectModel.m */,
-				6A85D99B1BAFB14C0049D988 /* MoneySourceModel.h */,
-				6A85D99C1BAFB14C0049D988 /* MoneySourceModel.m */,
+				6A85D9971BAFB14C0049D988 /* MSAccountDataModel.h */,
+				6A85D9981BAFB14C0049D988 /* MSAccountDataModel.m */,
+				6A85D9991BAFB14C0049D988 /* MSBaseProjectModel.h */,
+				6A85D99A1BAFB14C0049D988 /* MSBaseProjectModel.m */,
+				6A85D99B1BAFB14C0049D988 /* MSMoneySourceModel.h */,
+				6A85D99C1BAFB14C0049D988 /* MSMoneySourceModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,14 +127,14 @@
 		6A85D9A01BAFB15D0049D988 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				6A85D9A11BAFB1850049D988 /* BaseClassViewModel.h */,
-				6A85D9A21BAFB1850049D988 /* BaseClassViewModel.m */,
-				6A68B1CC1BAFB4C5009BA468 /* AccountViewModel.h */,
-				6A68B1CD1BAFB4C5009BA468 /* AccountViewModel.m */,
-				6A0A539E1BAFB8C8004AD688 /* BaseProjectViewModel.h */,
-				6A0A539F1BAFB8C8004AD688 /* BaseProjectViewModel.m */,
-				6A0A53A11BAFB8E3004AD688 /* MoneySourceViewModel.h */,
-				6A0A53A21BAFB8E3004AD688 /* MoneySourceViewModel.m */,
+				6A85D9A11BAFB1850049D988 /* MSBaseClassViewModel.h */,
+				6A85D9A21BAFB1850049D988 /* MSBaseClassViewModel.m */,
+				6A68B1CC1BAFB4C5009BA468 /* MSAccountViewModel.h */,
+				6A68B1CD1BAFB4C5009BA468 /* MSAccountViewModel.m */,
+				6A0A539E1BAFB8C8004AD688 /* MSBaseProjectViewModel.h */,
+				6A0A539F1BAFB8C8004AD688 /* MSBaseProjectViewModel.m */,
+				6A0A53A11BAFB8E3004AD688 /* MSMoneySourceViewModel.h */,
+				6A0A53A21BAFB8E3004AD688 /* MSMoneySourceViewModel.m */,
 				6A68B1D51BAFB664009BA468 /* Manager */,
 			);
 			path = ViewModel;
@@ -178,8 +178,8 @@
 		6A9095AA1BAF92D000672A05 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6A9095AD1BAF92D000672A05 /* AppDelegate.h */,
-				6A9095AE1BAF92D000672A05 /* AppDelegate.m */,
+				6A9095AD1BAF92D000672A05 /* MSAppDelegate.h */,
+				6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */,
 				6A9095B51BAF92D000672A05 /* Info.plist */,
 				6A9095AB1BAF92D000672A05 /* main.m */,
 			);
@@ -197,10 +197,10 @@
 		6A9095BE1BAF96C000672A05 /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				6A0A53991BAFB7F2004AD688 /* WebDataClient.h */,
-				6A0A539A1BAFB7F2004AD688 /* WebDataClient.m */,
-				6A68B1D21BAFB545009BA468 /* SqliteDataBaseClient.h */,
-				6A68B1D31BAFB545009BA468 /* SqliteDataBaseClient.m */,
+				6A0A53991BAFB7F2004AD688 /* MSWebDataClient.h */,
+				6A0A539A1BAFB7F2004AD688 /* MSWebDataClient.m */,
+				6A68B1D21BAFB545009BA468 /* MSSqliteDataBaseClient.h */,
+				6A68B1D31BAFB545009BA468 /* MSSqliteDataBaseClient.m */,
 				6A68B1D61BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql */,
 			);
 			path = Client;
@@ -269,8 +269,8 @@
 		6AF84D9B1BB0050500B061A5 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				6AF84D9C1BB0053000B061A5 /* BmobObjectAdapter.h */,
-				6AF84D9D1BB0053000B061A5 /* BmobObjectAdapter.m */,
+				6AF84D9C1BB0053000B061A5 /* MSBmobObjectAdapter.h */,
+				6AF84D9D1BB0053000B061A5 /* MSBmobObjectAdapter.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -311,6 +311,7 @@
 		6A90959F1BAF92D000672A05 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MS;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = TBXark;
 				TargetAttributes = {
@@ -386,23 +387,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A68B1CB1BAFB4B3009BA468 /* ProjectManagerViewModel.m in Sources */,
-				6A85D99D1BAFB14C0049D988 /* AccountDataModel.m in Sources */,
-				6A0A539B1BAFB7F2004AD688 /* WebDataClient.m in Sources */,
-				6A9095AF1BAF92D000672A05 /* AppDelegate.m in Sources */,
+				6A68B1CB1BAFB4B3009BA468 /* MSProjectManagerViewModel.m in Sources */,
+				6A85D99D1BAFB14C0049D988 /* MSAccountDataModel.m in Sources */,
+				6A0A539B1BAFB7F2004AD688 /* MSWebDataClient.m in Sources */,
+				6A9095AF1BAF92D000672A05 /* MSAppDelegate.m in Sources */,
 				6AF84D901BAFD75100B061A5 /* FMEncryptHelper.m in Sources */,
-				6A85D9A31BAFB1850049D988 /* BaseClassViewModel.m in Sources */,
+				6A85D9A31BAFB1850049D988 /* MSBaseClassViewModel.m in Sources */,
 				6AF84D8A1BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.m in Sources */,
 				6A9095AC1BAF92D000672A05 /* main.m in Sources */,
-				6A0A53A31BAFB8E3004AD688 /* MoneySourceViewModel.m in Sources */,
+				6A0A53A31BAFB8E3004AD688 /* MSMoneySourceViewModel.m in Sources */,
 				6AF84D8D1BAFD71000B061A5 /* FMEncryptDatabase.m in Sources */,
-				6A68B1D11BAFB4E3009BA468 /* MoneySourceManagerViewModel.m in Sources */,
-				6A85D99E1BAFB14C0049D988 /* BaseProjectModel.m in Sources */,
-				6A68B1D41BAFB545009BA468 /* SqliteDataBaseClient.m in Sources */,
-				6AF84D9E1BB0053000B061A5 /* BmobObjectAdapter.m in Sources */,
-				6A68B1CE1BAFB4C5009BA468 /* AccountViewModel.m in Sources */,
-				6A85D99F1BAFB14C0049D988 /* MoneySourceModel.m in Sources */,
-				6A0A53A01BAFB8C8004AD688 /* BaseProjectViewModel.m in Sources */,
+				6A68B1D11BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m in Sources */,
+				6A85D99E1BAFB14C0049D988 /* MSBaseProjectModel.m in Sources */,
+				6A68B1D41BAFB545009BA468 /* MSSqliteDataBaseClient.m in Sources */,
+				6AF84D9E1BB0053000B061A5 /* MSBmobObjectAdapter.m in Sources */,
+				6A68B1CE1BAFB4C5009BA468 /* MSAccountViewModel.m in Sources */,
+				6A85D99F1BAFB14C0049D988 /* MSMoneySourceModel.m in Sources */,
+				6A0A53A01BAFB8C8004AD688 /* MSBaseProjectViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,13 +1,13 @@
 //
-//  ProjectManagerViewModel.m
+//  MoneySourceViewModel.m
 //  MoneySaver
 //
 //  Created by Tbxark on 15/9/21.
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "ProjectManagerViewModel.h"
+#import "MSMoneySourceViewModel.h"
 
-@implementation ProjectManagerViewModel
+@implementation MSMoneySourceViewModel
 
 @end

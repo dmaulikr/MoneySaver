@@ -6,13 +6,13 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "BaseClassViewModel.h"
-#import "AccountDataModel.h"
+#import "MSBaseClassViewModel.h"
+#import "MSAccountDataModel.h"
 
-@interface AccountViewModel : BaseClassViewModel
+@interface MSAccountViewModel : MSBaseClassViewModel
 
-@property (nonatomic, strong) AccountRequestModel *accountRequestModel;
-@property (nonatomic, strong) AccountDataModel *accountDataModel;
+@property (nonatomic, strong) MSAccountRequestModel *accountRequestModel;
+@property (nonatomic, strong) MSAccountDataModel *accountDataModel;
 
 @property (nonatomic, strong) NSError *commandError;
 

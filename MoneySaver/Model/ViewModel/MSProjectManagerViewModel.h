@@ -6,10 +6,10 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "BaseClassViewModel.h"
-#import "BaseProjectViewModel.h"
+#import "MSBaseClassViewModel.h"
+#import "MSBaseProjectViewModel.h"
 
-@interface ProjectManagerViewModel : BaseClassViewModel
+@interface MSProjectManagerViewModel : MSBaseClassViewModel
 
 
 

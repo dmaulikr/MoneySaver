@@ -1,5 +1,5 @@
 //
-//  WebDataClient.h
+//  BaseClassViewModel.h
 //  MoneySaver
 //
 //  Created by Tbxark on 15/9/21.
@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa.h>
+#import <ReactiveCocoa/RACEXTScope.h>
 
-@interface WebDataClient : NSObject
-
+@interface MSBaseClassViewModel : NSObject
 
 @end

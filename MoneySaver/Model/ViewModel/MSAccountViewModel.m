@@ -6,9 +6,9 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "AccountViewModel.h"
+#import "MSAccountViewModel.h"
 
-@interface AccountViewModel ()
+@interface MSAccountViewModel ()
 
 @property (nonatomic, strong) RACSignal *accountEnable;
 @property (nonatomic, strong) RACSignal *emailEnable;
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation AccountViewModel
+@implementation MSAccountViewModel
 
 
 

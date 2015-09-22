@@ -35,7 +35,7 @@ FOUNDATION_EXPORT BaseProjectModelType   StringToBaseProjectModelType(NSString *
 /**
  *  账单项目模型
  */
-@interface BaseProjectModel : MTLModel <MTLJSONSerializing,MTLFMDBSerializing>
+@interface MSBaseProjectModel : MTLModel <MTLJSONSerializing,MTLFMDBSerializing>
 
 @property (nonatomic, copy) NSString *projectId; /**< 项目id*/
 

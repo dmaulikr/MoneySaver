@@ -6,7 +6,7 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "MSAppDelegate.h"
 
 #import "ConfigureConstants.h"
 
@@ -14,11 +14,11 @@
 #import <BmobSDK/Bmob.h>
 
 
-@interface AppDelegate ()
+@interface MSAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation MSAppDelegate
 
 
 #pragma mark - Configure

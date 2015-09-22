@@ -6,9 +6,9 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "BaseProjectModel.h"
+#import "MSBaseProjectModel.h"
 
-@implementation BaseProjectModel
+@implementation MSBaseProjectModel
 
 #pragma mark - MTLJSONSerializing
 
@@ -33,7 +33,7 @@
 
 + (NSDictionary *)FMDBColumnsByPropertyKey
 {
-    return [BaseProjectModel JSONKeyPathsByPropertyKey];
+    return [MSBaseProjectModel JSONKeyPathsByPropertyKey];
 }
 
 + (NSArray *)FMDBPrimaryKeys
@@ -43,7 +43,7 @@
 
 + (NSString *)FMDBTableName
 {
-    return @"BaseProjectModel";
+    return @"MSBaseProjectModel";
 }
 
 

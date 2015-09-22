@@ -7,7 +7,13 @@
 //
 
 #import "FMEncryptDatabaseQueue.h"
+#import "FMEncryptDatabase.h"
 
 @implementation FMEncryptDatabaseQueue
+
++ (Class)databaseClass
+{
+    return [FMEncryptDatabase class];
+}
 
 @end

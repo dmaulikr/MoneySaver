@@ -7,6 +7,7 @@
 //
 
 #import "FMDatabaseQueue.h"
+#import "FMEncryptDatabase.h"
 
 @interface FMEncryptDatabaseQueue : FMDatabaseQueue
 

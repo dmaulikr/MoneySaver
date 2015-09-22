@@ -10,4 +10,6 @@
 
 @implementation WebDataClient
 
+//+ (void)callFunctionInBackground:(NSString *)function withParameters:(NSDictionary *)parameters block:(BmobIdResultBlock)block;
+
 @end

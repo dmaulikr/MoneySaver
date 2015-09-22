@@ -7,7 +7,10 @@
 //
 
 #import "BaseClassViewModel.h"
+#import "BaseProjectViewModel.h"
 
 @interface ProjectManagerViewModel : BaseClassViewModel
+
+
 
 @end

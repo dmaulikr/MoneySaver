@@ -7,6 +7,7 @@
 //
 
 #import "BaseClassViewModel.h"
+#import "MoneySourceViewModel.h"
 
 @interface MoneySourceManagerViewModel : BaseClassViewModel
 

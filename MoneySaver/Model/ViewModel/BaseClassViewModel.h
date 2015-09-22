@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa.h>
+#import <ReactiveCocoa/RACEXTScope.h>
 
 @interface BaseClassViewModel : NSObject
 

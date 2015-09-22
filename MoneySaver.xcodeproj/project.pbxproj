@@ -7,20 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0474DC344D77E677CC7AEE49 /* libPods-MoneySaver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC39D14C939FE7DCC37D7C3 /* libPods-MoneySaver.a */; };
+		6A0A539B1BAFB7F2004AD688 /* WebDataClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539A1BAFB7F2004AD688 /* WebDataClient.m */; settings = {ASSET_TAGS = (); }; };
+		6A0A53A01BAFB8C8004AD688 /* BaseProjectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539F1BAFB8C8004AD688 /* BaseProjectViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A0A53A31BAFB8E3004AD688 /* MoneySourceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A53A21BAFB8E3004AD688 /* MoneySourceViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A68B1CB1BAFB4B3009BA468 /* ProjectManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CA1BAFB4B3009BA468 /* ProjectManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A68B1CE1BAFB4C5009BA468 /* AccountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CD1BAFB4C5009BA468 /* AccountViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A68B1D11BAFB4E3009BA468 /* MoneySourceManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D01BAFB4E3009BA468 /* MoneySourceManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A68B1D41BAFB545009BA468 /* SqliteDataBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D31BAFB545009BA468 /* SqliteDataBaseClient.m */; settings = {ASSET_TAGS = (); }; };
+		6A68B1D71BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql in Resources */ = {isa = PBXBuildFile; fileRef = 6A68B1D61BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql */; settings = {ASSET_TAGS = (); }; };
+		6A85D99D1BAFB14C0049D988 /* AccountDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9981BAFB14C0049D988 /* AccountDataModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A85D99E1BAFB14C0049D988 /* BaseProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99A1BAFB14C0049D988 /* BaseProjectModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A85D99F1BAFB14C0049D988 /* MoneySourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99C1BAFB14C0049D988 /* MoneySourceModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A85D9A31BAFB1850049D988 /* BaseClassViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9A21BAFB1850049D988 /* BaseClassViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A9095AC1BAF92D000672A05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9095AB1BAF92D000672A05 /* main.m */; };
 		6A9095AF1BAF92D000672A05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9095AE1BAF92D000672A05 /* AppDelegate.m */; };
-		6A9095B11BAF92D000672A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A9095B01BAF92D000672A05 /* Assets.xcassets */; };
-		6A9095B41BAF92D000672A05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9095B21BAF92D000672A05 /* LaunchScreen.storyboard */; };
+		6AF84D8A1BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D891BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
+		6AF84D8D1BAFD71000B061A5 /* FMEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8C1BAFD71000B061A5 /* FMEncryptDatabase.m */; settings = {ASSET_TAGS = (); }; };
+		6AF84D901BAFD75100B061A5 /* FMEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8F1BAFD75100B061A5 /* FMEncryptHelper.m */; settings = {ASSET_TAGS = (); }; };
+		6AF84D9E1BB0053000B061A5 /* BmobObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D9D1BB0053000B061A5 /* BmobObjectAdapter.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FC39D14C939FE7DCC37D7C3 /* libPods-MoneySaver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoneySaver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD1E6C10112F55358EE6C12 /* Pods-MoneySaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneySaver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneySaver/Pods-MoneySaver.debug.xcconfig"; sourceTree = "<group>"; };
+		6A0A53991BAFB7F2004AD688 /* WebDataClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebDataClient.h; sourceTree = "<group>"; };
+		6A0A539A1BAFB7F2004AD688 /* WebDataClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebDataClient.m; sourceTree = "<group>"; };
+		6A0A539E1BAFB8C8004AD688 /* BaseProjectViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseProjectViewModel.h; sourceTree = "<group>"; };
+		6A0A539F1BAFB8C8004AD688 /* BaseProjectViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseProjectViewModel.m; sourceTree = "<group>"; };
+		6A0A53A11BAFB8E3004AD688 /* MoneySourceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneySourceViewModel.h; sourceTree = "<group>"; };
+		6A0A53A21BAFB8E3004AD688 /* MoneySourceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneySourceViewModel.m; sourceTree = "<group>"; };
+		6A68B1C91BAFB4B3009BA468 /* ProjectManagerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectManagerViewModel.h; sourceTree = "<group>"; };
+		6A68B1CA1BAFB4B3009BA468 /* ProjectManagerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectManagerViewModel.m; sourceTree = "<group>"; };
+		6A68B1CC1BAFB4C5009BA468 /* AccountViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewModel.h; sourceTree = "<group>"; };
+		6A68B1CD1BAFB4C5009BA468 /* AccountViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewModel.m; sourceTree = "<group>"; };
+		6A68B1CF1BAFB4E3009BA468 /* MoneySourceManagerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneySourceManagerViewModel.h; sourceTree = "<group>"; };
+		6A68B1D01BAFB4E3009BA468 /* MoneySourceManagerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneySourceManagerViewModel.m; sourceTree = "<group>"; };
+		6A68B1D21BAFB545009BA468 /* SqliteDataBaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteDataBaseClient.h; sourceTree = "<group>"; };
+		6A68B1D31BAFB545009BA468 /* SqliteDataBaseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteDataBaseClient.m; sourceTree = "<group>"; };
+		6A68B1D61BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SqliteCreaterV1.0.0.sql; sourceTree = "<group>"; };
+		6A85D9971BAFB14C0049D988 /* AccountDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountDataModel.h; sourceTree = "<group>"; };
+		6A85D9981BAFB14C0049D988 /* AccountDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountDataModel.m; sourceTree = "<group>"; };
+		6A85D9991BAFB14C0049D988 /* BaseProjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseProjectModel.h; sourceTree = "<group>"; };
+		6A85D99A1BAFB14C0049D988 /* BaseProjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseProjectModel.m; sourceTree = "<group>"; };
+		6A85D99B1BAFB14C0049D988 /* MoneySourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneySourceModel.h; sourceTree = "<group>"; };
+		6A85D99C1BAFB14C0049D988 /* MoneySourceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneySourceModel.m; sourceTree = "<group>"; };
+		6A85D9A11BAFB1850049D988 /* BaseClassViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseClassViewModel.h; sourceTree = "<group>"; };
+		6A85D9A21BAFB1850049D988 /* BaseClassViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseClassViewModel.m; sourceTree = "<group>"; };
 		6A9095A71BAF92D000672A05 /* MoneySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9095AB1BAF92D000672A05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A9095AD1BAF92D000672A05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A9095AE1BAF92D000672A05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6A9095B01BAF92D000672A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6A9095B31BAF92D000672A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A9095B51BAF92D000672A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A9095BC1BAF933600672A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AF84D881BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptDatabaseQueue.h; sourceTree = "<group>"; };
+		6AF84D891BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptDatabaseQueue.m; sourceTree = "<group>"; };
+		6AF84D8B1BAFD71000B061A5 /* FMEncryptDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptDatabase.h; sourceTree = "<group>"; };
+		6AF84D8C1BAFD71000B061A5 /* FMEncryptDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptDatabase.m; sourceTree = "<group>"; };
+		6AF84D8E1BAFD75100B061A5 /* FMEncryptHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptHelper.h; sourceTree = "<group>"; };
+		6AF84D8F1BAFD75100B061A5 /* FMEncryptHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptHelper.m; sourceTree = "<group>"; };
+		6AF84D9A1BAFF36800B061A5 /* ConfigureConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigureConstants.h; sourceTree = "<group>"; };
+		6AF84D9C1BB0053000B061A5 /* BmobObjectAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BmobObjectAdapter.h; sourceTree = "<group>"; };
+		6AF84D9D1BB0053000B061A5 /* BmobObjectAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BmobObjectAdapter.m; sourceTree = "<group>"; };
+		9B23B3F69596401F1FA10E7E /* Pods-MoneySaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneySaver.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneySaver/Pods-MoneySaver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +77,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0474DC344D77E677CC7AEE49 /* libPods-MoneySaver.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F12BEF01A43030A5FDF9E52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AD1E6C10112F55358EE6C12 /* Pods-MoneySaver.debug.xcconfig */,
+				9B23B3F69596401F1FA10E7E /* Pods-MoneySaver.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A0A539C1BAFB848004AD688 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6A68B1D51BAFB664009BA468 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6A68B1C91BAFB4B3009BA468 /* ProjectManagerViewModel.h */,
+				6A68B1CA1BAFB4B3009BA468 /* ProjectManagerViewModel.m */,
+				6A68B1CF1BAFB4E3009BA468 /* MoneySourceManagerViewModel.h */,
+				6A68B1D01BAFB4E3009BA468 /* MoneySourceManagerViewModel.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		6A85D9961BAFB14C0049D988 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A85D9971BAFB14C0049D988 /* AccountDataModel.h */,
+				6A85D9981BAFB14C0049D988 /* AccountDataModel.m */,
+				6A85D9991BAFB14C0049D988 /* BaseProjectModel.h */,
+				6A85D99A1BAFB14C0049D988 /* BaseProjectModel.m */,
+				6A85D99B1BAFB14C0049D988 /* MoneySourceModel.h */,
+				6A85D99C1BAFB14C0049D988 /* MoneySourceModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A85D9A01BAFB15D0049D988 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6A85D9A11BAFB1850049D988 /* BaseClassViewModel.h */,
+				6A85D9A21BAFB1850049D988 /* BaseClassViewModel.m */,
+				6A68B1CC1BAFB4C5009BA468 /* AccountViewModel.h */,
+				6A68B1CD1BAFB4C5009BA468 /* AccountViewModel.m */,
+				6A0A539E1BAFB8C8004AD688 /* BaseProjectViewModel.h */,
+				6A0A539F1BAFB8C8004AD688 /* BaseProjectViewModel.m */,
+				6A0A53A11BAFB8E3004AD688 /* MoneySourceViewModel.h */,
+				6A0A53A21BAFB8E3004AD688 /* MoneySourceViewModel.m */,
+				6A68B1D51BAFB664009BA468 /* Manager */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		6A90959E1BAF92D000672A05 = {
 			isa = PBXGroup;
 			children = (
 				6A9095A91BAF92D000672A05 /* MoneySaver */,
 				6A9095A81BAF92D000672A05 /* Products */,
+				4F12BEF01A43030A5FDF9E52 /* Pods */,
+				B213BCB2A07FBF95C8BDA9A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,11 +161,15 @@
 		6A9095A91BAF92D000672A05 /* MoneySaver */ = {
 			isa = PBXGroup;
 			children = (
-				6A9095AD1BAF92D000672A05 /* AppDelegate.h */,
-				6A9095AE1BAF92D000672A05 /* AppDelegate.m */,
-				6A9095B01BAF92D000672A05 /* Assets.xcassets */,
-				6A9095B21BAF92D000672A05 /* LaunchScreen.storyboard */,
-				6A9095B51BAF92D000672A05 /* Info.plist */,
+				6AF84D9B1BB0050500B061A5 /* Helper */,
+				6A9095BE1BAF96C000672A05 /* Client */,
+				6A9095BF1BAF96C000672A05 /* Constants */,
+				6A9095C01BAF96C000672A05 /* Controllers */,
+				6A9095C11BAF96C000672A05 /* General */,
+				6A9095C21BAF96C000672A05 /* Model */,
+				6A9095C51BAF96C000672A05 /* Vendors */,
+				6A9095C61BAF96C000672A05 /* Views */,
+				6A9095BB1BAF933600672A05 /* Resource */,
 				6A9095AA1BAF92D000672A05 /* Supporting Files */,
 			);
 			path = MoneySaver;
@@ -66,9 +178,109 @@
 		6A9095AA1BAF92D000672A05 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6A9095AD1BAF92D000672A05 /* AppDelegate.h */,
+				6A9095AE1BAF92D000672A05 /* AppDelegate.m */,
+				6A9095B51BAF92D000672A05 /* Info.plist */,
 				6A9095AB1BAF92D000672A05 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A9095BB1BAF933600672A05 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6A9095BC1BAF933600672A05 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		6A9095BE1BAF96C000672A05 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A53991BAFB7F2004AD688 /* WebDataClient.h */,
+				6A0A539A1BAFB7F2004AD688 /* WebDataClient.m */,
+				6A68B1D21BAFB545009BA468 /* SqliteDataBaseClient.h */,
+				6A68B1D31BAFB545009BA468 /* SqliteDataBaseClient.m */,
+				6A68B1D61BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		6A9095BF1BAF96C000672A05 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6AF84D9A1BAFF36800B061A5 /* ConfigureConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6A9095C01BAF96C000672A05 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6A9095C11BAF96C000672A05 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				6AF84D871BAFD6C300B061A5 /* DatabaseEncrypt */,
+				6A0A539C1BAFB848004AD688 /* Protocol */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		6A9095C21BAF96C000672A05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A85D9A01BAFB15D0049D988 /* ViewModel */,
+				6A85D9961BAFB14C0049D988 /* Model */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A9095C51BAF96C000672A05 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		6A9095C61BAF96C000672A05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6AF84D871BAFD6C300B061A5 /* DatabaseEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				6AF84D881BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.h */,
+				6AF84D891BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.m */,
+				6AF84D8B1BAFD71000B061A5 /* FMEncryptDatabase.h */,
+				6AF84D8C1BAFD71000B061A5 /* FMEncryptDatabase.m */,
+				6AF84D8E1BAFD75100B061A5 /* FMEncryptHelper.h */,
+				6AF84D8F1BAFD75100B061A5 /* FMEncryptHelper.m */,
+			);
+			path = DatabaseEncrypt;
+			sourceTree = "<group>";
+		};
+		6AF84D9B1BB0050500B061A5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6AF84D9C1BB0053000B061A5 /* BmobObjectAdapter.h */,
+				6AF84D9D1BB0053000B061A5 /* BmobObjectAdapter.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B213BCB2A07FBF95C8BDA9A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FC39D14C939FE7DCC37D7C3 /* libPods-MoneySaver.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +290,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A9095B81BAF92D000672A05 /* Build configuration list for PBXNativeTarget "MoneySaver" */;
 			buildPhases = (
+				23040B1C5DCFE5E5F3E2C6AF /* Check Pods Manifest.lock */,
 				6A9095A31BAF92D000672A05 /* Sources */,
 				6A9095A41BAF92D000672A05 /* Frameworks */,
 				6A9095A51BAF92D000672A05 /* Resources */,
+				6F6C1892EBC0456FD30E0084 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,35 +342,71 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A9095B11BAF92D000672A05 /* Assets.xcassets in Resources */,
-				6A9095B41BAF92D000672A05 /* LaunchScreen.storyboard in Resources */,
+				6A68B1D71BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23040B1C5DCFE5E5F3E2C6AF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F6C1892EBC0456FD30E0084 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneySaver/Pods-MoneySaver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A9095A31BAF92D000672A05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A68B1CB1BAFB4B3009BA468 /* ProjectManagerViewModel.m in Sources */,
+				6A85D99D1BAFB14C0049D988 /* AccountDataModel.m in Sources */,
+				6A0A539B1BAFB7F2004AD688 /* WebDataClient.m in Sources */,
 				6A9095AF1BAF92D000672A05 /* AppDelegate.m in Sources */,
+				6AF84D901BAFD75100B061A5 /* FMEncryptHelper.m in Sources */,
+				6A85D9A31BAFB1850049D988 /* BaseClassViewModel.m in Sources */,
+				6AF84D8A1BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.m in Sources */,
 				6A9095AC1BAF92D000672A05 /* main.m in Sources */,
+				6A0A53A31BAFB8E3004AD688 /* MoneySourceViewModel.m in Sources */,
+				6AF84D8D1BAFD71000B061A5 /* FMEncryptDatabase.m in Sources */,
+				6A68B1D11BAFB4E3009BA468 /* MoneySourceManagerViewModel.m in Sources */,
+				6A85D99E1BAFB14C0049D988 /* BaseProjectModel.m in Sources */,
+				6A68B1D41BAFB545009BA468 /* SqliteDataBaseClient.m in Sources */,
+				6AF84D9E1BB0053000B061A5 /* BmobObjectAdapter.m in Sources */,
+				6A68B1CE1BAFB4C5009BA468 /* AccountViewModel.m in Sources */,
+				6A85D99F1BAFB14C0049D988 /* MoneySourceModel.m in Sources */,
+				6A0A53A01BAFB8C8004AD688 /* BaseProjectViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		6A9095B21BAF92D000672A05 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A9095B31BAF92D000672A05 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6A9095B61BAF92D000672A05 /* Debug */ = {
@@ -243,23 +493,31 @@
 		};
 		6A9095B91BAF92D000672A05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AD1E6C10112F55358EE6C12 /* Pods-MoneySaver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MoneySaver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TBXark.MoneySaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		6A9095BA1BAF92D000672A05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B23B3F69596401F1FA10E7E /* Pods-MoneySaver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MoneySaver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TBXark.MoneySaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -282,6 +540,7 @@
 				6A9095BA1BAF92D000672A05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

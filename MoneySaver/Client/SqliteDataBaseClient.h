@@ -7,7 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MTLFMDBAdapter.h>
 
 @interface SqliteDataBaseClient : NSObject
+
++ (instancetype)shareSqliteDataBaseClient;
+
+- (void)deleteAllDataFromDataBase;
+
+- (void)insertModel:(id<MTLFMDBSerializing>)model
+      callBackBlock:(void (^)(NSError *error,BOOL success))block;
+
+- (void)deleteModel:(id<MTLFMDBSerializing>)model
+      callBackBlock:(void (^)(NSError *error,BOOL success))block;
+
+- (void)updateModel:(id<MTLFMDBSerializing>)model
+      callBackBlock:(void (^)(NSError *error,BOOL success))block;
+
+- (void)selectModelsByClass:(Class)modelClass
+                  tableName:(NSString *)name
+                 condistion:(NSString *)condistion
+                    isArray:(BOOL)isArray
+              callBackBlock:(void (^)(id models,BOOL isArray))block;
 
 @end

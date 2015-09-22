@@ -16,15 +16,17 @@
 		6A68B1D11BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D01BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A68B1D41BAFB545009BA468 /* MSSqliteDataBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D31BAFB545009BA468 /* MSSqliteDataBaseClient.m */; settings = {ASSET_TAGS = (); }; };
 		6A68B1D71BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql in Resources */ = {isa = PBXBuildFile; fileRef = 6A68B1D61BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql */; settings = {ASSET_TAGS = (); }; };
+		6A8404441BB0FE5500A89446 /* DefaultConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404431BB0FE5500A89446 /* DefaultConstants.m */; settings = {ASSET_TAGS = (); }; };
+		6A8404471BB1049300A89446 /* WebClientConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404461BB1049300A89446 /* WebClientConstants.m */; settings = {ASSET_TAGS = (); }; };
 		6A85D99D1BAFB14C0049D988 /* MSAccountDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9981BAFB14C0049D988 /* MSAccountDataModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A85D99E1BAFB14C0049D988 /* MSBaseProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99A1BAFB14C0049D988 /* MSBaseProjectModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A85D99F1BAFB14C0049D988 /* MSMoneySourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99C1BAFB14C0049D988 /* MSMoneySourceModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A85D9A31BAFB1850049D988 /* MSBaseClassViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9A21BAFB1850049D988 /* MSBaseClassViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A9095AC1BAF92D000672A05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9095AB1BAF92D000672A05 /* main.m */; };
 		6A9095AF1BAF92D000672A05 /* MSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */; };
-		6AF84D8A1BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D891BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
-		6AF84D8D1BAFD71000B061A5 /* FMEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8C1BAFD71000B061A5 /* FMEncryptDatabase.m */; settings = {ASSET_TAGS = (); }; };
-		6AF84D901BAFD75100B061A5 /* FMEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8F1BAFD75100B061A5 /* FMEncryptHelper.m */; settings = {ASSET_TAGS = (); }; };
+		6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D891BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
+		6AF84D8D1BAFD71000B061A5 /* MSEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8C1BAFD71000B061A5 /* MSEncryptDatabase.m */; settings = {ASSET_TAGS = (); }; };
+		6AF84D901BAFD75100B061A5 /* MSEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8F1BAFD75100B061A5 /* MSEncryptHelper.m */; settings = {ASSET_TAGS = (); }; };
 		6AF84D9E1BB0053000B061A5 /* MSBmobObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D9D1BB0053000B061A5 /* MSBmobObjectAdapter.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,11 @@
 		6A68B1D21BAFB545009BA468 /* MSSqliteDataBaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSqliteDataBaseClient.h; sourceTree = "<group>"; };
 		6A68B1D31BAFB545009BA468 /* MSSqliteDataBaseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSqliteDataBaseClient.m; sourceTree = "<group>"; };
 		6A68B1D61BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SqliteCreaterV1.0.0.sql; sourceTree = "<group>"; };
+		6A8404411BB0F67100A89446 /* MSPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSPCH.pch; sourceTree = "<group>"; };
+		6A8404421BB0FE5500A89446 /* DefaultConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultConstants.h; sourceTree = "<group>"; };
+		6A8404431BB0FE5500A89446 /* DefaultConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultConstants.m; sourceTree = "<group>"; };
+		6A8404451BB1049300A89446 /* WebClientConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebClientConstants.h; sourceTree = "<group>"; };
+		6A8404461BB1049300A89446 /* WebClientConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebClientConstants.m; sourceTree = "<group>"; };
 		6A85D9971BAFB14C0049D988 /* MSAccountDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAccountDataModel.h; sourceTree = "<group>"; };
 		6A85D9981BAFB14C0049D988 /* MSAccountDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAccountDataModel.m; sourceTree = "<group>"; };
 		6A85D9991BAFB14C0049D988 /* MSBaseProjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBaseProjectModel.h; sourceTree = "<group>"; };
@@ -60,12 +67,12 @@
 		6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAppDelegate.m; sourceTree = "<group>"; };
 		6A9095B51BAF92D000672A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A9095BC1BAF933600672A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6AF84D881BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptDatabaseQueue.h; sourceTree = "<group>"; };
-		6AF84D891BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptDatabaseQueue.m; sourceTree = "<group>"; };
-		6AF84D8B1BAFD71000B061A5 /* FMEncryptDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptDatabase.h; sourceTree = "<group>"; };
-		6AF84D8C1BAFD71000B061A5 /* FMEncryptDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptDatabase.m; sourceTree = "<group>"; };
-		6AF84D8E1BAFD75100B061A5 /* FMEncryptHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptHelper.h; sourceTree = "<group>"; };
-		6AF84D8F1BAFD75100B061A5 /* FMEncryptHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptHelper.m; sourceTree = "<group>"; };
+		6AF84D881BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEncryptDatabaseQueue.h; sourceTree = "<group>"; };
+		6AF84D891BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSEncryptDatabaseQueue.m; sourceTree = "<group>"; };
+		6AF84D8B1BAFD71000B061A5 /* MSEncryptDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEncryptDatabase.h; sourceTree = "<group>"; };
+		6AF84D8C1BAFD71000B061A5 /* MSEncryptDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSEncryptDatabase.m; sourceTree = "<group>"; };
+		6AF84D8E1BAFD75100B061A5 /* MSEncryptHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEncryptHelper.h; sourceTree = "<group>"; };
+		6AF84D8F1BAFD75100B061A5 /* MSEncryptHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSEncryptHelper.m; sourceTree = "<group>"; };
 		6AF84D9A1BAFF36800B061A5 /* ConfigureConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigureConstants.h; sourceTree = "<group>"; };
 		6AF84D9C1BB0053000B061A5 /* MSBmobObjectAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBmobObjectAdapter.h; sourceTree = "<group>"; };
 		6AF84D9D1BB0053000B061A5 /* MSBmobObjectAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBmobObjectAdapter.m; sourceTree = "<group>"; };
@@ -178,6 +185,7 @@
 		6A9095AA1BAF92D000672A05 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6A8404411BB0F67100A89446 /* MSPCH.pch */,
 				6A9095AD1BAF92D000672A05 /* MSAppDelegate.h */,
 				6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */,
 				6A9095B51BAF92D000672A05 /* Info.plist */,
@@ -210,6 +218,10 @@
 			isa = PBXGroup;
 			children = (
 				6AF84D9A1BAFF36800B061A5 /* ConfigureConstants.h */,
+				6A8404421BB0FE5500A89446 /* DefaultConstants.h */,
+				6A8404431BB0FE5500A89446 /* DefaultConstants.m */,
+				6A8404451BB1049300A89446 /* WebClientConstants.h */,
+				6A8404461BB1049300A89446 /* WebClientConstants.m */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -256,12 +268,12 @@
 		6AF84D871BAFD6C300B061A5 /* DatabaseEncrypt */ = {
 			isa = PBXGroup;
 			children = (
-				6AF84D881BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.h */,
-				6AF84D891BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.m */,
-				6AF84D8B1BAFD71000B061A5 /* FMEncryptDatabase.h */,
-				6AF84D8C1BAFD71000B061A5 /* FMEncryptDatabase.m */,
-				6AF84D8E1BAFD75100B061A5 /* FMEncryptHelper.h */,
-				6AF84D8F1BAFD75100B061A5 /* FMEncryptHelper.m */,
+				6AF84D8B1BAFD71000B061A5 /* MSEncryptDatabase.h */,
+				6AF84D8C1BAFD71000B061A5 /* MSEncryptDatabase.m */,
+				6AF84D881BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.h */,
+				6AF84D891BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m */,
+				6AF84D8E1BAFD75100B061A5 /* MSEncryptHelper.h */,
+				6AF84D8F1BAFD75100B061A5 /* MSEncryptHelper.m */,
 			);
 			path = DatabaseEncrypt;
 			sourceTree = "<group>";
@@ -391,12 +403,14 @@
 				6A85D99D1BAFB14C0049D988 /* MSAccountDataModel.m in Sources */,
 				6A0A539B1BAFB7F2004AD688 /* MSWebDataClient.m in Sources */,
 				6A9095AF1BAF92D000672A05 /* MSAppDelegate.m in Sources */,
-				6AF84D901BAFD75100B061A5 /* FMEncryptHelper.m in Sources */,
+				6AF84D901BAFD75100B061A5 /* MSEncryptHelper.m in Sources */,
+				6A8404471BB1049300A89446 /* WebClientConstants.m in Sources */,
 				6A85D9A31BAFB1850049D988 /* MSBaseClassViewModel.m in Sources */,
-				6AF84D8A1BAFD6EA00B061A5 /* FMEncryptDatabaseQueue.m in Sources */,
+				6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */,
+				6A8404441BB0FE5500A89446 /* DefaultConstants.m in Sources */,
 				6A9095AC1BAF92D000672A05 /* main.m in Sources */,
 				6A0A53A31BAFB8E3004AD688 /* MSMoneySourceViewModel.m in Sources */,
-				6AF84D8D1BAFD71000B061A5 /* FMEncryptDatabase.m in Sources */,
+				6AF84D8D1BAFD71000B061A5 /* MSEncryptDatabase.m in Sources */,
 				6A68B1D11BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m in Sources */,
 				6A85D99E1BAFB14C0049D988 /* MSBaseProjectModel.m in Sources */,
 				6A68B1D41BAFB545009BA468 /* MSSqliteDataBaseClient.m in Sources */,
@@ -498,6 +512,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $PROJECT_DIR/$PROJECT_NAME/MSPCH.pch;
 				INFOPLIST_FILE = MoneySaver/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -513,6 +529,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $PROJECT_DIR/$PROJECT_NAME/MSPCH.pch;
 				INFOPLIST_FILE = MoneySaver/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

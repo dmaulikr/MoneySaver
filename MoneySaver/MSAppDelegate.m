@@ -12,6 +12,7 @@
 
 
 #import <BmobSDK/Bmob.h>
+#import "MSAccountViewModel.h"
 
 
 @interface MSAppDelegate ()
@@ -44,7 +45,15 @@
         [self.window makeKeyAndVisible];
     }
     
-    
+    MSAccountViewModel *account = [MSAccountViewModel new];
+    account.accountRequestModel.username = @"vfanx";
+    account.accountRequestModel.password = @"666666";
+    NSLog(@"%@",account.accountRequestModel);
+    [[account.accountLoginCommand execute:nil] subscribeNext:^(id x) {
+        
+    } error:^(NSError *error) {
+        
+    }];
     return YES;
 }
 

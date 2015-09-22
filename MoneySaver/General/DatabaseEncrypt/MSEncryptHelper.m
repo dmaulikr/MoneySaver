@@ -6,11 +6,11 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "FMEncryptHelper.h"
+#import "MSEncryptHelper.h"
 #import "sqlite3.h"
 
 
-@implementation FMEncryptHelper
+@implementation MSEncryptHelper
 static NSString *_encryptKey;
 
 + (void)initialize

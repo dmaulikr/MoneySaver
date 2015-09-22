@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FMEncryptHelper : NSObject
+@interface MSEncryptHelper : NSObject
 /** 对数据库加密 */
 + (BOOL)encryptDatabase:(NSString *)path;
 

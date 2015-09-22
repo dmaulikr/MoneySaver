@@ -1,0 +1,16 @@
+//
+//  MSPCH.pch
+//  MoneySaver
+//
+//  Created by Tbxark on 15/9/22.
+//  Copyright © 2015年 TBXark. All rights reserved.
+//
+
+#ifndef MSPCH_pch
+#define MSPCH_pch
+
+#import "DefaultConstants.h"
+
+#define WeakSelf  __weak __typeof(&*self)weakSelf = self;
+
+#endif /* MSPCH_pch */

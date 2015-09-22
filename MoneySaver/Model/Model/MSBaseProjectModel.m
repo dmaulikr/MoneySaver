@@ -15,7 +15,7 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{
-             @"projectId":@"projectId",
+             @"projectId":kDefaultDatabaseId,
 
              @"transactionType":@"transactionType",
              @"projectType":@"projectType",

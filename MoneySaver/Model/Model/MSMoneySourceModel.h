@@ -9,18 +9,18 @@
 #import <Mantle.h>
 
 typedef NS_ENUM(NSUInteger, MoneySourceModelType) {
-    SourceModelOtherType,
-    SourceModelBankType,
-    SourceModelAlipayType,
-    SourceModelCashType,
+    SourceModelOtherType  = 0,
+    SourceModelBankType   = 1,
+    SourceModelAlipayType = 2,
+    SourceModelCashType   = 3,
 };
 
 @interface MSMoneySourceModel : MTLModel <MTLJSONSerializing>
 
+@property (nonatomic, copy  ) NSNumber             *sourceId;/**< 资金ID */
 
-@property (nonatomic, assign) MoneySourceModelType sourceType; /**< 资金来源 */
+@property (nonatomic, assign) MoneySourceModelType sourceType;/**< 资金来源 */
 
-@property (nonatomic, copy) NSNumber *sourceId;/**< 资金ID */
-@property (nonatomic, copy) NSNumber *total; /**< 资金总额 */
+@property (nonatomic, copy  ) NSNumber             *total;/**< 资金总额 */
 
 @end

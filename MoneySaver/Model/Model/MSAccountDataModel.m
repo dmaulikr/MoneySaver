@@ -14,8 +14,9 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{
-             @"account":@"account",
+             @"username":@"username",
              @"password":@"password",
+             @"changePassword":@"changePassword",
              @"email":@"email",
              };
 }
@@ -31,7 +32,7 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{
-             @"accountId":@"objectId",
+             @"accountId":kDefaultDatabaseId,
              @"account":@"account",
              @"token":@"token",
              @"monthLimit":@"monthLimit",

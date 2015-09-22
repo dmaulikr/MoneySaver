@@ -6,9 +6,9 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "FMEncryptDatabase.h"
+#import "MSEncryptDatabase.h"
 
-@implementation FMEncryptDatabase
+@implementation MSEncryptDatabase
 
 static NSString *kEncryptKey;
 

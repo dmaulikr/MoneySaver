@@ -7,8 +7,8 @@
 //
 
 #import "FMDatabaseQueue.h"
-#import "FMEncryptDatabase.h"
+#import "MSEncryptDatabase.h"
 
-@interface FMEncryptDatabaseQueue : FMDatabaseQueue
+@interface MSEncryptDatabaseQueue : FMDatabaseQueue
 
 @end

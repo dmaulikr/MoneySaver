@@ -10,6 +10,10 @@
 #import <ReactiveCocoa.h>
 #import <ReactiveCocoa/RACEXTScope.h>
 
+#import "MSWebDataClient.h"
+
 @interface MSBaseClassViewModel : NSObject
+
+- (void)initialize;
 
 @end

@@ -12,9 +12,9 @@
 
 
 typedef NS_ENUM(NSUInteger, ProjectTransactionType) {
-    TransactionTypeIncome,
-    TransactionTypeOutlay,
-    TransactionTypeTurn,
+    TransactionTypeIncome = 0,
+    TransactionTypeOutlay = 1,
+    TransactionTypeTurn   = 2,
 };
 
 typedef NS_ENUM(NSUInteger, BaseProjectModelType) {
@@ -37,17 +37,17 @@ FOUNDATION_EXPORT BaseProjectModelType   StringToBaseProjectModelType(NSString *
  */
 @interface MSBaseProjectModel : MTLModel <MTLJSONSerializing,MTLFMDBSerializing>
 
-@property (nonatomic, copy) NSString *projectId; /**< 项目id*/
+@property (nonatomic, copy  ) NSString               *projectId;/**< 项目id*/
 
-@property (nonatomic, assign) ProjectTransactionType transactionType; /**< 交易类型 */
-@property (nonatomic, assign) BaseProjectModelType   projectType;    /**< 账单类型 */
+@property (nonatomic, assign) ProjectTransactionType transactionType;/**< 交易类型 */
+@property (nonatomic, assign) BaseProjectModelType   projectType;/**< 账单类型 */
 
-@property (nonatomic, copy) NSDate      *date; /**< 账单日期 */
-@property (nonatomic, copy) NSString    *name; /**< 账单名称 */
-@property (nonatomic, copy) NSNumber    *value; /**< 账单金额 */
-@property (nonatomic, copy) NSString    *note; /**< 账单备注 */
+@property (nonatomic, copy  ) NSDate                 *date;/**< 账单日期 */
+@property (nonatomic, copy  ) NSString               *name;/**< 账单名称 */
+@property (nonatomic, copy  ) NSNumber               *value;/**< 账单金额 */
+@property (nonatomic, copy  ) NSString               *note;/**< 账单备注 */
 
-@property (nonatomic, copy) NSString    *sourceId; /**< 资金来源 */
+@property (nonatomic, copy  ) NSString               *sourceId;/**< 资金来源 */
 
 @end
 

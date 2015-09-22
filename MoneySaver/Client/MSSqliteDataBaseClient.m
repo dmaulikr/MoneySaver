@@ -7,13 +7,13 @@
 //
 
 #import "MSSqliteDataBaseClient.h"
-#import "FMEncryptDatabaseQueue.h"
+#import "MSEncryptDatabaseQueue.h"
 
 static MSSqliteDataBaseClient *_defaultDataBaseClient;
 
 @interface MSSqliteDataBaseClient ()
 
-@property (nonatomic, strong) FMEncryptDatabaseQueue *queue;
+@property (nonatomic, strong) MSEncryptDatabaseQueue *queue;
 
 @end
 
@@ -42,7 +42,7 @@ static MSSqliteDataBaseClient *_defaultDataBaseClient;
 {
     self = [super init];
     if (self) {
-        _queue = [FMEncryptDatabaseQueue databaseQueueWithPath:[MSSqliteDataBaseClient dataBasePath]];
+        _queue = [MSEncryptDatabaseQueue databaseQueueWithPath:[MSSqliteDataBaseClient dataBasePath]];
     }
     return self;
 }

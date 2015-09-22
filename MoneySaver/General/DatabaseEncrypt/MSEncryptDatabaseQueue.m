@@ -6,14 +6,14 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "FMEncryptDatabaseQueue.h"
-#import "FMEncryptDatabase.h"
+#import "MSEncryptDatabaseQueue.h"
+#import "MSEncryptDatabase.h"
 
-@implementation FMEncryptDatabaseQueue
+@implementation MSEncryptDatabaseQueue
 
 + (Class)databaseClass
 {
-    return [FMEncryptDatabase class];
+    return [MSEncryptDatabase class];
 }
 
 @end

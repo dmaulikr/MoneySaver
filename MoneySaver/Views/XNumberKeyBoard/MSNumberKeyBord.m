@@ -113,7 +113,6 @@
         buttonFrame.origin.x = 3 * buttonWidth;
         MSNumberKeyBordButton *clearButton = [MSNumberKeyBordButton buttonWithType:MSNumberKeyBordDeleteButtonType];
         clearButton.frame = buttonFrame;
-        [clearButton setTitle:@"←" forState:UIControlStateNormal];
         [clearButton addTarget:self action:@selector(deleteButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:clearButton];
         
@@ -159,6 +158,10 @@
             [self.numberArray removeLastObject];
             _currentString = nil;
             [self currentString];
+        }
+        else
+        {
+//            [self.deleteTimer invalidate];
         }
     }else
     {

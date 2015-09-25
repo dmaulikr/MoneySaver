@@ -20,14 +20,13 @@ NSString *MSNumberKeyBordButtonTypeToString(MSNumberKeyBordButtonType type)
             return @"+";
         }
         case MSNumberKeyBordDeleteButtonType: {
-            return @"";
+            return @"←";
         }
         case MSNumberKeyBordCommiteButtonType: {
             return @"确认";
         }
         default: {
             return [NSString stringWithFormat:@"%lu",(unsigned long)type];
-            break;
         }
     }
 }

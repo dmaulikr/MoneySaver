@@ -7,7 +7,7 @@
 //
 
 #import "MSSubmitTransitionButton.h"
-#import "MSSpinerLayer.h"
+#import "MSCircleLayer.h"
 #import "NSTimer+MSSubmitTransition.h"
 
 static UIColor *PINK                 = nil;
@@ -25,7 +25,7 @@ static CFTimeInterval kShrinkDuration = 0.1;
 @property (nonatomic, strong) UIColor *normalBackgroundColor;
 
 
-@property (nonatomic, strong) MSSpinerLayer *spiner;
+@property (nonatomic, strong) MSCircleLayer *spiner;
 @property (nonatomic, copy)   NSString *cachedTitle;
 
 
@@ -216,10 +216,10 @@ static CFTimeInterval kShrinkDuration = 0.1;
 
 
 #pragma mark - Getter
-- (MSSpinerLayer *)spiner
+- (MSCircleLayer *)spiner
 {
     if (!_spiner) {
-        _spiner = [[MSSpinerLayer alloc] initWithFrame:self.frame];
+        _spiner = [[MSCircleLayer alloc] initWithFrame:self.frame];
         [self.layer addSublayer:_spiner];
     }
     return _spiner;

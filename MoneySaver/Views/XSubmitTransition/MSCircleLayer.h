@@ -8,7 +8,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-@interface MSSpinerLayer : CAShapeLayer
+@interface MSCircleLayer : CAShapeLayer
 
 
 - (instancetype)initWithFrame:(CGRect)frame;

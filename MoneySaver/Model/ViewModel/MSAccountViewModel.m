@@ -164,4 +164,6 @@
     return _forgetPasswordCommand;
 }
 
+//- (RACCommand *)re
+
 @end

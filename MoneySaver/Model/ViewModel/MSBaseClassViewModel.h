@@ -15,6 +15,6 @@
 
 @interface MSBaseClassViewModel : NSObject
 
-- (void)initialize;
+//- (void)initialize;
 
 @end

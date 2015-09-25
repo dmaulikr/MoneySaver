@@ -6,10 +6,10 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "MSSpinerLayer.h"
+#import "MSCircleLayer.h"
 #import <UIKit/UIKit.h>
 
-@implementation MSSpinerLayer
+@implementation MSCircleLayer
 
 
 - (instancetype)initWithFrame:(CGRect)frame

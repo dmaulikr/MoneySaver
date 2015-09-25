@@ -25,7 +25,7 @@
 		6A8404441BB0FE5500A89446 /* DefaultConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404431BB0FE5500A89446 /* DefaultConstants.m */; settings = {ASSET_TAGS = (); }; };
 		6A8404471BB1049300A89446 /* WebClientConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404461BB1049300A89446 /* WebClientConstants.m */; settings = {ASSET_TAGS = (); }; };
 		6A8404511BB24C3000A89446 /* MSSubmitTransitionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404501BB24C3000A89446 /* MSSubmitTransitionButton.m */; settings = {ASSET_TAGS = (); }; };
-		6A8404541BB24DCE00A89446 /* MSSpinerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404531BB24DCE00A89446 /* MSSpinerLayer.m */; settings = {ASSET_TAGS = (); }; };
+		6A8404541BB24DCE00A89446 /* MSCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404531BB24DCE00A89446 /* MSCircleLayer.m */; settings = {ASSET_TAGS = (); }; };
 		6A8404571BB2523D00A89446 /* NSTimer+MSSubmitTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404561BB2523D00A89446 /* NSTimer+MSSubmitTransition.m */; settings = {ASSET_TAGS = (); }; };
 		6A84045A1BB25DDE00A89446 /* MSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404591BB25DDE00A89446 /* MSTestViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6A84045D1BB27A5300A89446 /* MSFadeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84045C1BB27A5300A89446 /* MSFadeTransition.m */; settings = {ASSET_TAGS = (); }; };
@@ -84,8 +84,8 @@
 		6A8404461BB1049300A89446 /* WebClientConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebClientConstants.m; sourceTree = "<group>"; };
 		6A84044F1BB24C3000A89446 /* MSSubmitTransitionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSubmitTransitionButton.h; sourceTree = "<group>"; };
 		6A8404501BB24C3000A89446 /* MSSubmitTransitionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSubmitTransitionButton.m; sourceTree = "<group>"; };
-		6A8404521BB24DCE00A89446 /* MSSpinerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSpinerLayer.h; sourceTree = "<group>"; };
-		6A8404531BB24DCE00A89446 /* MSSpinerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSpinerLayer.m; sourceTree = "<group>"; };
+		6A8404521BB24DCE00A89446 /* MSCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCircleLayer.h; sourceTree = "<group>"; };
+		6A8404531BB24DCE00A89446 /* MSCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCircleLayer.m; sourceTree = "<group>"; };
 		6A8404551BB2523D00A89446 /* NSTimer+MSSubmitTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+MSSubmitTransition.h"; sourceTree = "<group>"; };
 		6A8404561BB2523D00A89446 /* NSTimer+MSSubmitTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+MSSubmitTransition.m"; sourceTree = "<group>"; };
 		6A8404581BB25DDE00A89446 /* MSTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTestViewController.h; sourceTree = "<group>"; };
@@ -188,8 +188,8 @@
 		6A84044E1BB24C2300A89446 /* XSubmitTransition */ = {
 			isa = PBXGroup;
 			children = (
-				6A8404521BB24DCE00A89446 /* MSSpinerLayer.h */,
-				6A8404531BB24DCE00A89446 /* MSSpinerLayer.m */,
+				6A8404521BB24DCE00A89446 /* MSCircleLayer.h */,
+				6A8404531BB24DCE00A89446 /* MSCircleLayer.m */,
 				6A84044F1BB24C3000A89446 /* MSSubmitTransitionButton.h */,
 				6A8404501BB24C3000A89446 /* MSSubmitTransitionButton.m */,
 				6A8404551BB2523D00A89446 /* NSTimer+MSSubmitTransition.h */,
@@ -540,7 +540,7 @@
 				6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */,
 				6A8404441BB0FE5500A89446 /* DefaultConstants.m in Sources */,
 				6A9095AC1BAF92D000672A05 /* main.m in Sources */,
-				6A8404541BB24DCE00A89446 /* MSSpinerLayer.m in Sources */,
+				6A8404541BB24DCE00A89446 /* MSCircleLayer.m in Sources */,
 				6A0A53A31BAFB8E3004AD688 /* MSMoneySourceViewModel.m in Sources */,
 				6AF84D8D1BAFD71000B061A5 /* MSEncryptDatabase.m in Sources */,
 				6A68B1D11BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m in Sources */,

@@ -11,5 +11,6 @@
 
 /** 默认数据库主键 */
 FOUNDATION_EXPORT NSString * const kDefaultDatabaseId;
+FOUNDATION_EXPORT NSString * const kDatabaseEncryptKey;
 
 

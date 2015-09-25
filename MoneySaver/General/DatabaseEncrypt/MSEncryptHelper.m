@@ -15,7 +15,7 @@ static NSString *_encryptKey;
 
 + (void)initialize
 {
-    _encryptKey = @"FDLSAFJEIOQJR34JRI4JIGR93209T489FR";
+    _encryptKey = kDatabaseEncryptKey;
 }
 
 //对数据库加密（文件不变）

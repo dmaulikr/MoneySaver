@@ -9,4 +9,5 @@
 #import "DefaultConstants.h"
 
 NSString * const kDefaultDatabaseId = @"objectId";
+NSString * const kDatabaseEncryptKey = @"TBXarkingDatabaseEncryptKey";
 

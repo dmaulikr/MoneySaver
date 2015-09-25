@@ -274,7 +274,6 @@
 				6AF84D9B1BB0050500B061A5 /* Helper */,
 				6A9095BE1BAF96C000672A05 /* Client */,
 				6A9095BF1BAF96C000672A05 /* Constants */,
-				6A9095C01BAF96C000672A05 /* Controllers */,
 				6A9095C11BAF96C000672A05 /* General */,
 				6A9095C21BAF96C000672A05 /* Model */,
 				6A9095C51BAF96C000672A05 /* Vendors */,
@@ -330,13 +329,6 @@
 				6A8404461BB1049300A89446 /* WebClientConstants.m */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		6A9095C01BAF96C000672A05 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		6A9095C11BAF96C000672A05 /* General */ = {

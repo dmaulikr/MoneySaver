@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UIColor+MSDefaultColor.h"
 
 /** 默认数据库主键 */
 FOUNDATION_EXPORT NSString * const kDefaultDatabaseId;
+
+

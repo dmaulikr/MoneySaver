@@ -10,6 +10,7 @@
 #define MSPCH_pch
 
 #import "DefaultConstants.h"
+#import "Macro.h"
 
 #define WeakSelf  __weak __typeof(&*self)weakSelf = self;
 

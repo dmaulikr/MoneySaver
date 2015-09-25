@@ -11,6 +11,12 @@
 		6A0A539B1BAFB7F2004AD688 /* MSWebDataClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539A1BAFB7F2004AD688 /* MSWebDataClient.m */; settings = {ASSET_TAGS = (); }; };
 		6A0A53A01BAFB8C8004AD688 /* MSBaseProjectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539F1BAFB8C8004AD688 /* MSBaseProjectViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A0A53A31BAFB8E3004AD688 /* MSMoneySourceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A53A21BAFB8E3004AD688 /* MSMoneySourceViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A3A52401BB4FF6400BA99A5 /* MSNumberKeyBord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A523F1BB4FF6400BA99A5 /* MSNumberKeyBord.m */; settings = {ASSET_TAGS = (); }; };
+		6A3A52451BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A52441BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m */; settings = {ASSET_TAGS = (); }; };
+		6A3A52491BB51FDF00BA99A5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A52481BB51FDF00BA99A5 /* UIView+Frame.m */; settings = {ASSET_TAGS = (); }; };
+		6A3A524C1BB51FE900BA99A5 /* UIDevice+XDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A524B1BB51FE900BA99A5 /* UIDevice+XDevice.m */; settings = {ASSET_TAGS = (); }; };
+		6A3A524F1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A524E1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m */; settings = {ASSET_TAGS = (); }; };
+		6A3A52521BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A52511BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.m */; settings = {ASSET_TAGS = (); }; };
 		6A68B1CB1BAFB4B3009BA468 /* MSProjectManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CA1BAFB4B3009BA468 /* MSProjectManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A68B1CE1BAFB4C5009BA468 /* MSAccountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CD1BAFB4C5009BA468 /* MSAccountViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A68B1D11BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D01BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
@@ -18,12 +24,22 @@
 		6A68B1D71BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql in Resources */ = {isa = PBXBuildFile; fileRef = 6A68B1D61BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql */; settings = {ASSET_TAGS = (); }; };
 		6A8404441BB0FE5500A89446 /* DefaultConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404431BB0FE5500A89446 /* DefaultConstants.m */; settings = {ASSET_TAGS = (); }; };
 		6A8404471BB1049300A89446 /* WebClientConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404461BB1049300A89446 /* WebClientConstants.m */; settings = {ASSET_TAGS = (); }; };
+		6A8404511BB24C3000A89446 /* MSSubmitTransitionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404501BB24C3000A89446 /* MSSubmitTransitionButton.m */; settings = {ASSET_TAGS = (); }; };
+		6A8404541BB24DCE00A89446 /* MSSpinerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404531BB24DCE00A89446 /* MSSpinerLayer.m */; settings = {ASSET_TAGS = (); }; };
+		6A8404571BB2523D00A89446 /* NSTimer+MSSubmitTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404561BB2523D00A89446 /* NSTimer+MSSubmitTransition.m */; settings = {ASSET_TAGS = (); }; };
+		6A84045A1BB25DDE00A89446 /* MSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404591BB25DDE00A89446 /* MSTestViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6A84045D1BB27A5300A89446 /* MSFadeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84045C1BB27A5300A89446 /* MSFadeTransition.m */; settings = {ASSET_TAGS = (); }; };
+		6A84045E1BB282E800A89446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A9095BC1BAF933600672A05 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		6A8404641BB2860200A89446 /* MSBaseClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404631BB2860200A89446 /* MSBaseClassViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6A84046C1BB2898A00A89446 /* MSLoginMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84046B1BB2898A00A89446 /* MSLoginMainViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6A85D99D1BAFB14C0049D988 /* MSAccountDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9981BAFB14C0049D988 /* MSAccountDataModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A85D99E1BAFB14C0049D988 /* MSBaseProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99A1BAFB14C0049D988 /* MSBaseProjectModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A85D99F1BAFB14C0049D988 /* MSMoneySourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99C1BAFB14C0049D988 /* MSMoneySourceModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A85D9A31BAFB1850049D988 /* MSBaseClassViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9A21BAFB1850049D988 /* MSBaseClassViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A9095AC1BAF92D000672A05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9095AB1BAF92D000672A05 /* main.m */; };
 		6A9095AF1BAF92D000672A05 /* MSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */; };
+		6A92B3891BB3F568001C7A87 /* UIColor+MSDefaultColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92B3881BB3F568001C7A87 /* UIColor+MSDefaultColor.m */; settings = {ASSET_TAGS = (); }; };
+		6A92B38D1BB3FA9B001C7A87 /* MSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92B38C1BB3FA9B001C7A87 /* MSMainViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D891BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
 		6AF84D8D1BAFD71000B061A5 /* MSEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8C1BAFD71000B061A5 /* MSEncryptDatabase.m */; settings = {ASSET_TAGS = (); }; };
 		6AF84D901BAFD75100B061A5 /* MSEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8F1BAFD75100B061A5 /* MSEncryptHelper.m */; settings = {ASSET_TAGS = (); }; };
@@ -39,6 +55,19 @@
 		6A0A539F1BAFB8C8004AD688 /* MSBaseProjectViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBaseProjectViewModel.m; sourceTree = "<group>"; };
 		6A0A53A11BAFB8E3004AD688 /* MSMoneySourceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMoneySourceViewModel.h; sourceTree = "<group>"; };
 		6A0A53A21BAFB8E3004AD688 /* MSMoneySourceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMoneySourceViewModel.m; sourceTree = "<group>"; };
+		6A3A523E1BB4FF6400BA99A5 /* MSNumberKeyBord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNumberKeyBord.h; sourceTree = "<group>"; };
+		6A3A523F1BB4FF6400BA99A5 /* MSNumberKeyBord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNumberKeyBord.m; sourceTree = "<group>"; };
+		6A3A52431BB4FFBC00BA99A5 /* MSNumberKeyBordButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNumberKeyBordButton.h; sourceTree = "<group>"; };
+		6A3A52441BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNumberKeyBordButton.m; sourceTree = "<group>"; };
+		6A3A52461BB51F8F00BA99A5 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		6A3A52471BB51FDF00BA99A5 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		6A3A52481BB51FDF00BA99A5 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		6A3A524A1BB51FE900BA99A5 /* UIDevice+XDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+XDevice.h"; sourceTree = "<group>"; };
+		6A3A524B1BB51FE900BA99A5 /* UIDevice+XDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+XDevice.m"; sourceTree = "<group>"; };
+		6A3A524D1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACChannelTerminal+TwoWayBinding.h"; sourceTree = "<group>"; };
+		6A3A524E1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACChannelTerminal+TwoWayBinding.m"; sourceTree = "<group>"; };
+		6A3A52501BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+DefaultFormatter.h"; sourceTree = "<group>"; };
+		6A3A52511BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+DefaultFormatter.m"; sourceTree = "<group>"; };
 		6A68B1C91BAFB4B3009BA468 /* MSProjectManagerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectManagerViewModel.h; sourceTree = "<group>"; };
 		6A68B1CA1BAFB4B3009BA468 /* MSProjectManagerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectManagerViewModel.m; sourceTree = "<group>"; };
 		6A68B1CC1BAFB4C5009BA468 /* MSAccountViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAccountViewModel.h; sourceTree = "<group>"; };
@@ -53,6 +82,20 @@
 		6A8404431BB0FE5500A89446 /* DefaultConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultConstants.m; sourceTree = "<group>"; };
 		6A8404451BB1049300A89446 /* WebClientConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebClientConstants.h; sourceTree = "<group>"; };
 		6A8404461BB1049300A89446 /* WebClientConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebClientConstants.m; sourceTree = "<group>"; };
+		6A84044F1BB24C3000A89446 /* MSSubmitTransitionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSubmitTransitionButton.h; sourceTree = "<group>"; };
+		6A8404501BB24C3000A89446 /* MSSubmitTransitionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSubmitTransitionButton.m; sourceTree = "<group>"; };
+		6A8404521BB24DCE00A89446 /* MSSpinerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSpinerLayer.h; sourceTree = "<group>"; };
+		6A8404531BB24DCE00A89446 /* MSSpinerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSpinerLayer.m; sourceTree = "<group>"; };
+		6A8404551BB2523D00A89446 /* NSTimer+MSSubmitTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+MSSubmitTransition.h"; sourceTree = "<group>"; };
+		6A8404561BB2523D00A89446 /* NSTimer+MSSubmitTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+MSSubmitTransition.m"; sourceTree = "<group>"; };
+		6A8404581BB25DDE00A89446 /* MSTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTestViewController.h; sourceTree = "<group>"; };
+		6A8404591BB25DDE00A89446 /* MSTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTestViewController.m; sourceTree = "<group>"; };
+		6A84045B1BB27A5300A89446 /* MSFadeTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFadeTransition.h; sourceTree = "<group>"; };
+		6A84045C1BB27A5300A89446 /* MSFadeTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSFadeTransition.m; sourceTree = "<group>"; };
+		6A8404621BB2860200A89446 /* MSBaseClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBaseClassViewController.h; sourceTree = "<group>"; };
+		6A8404631BB2860200A89446 /* MSBaseClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBaseClassViewController.m; sourceTree = "<group>"; };
+		6A84046A1BB2898A00A89446 /* MSLoginMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLoginMainViewController.h; sourceTree = "<group>"; };
+		6A84046B1BB2898A00A89446 /* MSLoginMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLoginMainViewController.m; sourceTree = "<group>"; };
 		6A85D9971BAFB14C0049D988 /* MSAccountDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAccountDataModel.h; sourceTree = "<group>"; };
 		6A85D9981BAFB14C0049D988 /* MSAccountDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAccountDataModel.m; sourceTree = "<group>"; };
 		6A85D9991BAFB14C0049D988 /* MSBaseProjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBaseProjectModel.h; sourceTree = "<group>"; };
@@ -67,6 +110,10 @@
 		6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAppDelegate.m; sourceTree = "<group>"; };
 		6A9095B51BAF92D000672A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A9095BC1BAF933600672A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A92B3871BB3F568001C7A87 /* UIColor+MSDefaultColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MSDefaultColor.h"; sourceTree = "<group>"; };
+		6A92B3881BB3F568001C7A87 /* UIColor+MSDefaultColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MSDefaultColor.m"; sourceTree = "<group>"; };
+		6A92B38B1BB3FA9B001C7A87 /* MSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMainViewController.h; sourceTree = "<group>"; };
+		6A92B38C1BB3FA9B001C7A87 /* MSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMainViewController.m; sourceTree = "<group>"; };
 		6AF84D881BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEncryptDatabaseQueue.h; sourceTree = "<group>"; };
 		6AF84D891BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSEncryptDatabaseQueue.m; sourceTree = "<group>"; };
 		6AF84D8B1BAFD71000B061A5 /* MSEncryptDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEncryptDatabase.h; sourceTree = "<group>"; };
@@ -107,6 +154,17 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		6A3A523D1BB4FF3F00BA99A5 /* XNumberKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				6A3A523E1BB4FF6400BA99A5 /* MSNumberKeyBord.h */,
+				6A3A523F1BB4FF6400BA99A5 /* MSNumberKeyBord.m */,
+				6A3A52431BB4FFBC00BA99A5 /* MSNumberKeyBordButton.h */,
+				6A3A52441BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m */,
+			);
+			path = XNumberKeyBoard;
+			sourceTree = "<group>";
+		};
 		6A68B1D51BAFB664009BA468 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +174,50 @@
 				6A68B1D01BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m */,
 			);
 			name = Manager;
+			sourceTree = "<group>";
+		};
+		6A84044D1BB24C0200A89446 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A3A523D1BB4FF3F00BA99A5 /* XNumberKeyBoard */,
+				6A84044E1BB24C2300A89446 /* XSubmitTransition */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6A84044E1BB24C2300A89446 /* XSubmitTransition */ = {
+			isa = PBXGroup;
+			children = (
+				6A8404521BB24DCE00A89446 /* MSSpinerLayer.h */,
+				6A8404531BB24DCE00A89446 /* MSSpinerLayer.m */,
+				6A84044F1BB24C3000A89446 /* MSSubmitTransitionButton.h */,
+				6A8404501BB24C3000A89446 /* MSSubmitTransitionButton.m */,
+				6A8404551BB2523D00A89446 /* NSTimer+MSSubmitTransition.h */,
+				6A8404561BB2523D00A89446 /* NSTimer+MSSubmitTransition.m */,
+				6A84045B1BB27A5300A89446 /* MSFadeTransition.h */,
+				6A84045C1BB27A5300A89446 /* MSFadeTransition.m */,
+			);
+			path = XSubmitTransition;
+			sourceTree = "<group>";
+		};
+		6A84045F1BB285B900A89446 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A92B38A1BB3FA83001C7A87 /* MainInterface */,
+				6A8404611BB285E500A89446 /* LoginRegister */,
+				6A8404621BB2860200A89446 /* MSBaseClassViewController.h */,
+				6A8404631BB2860200A89446 /* MSBaseClassViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6A8404611BB285E500A89446 /* LoginRegister */ = {
+			isa = PBXGroup;
+			children = (
+				6A84046A1BB2898A00A89446 /* MSLoginMainViewController.h */,
+				6A84046B1BB2898A00A89446 /* MSLoginMainViewController.m */,
+			);
+			path = LoginRegister;
 			sourceTree = "<group>";
 		};
 		6A85D9961BAFB14C0049D988 /* Model */ = {
@@ -168,6 +270,7 @@
 		6A9095A91BAF92D000672A05 /* MoneySaver */ = {
 			isa = PBXGroup;
 			children = (
+				6A84045F1BB285B900A89446 /* Controller */,
 				6AF84D9B1BB0050500B061A5 /* Helper */,
 				6A9095BE1BAF96C000672A05 /* Client */,
 				6A9095BF1BAF96C000672A05 /* Constants */,
@@ -175,7 +278,7 @@
 				6A9095C11BAF96C000672A05 /* General */,
 				6A9095C21BAF96C000672A05 /* Model */,
 				6A9095C51BAF96C000672A05 /* Vendors */,
-				6A9095C61BAF96C000672A05 /* Views */,
+				6A84044D1BB24C0200A89446 /* Views */,
 				6A9095BB1BAF933600672A05 /* Resource */,
 				6A9095AA1BAF92D000672A05 /* Supporting Files */,
 			);
@@ -185,6 +288,8 @@
 		6A9095AA1BAF92D000672A05 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6A8404581BB25DDE00A89446 /* MSTestViewController.h */,
+				6A8404591BB25DDE00A89446 /* MSTestViewController.m */,
 				6A8404411BB0F67100A89446 /* MSPCH.pch */,
 				6A9095AD1BAF92D000672A05 /* MSAppDelegate.h */,
 				6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */,
@@ -217,6 +322,7 @@
 		6A9095BF1BAF96C000672A05 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				6A3A52461BB51F8F00BA99A5 /* Macro.h */,
 				6AF84D9A1BAFF36800B061A5 /* ConfigureConstants.h */,
 				6A8404421BB0FE5500A89446 /* DefaultConstants.h */,
 				6A8404431BB0FE5500A89446 /* DefaultConstants.m */,
@@ -236,6 +342,7 @@
 		6A9095C11BAF96C000672A05 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				6A92B3861BB3F55A001C7A87 /* Category */,
 				6AF84D871BAFD6C300B061A5 /* DatabaseEncrypt */,
 				6A0A539C1BAFB848004AD688 /* Protocol */,
 			);
@@ -258,11 +365,30 @@
 			path = Vendors;
 			sourceTree = "<group>";
 		};
-		6A9095C61BAF96C000672A05 /* Views */ = {
+		6A92B3861BB3F55A001C7A87 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				6A3A52501BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.h */,
+				6A3A52511BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.m */,
+				6A3A524D1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.h */,
+				6A3A524E1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m */,
+				6A3A524A1BB51FE900BA99A5 /* UIDevice+XDevice.h */,
+				6A3A524B1BB51FE900BA99A5 /* UIDevice+XDevice.m */,
+				6A3A52471BB51FDF00BA99A5 /* UIView+Frame.h */,
+				6A3A52481BB51FDF00BA99A5 /* UIView+Frame.m */,
+				6A92B3871BB3F568001C7A87 /* UIColor+MSDefaultColor.h */,
+				6A92B3881BB3F568001C7A87 /* UIColor+MSDefaultColor.m */,
 			);
-			path = Views;
+			path = Category;
+			sourceTree = "<group>";
+		};
+		6A92B38A1BB3FA83001C7A87 /* MainInterface */ = {
+			isa = PBXGroup;
+			children = (
+				6A92B38B1BB3FA9B001C7A87 /* MSMainViewController.h */,
+				6A92B38C1BB3FA9B001C7A87 /* MSMainViewController.m */,
+			);
+			path = MainInterface;
 			sourceTree = "<group>";
 		};
 		6AF84D871BAFD6C300B061A5 /* DatabaseEncrypt */ = {
@@ -355,6 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A84045E1BB282E800A89446 /* Assets.xcassets in Resources */,
 				6A68B1D71BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,24 +526,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A84045A1BB25DDE00A89446 /* MSTestViewController.m in Sources */,
+				6A3A52491BB51FDF00BA99A5 /* UIView+Frame.m in Sources */,
+				6A84046C1BB2898A00A89446 /* MSLoginMainViewController.m in Sources */,
+				6A8404511BB24C3000A89446 /* MSSubmitTransitionButton.m in Sources */,
+				6A3A52451BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m in Sources */,
+				6A3A524F1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m in Sources */,
+				6A3A52401BB4FF6400BA99A5 /* MSNumberKeyBord.m in Sources */,
+				6A8404571BB2523D00A89446 /* NSTimer+MSSubmitTransition.m in Sources */,
+				6A8404641BB2860200A89446 /* MSBaseClassViewController.m in Sources */,
 				6A68B1CB1BAFB4B3009BA468 /* MSProjectManagerViewModel.m in Sources */,
 				6A85D99D1BAFB14C0049D988 /* MSAccountDataModel.m in Sources */,
 				6A0A539B1BAFB7F2004AD688 /* MSWebDataClient.m in Sources */,
+				6A3A52521BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.m in Sources */,
 				6A9095AF1BAF92D000672A05 /* MSAppDelegate.m in Sources */,
+				6A92B38D1BB3FA9B001C7A87 /* MSMainViewController.m in Sources */,
 				6AF84D901BAFD75100B061A5 /* MSEncryptHelper.m in Sources */,
+				6A3A524C1BB51FE900BA99A5 /* UIDevice+XDevice.m in Sources */,
 				6A8404471BB1049300A89446 /* WebClientConstants.m in Sources */,
 				6A85D9A31BAFB1850049D988 /* MSBaseClassViewModel.m in Sources */,
 				6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */,
 				6A8404441BB0FE5500A89446 /* DefaultConstants.m in Sources */,
 				6A9095AC1BAF92D000672A05 /* main.m in Sources */,
+				6A8404541BB24DCE00A89446 /* MSSpinerLayer.m in Sources */,
 				6A0A53A31BAFB8E3004AD688 /* MSMoneySourceViewModel.m in Sources */,
 				6AF84D8D1BAFD71000B061A5 /* MSEncryptDatabase.m in Sources */,
 				6A68B1D11BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m in Sources */,
+				6A92B3891BB3F568001C7A87 /* UIColor+MSDefaultColor.m in Sources */,
 				6A85D99E1BAFB14C0049D988 /* MSBaseProjectModel.m in Sources */,
 				6A68B1D41BAFB545009BA468 /* MSSqliteDataBaseClient.m in Sources */,
 				6AF84D9E1BB0053000B061A5 /* MSBmobObjectAdapter.m in Sources */,
 				6A68B1CE1BAFB4C5009BA468 /* MSAccountViewModel.m in Sources */,
 				6A85D99F1BAFB14C0049D988 /* MSMoneySourceModel.m in Sources */,
+				6A84045D1BB27A5300A89446 /* MSFadeTransition.m in Sources */,
 				6A0A53A01BAFB8C8004AD688 /* MSBaseProjectViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +653,7 @@
 			baseConfigurationReference = 1AD1E6C10112F55358EE6C12 /* Pods-MoneySaver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $PROJECT_DIR/$PROJECT_NAME/MSPCH.pch;
@@ -528,6 +671,7 @@
 			baseConfigurationReference = 9B23B3F69596401F1FA10E7E /* Pods-MoneySaver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $PROJECT_DIR/$PROJECT_NAME/MSPCH.pch;

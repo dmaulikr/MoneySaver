@@ -14,6 +14,8 @@
 #import <BmobSDK/Bmob.h>
 #import "MSAccountViewModel.h"
 
+#import "MSLoginMainViewController.h"
+#import "MSTestViewController.h"
 
 @interface MSAppDelegate ()
 
@@ -28,7 +30,16 @@
     [Bmob registerWithAppKey:kBmobSDKAPPKey];
 }
 
-
+- (void)configureViewController
+{
+    self.window.rootViewController = [MSTestViewController new];
+    if ([BmobUser getCurrentUser]) {
+        
+    }else
+    {
+        [self.window.rootViewController presentViewController:[MSLoginMainViewController new] animated:NO completion:nil];
+    }
+}
 
 
 
@@ -36,26 +47,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [self venderConfigure];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [MSLoginMainViewController new];
+    [self.window makeKeyAndVisible];
 
-    { // 配置Windows
-        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-        self.window.backgroundColor = [UIColor whiteColor];
-        self.window.rootViewController = [UIViewController new];
-        [self.window makeKeyAndVisible];
-    }
+    
+    [self venderConfigure];
+    [self configureViewController];
     
     MSAccountViewModel *account = [MSAccountViewModel new];
     account.accountRequestModel.username = @"vfanx";
     account.accountRequestModel.password = @"666666";
-    NSLog(@"%@",account.accountRequestModel);
     [[account.accountLoginCommand execute:nil] subscribeNext:^(id x) {
         
     } error:^(NSError *error) {
         
     }];
+//
     return YES;
 }
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {}

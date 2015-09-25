@@ -47,6 +47,17 @@ static MSSqliteDataBaseClient *_defaultDataBaseClient;
     return self;
 }
 
+#pragma mark - Table Operation
+- (void)createTable
+{
+    
+}
+
+- (void)dropAllTable
+{
+    
+}
+
 #pragma mark - Data Operation
 - (void)insertModel:(id<MTLFMDBSerializing>)model
       callBackBlock:(void (^)(NSError *error,BOOL success))block

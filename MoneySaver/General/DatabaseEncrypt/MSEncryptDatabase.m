@@ -16,7 +16,7 @@ static NSString *kEncryptKey;
 {
     [super initialize];
     //初始化数据库加密key，在使用之前可以通过 setEncryptKey 修改
-    kEncryptKey = @"FDLSAFJEIOQJR34JRI4JIGR93209T489FR";
+    kEncryptKey = @"TBXARKING";
 }
 
 #pragma mark - 重载原来方法

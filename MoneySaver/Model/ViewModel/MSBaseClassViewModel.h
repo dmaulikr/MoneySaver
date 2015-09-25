@@ -12,6 +12,7 @@
 
 #import "MSWebDataClient.h"
 
+
 @interface MSBaseClassViewModel : NSObject
 
 - (void)initialize;

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4EBE0143E19EAFE5DC63C67A"
+               BlueprintIdentifier = "84CE4AEB3795BC92E30AB58B"
                BuildableName = "libFDFullscreenPopGesture.a"
                BlueprintName = "FDFullscreenPopGesture"
                ReferencedContainer = "container:Pods.xcodeproj">

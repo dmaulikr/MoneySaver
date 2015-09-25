@@ -6,30 +6,33 @@ target 'MoneySaver' do
 # Framework
    pod 'Mantle'
    pod 'ReactiveCocoa'
-   pod 'AFNetworking'
    pod 'Masonry'
    pod 'SDWebImage'
    pod 'Routable', '~> 0.2.0'
    pod 'FMDB/SQLCipher'
    pod 'BmobSDK'
+   pod 'JSPatch'
    #   pod 'FMDB', '~> 2.5'
 
 # UI
-   pod 'SVProgressHUD'
-   pod 'MJRefresh' 
-   pod 'DZNEmptyDataSet'
+   pod 'SVProgressHUD' #HUD
+   pod 'MJRefresh' #刷新
+   pod 'DZNEmptyDataSet' #空白页提示
+   pod 'JHChainableAnimations', '~> 1.3.0' #链式动画
+   pod 'JVFloatLabeledTextField' #浮动输入框
+   pod 'FontAwesomeKit/FontAwesome'  #文字转图片
+   pod 'JTCalendar', '~> 2.0' #日历
+
 
 # Helper
-   pod 'IQKeyboardManager', '~> 3.2.4'
+   pod 'IQKeyboardManager', '~> 3.2.4' 
    pod 'ChameleonFramework'
    pod 'MTLFMDBAdapter'
 
 # Category & Extensions
    pod 'FDFullscreenPopGesture', '1.1'
-   pod 'AFNetworking-RACExtensions', '~> 0.1.8'
 
 # Other
-   pod 'ReactiveViewModel', '~> 0.3'	
    pod 'Harpy'  #版本更新
 
 end

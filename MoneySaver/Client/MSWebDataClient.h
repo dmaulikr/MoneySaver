@@ -46,7 +46,6 @@ typedef NS_ENUM(NSUInteger, BmobObjectDataOperationType) {
                                 isArray:(BOOL)isArray;
 
 
-//+ (RACSignal *)use
 
 /**
  *  更新数据库

@@ -9,8 +9,23 @@
 #import <Foundation/Foundation.h>
 #import "UIColor+MSDefaultColor.h"
 
+//数据库相关
+
 /** 默认数据库主键 */
 FOUNDATION_EXPORT NSString * const kDefaultDatabaseId;
+/** 数据库加密密钥 */
 FOUNDATION_EXPORT NSString * const kDatabaseEncryptKey;
 
+
+
+
+
+
+
+//通知中心相关
+
+/** 用户登录 */
+FOUNDATION_EXPORT NSString * const kNofityUserLoginKey;
+/** 用户登出 */
+FOUNDATION_EXPORT NSString * const kNofityUserLogoutKey;
 

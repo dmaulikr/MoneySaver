@@ -20,6 +20,20 @@
 @implementation MSAccountViewModel
 
 
+- (void)configureSignal
+{
+    @weakify(self);
+    [[RACObserve(self, accountImage) map:^id(id value) {
+        return @(value != nil);
+    }] subscribeNext:^(id x) {
+//        TODO : 自动上传图片
+    } error:^(NSError *error) {
+        self.accountInfomationError = error;
+    }];
+    
+}
+
+
 #pragma mark - Getter
 
 
@@ -54,6 +68,8 @@
     return _emailEnable;
 }
 
+#pragma mark RACCommand
+
 - (RACCommand *)accountLoginCommand
 {
     if (!_accountLoginCommand) {
@@ -77,12 +93,31 @@
                         }];
                 return nil;
             }] catch:^RACSignal *(NSError *error) {
-                self.commandError = error;
+                self.accountOperationError = error;
                 return [RACSignal error:error];
             }];
         }];
     }
     return _accountLoginCommand;
+}
+
+- (RACCommand *)accountLogoutCommand
+{
+    if (!_accountLogoutCommand) {
+        _accountLogoutCommand = [[RACCommand alloc] initWithEnabled:[RACObserve(self, accountDataModel) map:^id(id value) {
+            return @(value != nil);
+        }] signalBlock:^RACSignal *(id input) {
+            return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+                [BmobUser logout];
+                self.accountDataModel = nil;
+                [[NSNotificationCenter defaultCenter] postNotificationName:kNofityUserLogoutKey object:nil];
+                [subscriber sendNext:@YES];
+                [subscriber sendCompleted];
+                return nil;
+            }];
+        }];
+    }
+    return _accountLogoutCommand;
 }
 
 - (RACCommand *)registerCommand
@@ -112,7 +147,7 @@
                 }];
                 return nil;
             }] catch:^RACSignal *(NSError *error) {
-                self.commandError = error;
+                self.accountOperationError = error;
                 return [RACSignal error:error];
             }] ;
         }];
@@ -128,7 +163,7 @@
             return @YES;
         }] signalBlock:^RACSignal *(id input) {
             @strongify(self);
-           return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+           return [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
                [[BmobUser getCurrentUser] updateCurrentUserPasswordWithOldPassword:self.accountRequestModel.password newPassword:self.accountRequestModel.changePassword block:^(BOOL isSuccessful, NSError *error) {
                    if (error) {
                        [subscriber sendError:error];
@@ -142,6 +177,9 @@
                    }
                }];
                return nil;
+           }] catch:^RACSignal *(NSError *error) {
+               self.accountOperationError = error;
+               return [RACSignal error:error];
            }];
         }];
     }
@@ -163,7 +201,5 @@
     }
     return _forgetPasswordCommand;
 }
-
-//- (RACCommand *)re
 
 @end

@@ -11,3 +11,6 @@
 NSString * const kDefaultDatabaseId = @"objectId";
 NSString * const kDatabaseEncryptKey = @"TBXarkingDatabaseEncryptKey";
 
+NSString * const kNofityUserLoginKey = @"MoneySaverNofityUserLoginKey";
+NSString * const kNofityUserLogoutKey = @"MoneySaverNofityUserLogoutKey";
+

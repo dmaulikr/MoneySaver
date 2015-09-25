@@ -14,11 +14,15 @@
 @property (nonatomic, strong) MSAccountRequestModel *accountRequestModel;
 @property (nonatomic, strong) MSAccountDataModel    *accountDataModel;
 
-@property (nonatomic, strong) NSError               *commandError;
+@property (nonatomic, strong) NSError               *accountOperationError;
+@property (nonatomic, strong) NSError               *accountInfomationError;
 
 @property (nonatomic, strong) RACCommand            *accountLoginCommand;
+@property (nonatomic, strong) RACCommand            *accountLogoutCommand;
 @property (nonatomic, strong) RACCommand            *changePasswordCommand;
 @property (nonatomic, strong) RACCommand            *forgetPasswordCommand;
 @property (nonatomic, strong) RACCommand            *registerCommand;
+
+@property (nonatomic, strong) UIImage               *accountImage;
 
 @end

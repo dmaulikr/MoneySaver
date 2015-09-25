@@ -48,9 +48,8 @@
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {
     UIView *containerView = [transitionContext containerView];
-    //获取VC快照
-    UIView *toView = [[transitionContext viewForKey:UITransitionContextToViewKey] snapshotViewAfterScreenUpdates:NO];
-    UIView *fromView = [[transitionContext viewForKey:UITransitionContextFromViewKey] snapshotViewAfterScreenUpdates:NO];
+    UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
+    UIView *fromView = [transitionContext viewForKey:UITransitionContextFromViewKey];
     toView.alpha = _startingAlpha;
     fromView.alpha = 1.0f;
     [containerView addSubview:toView];

@@ -33,12 +33,12 @@
 - (void)configureViewController
 {
     self.window.rootViewController = [MSTestViewController new];
-    if ([BmobUser getCurrentUser]) {
-        
-    }else
-    {
+//    if ([BmobUser getCurrentUser]) {
+//        
+//    }else
+//    {
         [self.window.rootViewController presentViewController:[MSLoginMainViewController new] animated:NO completion:nil];
-    }
+//    }
 }
 
 

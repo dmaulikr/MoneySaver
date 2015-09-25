@@ -9,9 +9,34 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MoneySaverToday.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
+		<key>MoneySaverWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
+		<key>Notification - MoneySaverWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>23</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>6A692E661BB5AA4700AAA277</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6A692E941BB5AA8400AAA277</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6A9095A61BAF92D000672A05</key>
 		<dict>
 			<key>primary</key>

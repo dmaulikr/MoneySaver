@@ -22,18 +22,11 @@
 		6A68B1D11BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D01BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A68B1D41BAFB545009BA468 /* MSSqliteDataBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D31BAFB545009BA468 /* MSSqliteDataBaseClient.m */; settings = {ASSET_TAGS = (); }; };
 		6A68B1D71BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql in Resources */ = {isa = PBXBuildFile; fileRef = 6A68B1D61BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql */; settings = {ASSET_TAGS = (); }; };
-		6A692E6B1BB5AA4700AAA277 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A692E691BB5AA4700AAA277 /* Interface.storyboard */; };
-		6A692E6D1BB5AA4700AAA277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A692E6C1BB5AA4700AAA277 /* Assets.xcassets */; };
-		6A692E741BB5AA4700AAA277 /* MoneySaverWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6A692E731BB5AA4700AAA277 /* MoneySaverWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		6A692E7C1BB5AA4700AAA277 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A692E7B1BB5AA4700AAA277 /* InterfaceController.m */; };
-		6A692E7F1BB5AA4700AAA277 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A692E7E1BB5AA4700AAA277 /* ExtensionDelegate.m */; };
-		6A692E821BB5AA4700AAA277 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A692E811BB5AA4700AAA277 /* NotificationController.m */; };
-		6A692E841BB5AA4700AAA277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A692E831BB5AA4700AAA277 /* Assets.xcassets */; };
-		6A692E881BB5AA4700AAA277 /* MoneySaverWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6A692E671BB5AA4700AAA277 /* MoneySaverWatch.app */; };
 		6A692E971BB5AA8400AAA277 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A692E961BB5AA8400AAA277 /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
 		6A692E9B1BB5AA8400AAA277 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A692E9A1BB5AA8400AAA277 /* TodayViewController.m */; };
 		6A692E9E1BB5AA8400AAA277 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A692E9C1BB5AA8400AAA277 /* MainInterface.storyboard */; };
 		6A692EA21BB5AA8400AAA277 /* MoneySaverToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6A692E951BB5AA8400AAA277 /* MoneySaverToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6A692EA91BB6404100AAA277 /* MSBmobDataBojectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A692EA81BB6404100AAA277 /* MSBmobDataBojectModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A8404441BB0FE5500A89446 /* DefaultConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404431BB0FE5500A89446 /* DefaultConstants.m */; settings = {ASSET_TAGS = (); }; };
 		6A8404471BB1049300A89446 /* WebClientConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404461BB1049300A89446 /* WebClientConstants.m */; settings = {ASSET_TAGS = (); }; };
 		6A8404511BB24C3000A89446 /* MSSubmitTransitionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404501BB24C3000A89446 /* MSSubmitTransitionButton.m */; settings = {ASSET_TAGS = (); }; };
@@ -59,20 +52,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6A692E751BB5AA4700AAA277 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6A90959F1BAF92D000672A05 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6A692E721BB5AA4700AAA277;
-			remoteInfo = "MoneySaverWatch Extension";
-		};
-		6A692E861BB5AA4700AAA277 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6A90959F1BAF92D000672A05 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6A692E661BB5AA4700AAA277;
-			remoteInfo = MoneySaverWatch;
-		};
 		6A692EA01BB5AA8400AAA277 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6A90959F1BAF92D000672A05 /* Project object */;
@@ -83,24 +62,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6A692E8E1BB5AA4700AAA277 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				6A692E741BB5AA4700AAA277 /* MoneySaverWatch Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6A692E901BB5AA4700AAA277 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				6A692E881BB5AA4700AAA277 /* MoneySaverWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,26 +116,14 @@
 		6A68B1D21BAFB545009BA468 /* MSSqliteDataBaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSqliteDataBaseClient.h; sourceTree = "<group>"; };
 		6A68B1D31BAFB545009BA468 /* MSSqliteDataBaseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSqliteDataBaseClient.m; sourceTree = "<group>"; };
 		6A68B1D61BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SqliteCreaterV1.0.0.sql; sourceTree = "<group>"; };
-		6A692E671BB5AA4700AAA277 /* MoneySaverWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneySaverWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A692E6A1BB5AA4700AAA277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		6A692E6C1BB5AA4700AAA277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6A692E6E1BB5AA4700AAA277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A692E731BB5AA4700AAA277 /* MoneySaverWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MoneySaverWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A692E791BB5AA4700AAA277 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		6A692E7A1BB5AA4700AAA277 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
-		6A692E7B1BB5AA4700AAA277 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
-		6A692E7D1BB5AA4700AAA277 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
-		6A692E7E1BB5AA4700AAA277 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
-		6A692E801BB5AA4700AAA277 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
-		6A692E811BB5AA4700AAA277 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
-		6A692E831BB5AA4700AAA277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6A692E851BB5AA4700AAA277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A692E951BB5AA8400AAA277 /* MoneySaverToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MoneySaverToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A692E961BB5AA8400AAA277 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		6A692E991BB5AA8400AAA277 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		6A692E9A1BB5AA8400AAA277 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		6A692E9D1BB5AA8400AAA277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		6A692E9F1BB5AA8400AAA277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A692EA71BB6404100AAA277 /* MSBmobDataBojectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBmobDataBojectModel.h; sourceTree = "<group>"; };
+		6A692EA81BB6404100AAA277 /* MSBmobDataBojectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBmobDataBojectModel.m; sourceTree = "<group>"; };
 		6A8404411BB0F67100A89446 /* MSPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSPCH.pch; sourceTree = "<group>"; };
 		6A8404421BB0FE5500A89446 /* DefaultConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultConstants.h; sourceTree = "<group>"; };
 		6A8404431BB0FE5500A89446 /* DefaultConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultConstants.m; sourceTree = "<group>"; };
@@ -219,13 +174,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6A692E701BB5AA4700AAA277 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6A692E921BB5AA8400AAA277 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,40 +229,6 @@
 				6A68B1D01BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m */,
 			);
 			name = Manager;
-			sourceTree = "<group>";
-		};
-		6A692E681BB5AA4700AAA277 /* MoneySaverWatch */ = {
-			isa = PBXGroup;
-			children = (
-				6A692E691BB5AA4700AAA277 /* Interface.storyboard */,
-				6A692E6C1BB5AA4700AAA277 /* Assets.xcassets */,
-				6A692E6E1BB5AA4700AAA277 /* Info.plist */,
-			);
-			path = MoneySaverWatch;
-			sourceTree = "<group>";
-		};
-		6A692E771BB5AA4700AAA277 /* MoneySaverWatch Extension */ = {
-			isa = PBXGroup;
-			children = (
-				6A692E7A1BB5AA4700AAA277 /* InterfaceController.h */,
-				6A692E7B1BB5AA4700AAA277 /* InterfaceController.m */,
-				6A692E7D1BB5AA4700AAA277 /* ExtensionDelegate.h */,
-				6A692E7E1BB5AA4700AAA277 /* ExtensionDelegate.m */,
-				6A692E801BB5AA4700AAA277 /* NotificationController.h */,
-				6A692E811BB5AA4700AAA277 /* NotificationController.m */,
-				6A692E831BB5AA4700AAA277 /* Assets.xcassets */,
-				6A692E851BB5AA4700AAA277 /* Info.plist */,
-				6A692E781BB5AA4700AAA277 /* Supporting Files */,
-			);
-			path = "MoneySaverWatch Extension";
-			sourceTree = "<group>";
-		};
-		6A692E781BB5AA4700AAA277 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6A692E791BB5AA4700AAA277 /* PushNotificationPayload.apns */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6A692E981BB5AA8400AAA277 /* MoneySaverToday */ = {
@@ -381,6 +295,8 @@
 				6A85D99A1BAFB14C0049D988 /* MSBaseProjectModel.m */,
 				6A85D99B1BAFB14C0049D988 /* MSMoneySourceModel.h */,
 				6A85D99C1BAFB14C0049D988 /* MSMoneySourceModel.m */,
+				6A692EA71BB6404100AAA277 /* MSBmobDataBojectModel.h */,
+				6A692EA81BB6404100AAA277 /* MSBmobDataBojectModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -406,8 +322,6 @@
 			children = (
 				6A9095A91BAF92D000672A05 /* MoneySaver */,
 				6A692E981BB5AA8400AAA277 /* MoneySaverToday */,
-				6A692E681BB5AA4700AAA277 /* MoneySaverWatch */,
-				6A692E771BB5AA4700AAA277 /* MoneySaverWatch Extension */,
 				6A9095A81BAF92D000672A05 /* Products */,
 				4F12BEF01A43030A5FDF9E52 /* Pods */,
 				B213BCB2A07FBF95C8BDA9A4 /* Frameworks */,
@@ -418,8 +332,6 @@
 			isa = PBXGroup;
 			children = (
 				6A9095A71BAF92D000672A05 /* MoneySaver.app */,
-				6A692E671BB5AA4700AAA277 /* MoneySaverWatch.app */,
-				6A692E731BB5AA4700AAA277 /* MoneySaverWatch Extension.appex */,
 				6A692E951BB5AA8400AAA277 /* MoneySaverToday.appex */,
 			);
 			name = Products;
@@ -575,40 +487,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A692E661BB5AA4700AAA277 /* MoneySaverWatch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6A692E8F1BB5AA4700AAA277 /* Build configuration list for PBXNativeTarget "MoneySaverWatch" */;
-			buildPhases = (
-				6A692E651BB5AA4700AAA277 /* Resources */,
-				6A692E8E1BB5AA4700AAA277 /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6A692E761BB5AA4700AAA277 /* PBXTargetDependency */,
-			);
-			name = MoneySaverWatch;
-			productName = MoneySaverWatch;
-			productReference = 6A692E671BB5AA4700AAA277 /* MoneySaverWatch.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		6A692E721BB5AA4700AAA277 /* MoneySaverWatch Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6A692E8D1BB5AA4700AAA277 /* Build configuration list for PBXNativeTarget "MoneySaverWatch Extension" */;
-			buildPhases = (
-				6A692E6F1BB5AA4700AAA277 /* Sources */,
-				6A692E701BB5AA4700AAA277 /* Frameworks */,
-				6A692E711BB5AA4700AAA277 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "MoneySaverWatch Extension";
-			productName = "MoneySaverWatch Extension";
-			productReference = 6A692E731BB5AA4700AAA277 /* MoneySaverWatch Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
 		6A692E941BB5AA8400AAA277 /* MoneySaverToday */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A692EA31BB5AA8500AAA277 /* Build configuration list for PBXNativeTarget "MoneySaverToday" */;
@@ -641,7 +519,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				6A692E871BB5AA4700AAA277 /* PBXTargetDependency */,
 				6A692EA11BB5AA8400AAA277 /* PBXTargetDependency */,
 			);
 			name = MoneySaver;
@@ -659,12 +536,6 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = TBXark;
 				TargetAttributes = {
-					6A692E661BB5AA4700AAA277 = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					6A692E721BB5AA4700AAA277 = {
-						CreatedOnToolsVersion = 7.0;
-					};
 					6A692E941BB5AA8400AAA277 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -687,31 +558,12 @@
 			projectRoot = "";
 			targets = (
 				6A9095A61BAF92D000672A05 /* MoneySaver */,
-				6A692E661BB5AA4700AAA277 /* MoneySaverWatch */,
-				6A692E721BB5AA4700AAA277 /* MoneySaverWatch Extension */,
 				6A692E941BB5AA8400AAA277 /* MoneySaverToday */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6A692E651BB5AA4700AAA277 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A692E6D1BB5AA4700AAA277 /* Assets.xcassets in Resources */,
-				6A692E6B1BB5AA4700AAA277 /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6A692E711BB5AA4700AAA277 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A692E841BB5AA4700AAA277 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6A692E931BB5AA8400AAA277 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -765,16 +617,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6A692E6F1BB5AA4700AAA277 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A692E7F1BB5AA4700AAA277 /* ExtensionDelegate.m in Sources */,
-				6A692E7C1BB5AA4700AAA277 /* InterfaceController.m in Sources */,
-				6A692E821BB5AA4700AAA277 /* NotificationController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6A692E911BB5AA8400AAA277 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -788,6 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A84045A1BB25DDE00A89446 /* MSTestViewController.m in Sources */,
+				6A692EA91BB6404100AAA277 /* MSBmobDataBojectModel.m in Sources */,
 				6A3A52491BB51FDF00BA99A5 /* UIView+Frame.m in Sources */,
 				6A84046C1BB2898A00A89446 /* MSLoginMainViewController.m in Sources */,
 				6A8404511BB24C3000A89446 /* MSSubmitTransitionButton.m in Sources */,
@@ -827,16 +670,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6A692E761BB5AA4700AAA277 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6A692E721BB5AA4700AAA277 /* MoneySaverWatch Extension */;
-			targetProxy = 6A692E751BB5AA4700AAA277 /* PBXContainerItemProxy */;
-		};
-		6A692E871BB5AA4700AAA277 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6A692E661BB5AA4700AAA277 /* MoneySaverWatch */;
-			targetProxy = 6A692E861BB5AA4700AAA277 /* PBXContainerItemProxy */;
-		};
 		6A692EA11BB5AA8400AAA277 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6A692E941BB5AA8400AAA277 /* MoneySaverToday */;
@@ -845,14 +678,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6A692E691BB5AA4700AAA277 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A692E6A1BB5AA4700AAA277 /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
 		6A692E9C1BB5AA8400AAA277 /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -864,64 +689,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6A692E891BB5AA4700AAA277 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				IBSC_MODULE = MoneySaverWatch_Extension;
-				INFOPLIST_FILE = MoneySaverWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.TBXark.MoneySaver.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		6A692E8A1BB5AA4700AAA277 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				IBSC_MODULE = MoneySaverWatch_Extension;
-				INFOPLIST_FILE = MoneySaverWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.TBXark.MoneySaver.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		6A692E8B1BB5AA4700AAA277 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "MoneySaverWatch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.TBXark.MoneySaver.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		6A692E8C1BB5AA4700AAA277 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "MoneySaverWatch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.TBXark.MoneySaver.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
 		6A692EA41BB5AA8500AAA277 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1067,22 +834,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A692E8D1BB5AA4700AAA277 /* Build configuration list for PBXNativeTarget "MoneySaverWatch Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6A692E8B1BB5AA4700AAA277 /* Debug */,
-				6A692E8C1BB5AA4700AAA277 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		6A692E8F1BB5AA4700AAA277 /* Build configuration list for PBXNativeTarget "MoneySaverWatch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6A692E891BB5AA4700AAA277 /* Debug */,
-				6A692E8A1BB5AA4700AAA277 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		6A692EA31BB5AA8500AAA277 /* Build configuration list for PBXNativeTarget "MoneySaverToday" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1090,6 +841,7 @@
 				6A692EA51BB5AA8500AAA277 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A9095A21BAF92D000672A05 /* Build configuration list for PBXProject "MoneySaver" */ = {
 			isa = XCConfigurationList;

@@ -49,6 +49,9 @@
 }
 
 
+//+ (RACSignal *)uploadDataInBackground:(NSData *)data
+
+
 + (RACSignal *)callFunctionInBackground:(NSString *)function
                          withParameters:(NSDictionary *)parameters
                              modelClass:(Class)modelClass

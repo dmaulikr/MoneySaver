@@ -41,6 +41,9 @@
 		6A85D99E1BAFB14C0049D988 /* MSBaseProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99A1BAFB14C0049D988 /* MSBaseProjectModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A85D99F1BAFB14C0049D988 /* MSMoneySourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99C1BAFB14C0049D988 /* MSMoneySourceModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A85D9A31BAFB1850049D988 /* MSBaseClassViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9A21BAFB1850049D988 /* MSBaseClassViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A894CCA1BBB8290009A7120 /* MSProjectListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A894CC51BBB8290009A7120 /* MSProjectListHeaderView.m */; settings = {ASSET_TAGS = (); }; };
+		6A894CCB1BBB8290009A7120 /* MSProjectListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A894CC71BBB8290009A7120 /* MSProjectListTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		6A894CCC1BBB8290009A7120 /* MSProjectListTableViewCellTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A894CC91BBB8290009A7120 /* MSProjectListTableViewCellTypeView.m */; settings = {ASSET_TAGS = (); }; };
 		6A9095AC1BAF92D000672A05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9095AB1BAF92D000672A05 /* main.m */; };
 		6A9095AF1BAF92D000672A05 /* MSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */; };
 		6A92B3891BB3F568001C7A87 /* UIColor+MSDefaultColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92B3881BB3F568001C7A87 /* UIColor+MSDefaultColor.m */; settings = {ASSET_TAGS = (); }; };
@@ -151,6 +154,12 @@
 		6A85D99C1BAFB14C0049D988 /* MSMoneySourceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMoneySourceModel.m; sourceTree = "<group>"; };
 		6A85D9A11BAFB1850049D988 /* MSBaseClassViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBaseClassViewModel.h; sourceTree = "<group>"; };
 		6A85D9A21BAFB1850049D988 /* MSBaseClassViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBaseClassViewModel.m; sourceTree = "<group>"; };
+		6A894CC41BBB8290009A7120 /* MSProjectListHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectListHeaderView.h; sourceTree = "<group>"; };
+		6A894CC51BBB8290009A7120 /* MSProjectListHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectListHeaderView.m; sourceTree = "<group>"; };
+		6A894CC61BBB8290009A7120 /* MSProjectListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectListTableViewCell.h; sourceTree = "<group>"; };
+		6A894CC71BBB8290009A7120 /* MSProjectListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectListTableViewCell.m; sourceTree = "<group>"; };
+		6A894CC81BBB8290009A7120 /* MSProjectListTableViewCellTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectListTableViewCellTypeView.h; sourceTree = "<group>"; };
+		6A894CC91BBB8290009A7120 /* MSProjectListTableViewCellTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectListTableViewCellTypeView.m; sourceTree = "<group>"; };
 		6A9095A71BAF92D000672A05 /* MoneySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9095AB1BAF92D000672A05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A9095AD1BAF92D000672A05 /* MSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAppDelegate.h; sourceTree = "<group>"; };
@@ -269,6 +278,7 @@
 		6A84045F1BB285B900A89446 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6A8E18D71BB68CEB00B8F38C /* ProjectReport */,
 				6A92B38A1BB3FA83001C7A87 /* MainInterface */,
 				6A8404611BB285E500A89446 /* LoginRegister */,
 				6A8404621BB2860200A89446 /* MSBaseClassViewController.h */,
@@ -315,6 +325,27 @@
 				6A68B1D51BAFB664009BA468 /* Manager */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6A894CC31BBB8290009A7120 /* PrivateView */ = {
+			isa = PBXGroup;
+			children = (
+				6A894CC41BBB8290009A7120 /* MSProjectListHeaderView.h */,
+				6A894CC51BBB8290009A7120 /* MSProjectListHeaderView.m */,
+				6A894CC61BBB8290009A7120 /* MSProjectListTableViewCell.h */,
+				6A894CC71BBB8290009A7120 /* MSProjectListTableViewCell.m */,
+				6A894CC81BBB8290009A7120 /* MSProjectListTableViewCellTypeView.h */,
+				6A894CC91BBB8290009A7120 /* MSProjectListTableViewCellTypeView.m */,
+			);
+			path = PrivateView;
+			sourceTree = "<group>";
+		};
+		6A8E18D71BB68CEB00B8F38C /* ProjectReport */ = {
+			isa = PBXGroup;
+			children = (
+				6A894CC31BBB8290009A7120 /* PrivateView */,
+			);
+			path = ProjectReport;
 			sourceTree = "<group>";
 		};
 		6A90959E1BAF92D000672A05 = {
@@ -652,8 +683,11 @@
 				6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */,
 				6A8404441BB0FE5500A89446 /* DefaultConstants.m in Sources */,
 				6A9095AC1BAF92D000672A05 /* main.m in Sources */,
+				6A894CCC1BBB8290009A7120 /* MSProjectListTableViewCellTypeView.m in Sources */,
+				6A894CCA1BBB8290009A7120 /* MSProjectListHeaderView.m in Sources */,
 				6A8404541BB24DCE00A89446 /* MSCircleLayer.m in Sources */,
 				6A0A53A31BAFB8E3004AD688 /* MSMoneySourceViewModel.m in Sources */,
+				6A894CCB1BBB8290009A7120 /* MSProjectListTableViewCell.m in Sources */,
 				6AF84D8D1BAFD71000B061A5 /* MSEncryptDatabase.m in Sources */,
 				6A68B1D11BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m in Sources */,
 				6A92B3891BB3F568001C7A87 /* UIColor+MSDefaultColor.m in Sources */,

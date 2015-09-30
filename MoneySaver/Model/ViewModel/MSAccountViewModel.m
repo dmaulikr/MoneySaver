@@ -194,6 +194,7 @@
             @strongify(self);
            return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
                [BmobUser requestPasswordResetInBackgroundWithEmail:self.accountRequestModel.email];
+               [subscriber sendNext:@YES];
                [subscriber sendCompleted];
                return nil;
            }];

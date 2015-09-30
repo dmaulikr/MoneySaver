@@ -19,6 +19,7 @@
 - (instancetype)initWithViewModel:(id)viewmodel
 {
     self = [super initWithViewModel:viewmodel];
+    
     return self;
 }
 

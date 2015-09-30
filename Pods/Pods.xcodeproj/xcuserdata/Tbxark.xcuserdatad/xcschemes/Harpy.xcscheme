@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "47BB19EA4DC3A333387BAADF"
+               BlueprintIdentifier = "07152BEB28B1B7814D561FED"
                BuildableName = "libHarpy.a"
                BlueprintName = "Harpy"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -7,7 +7,7 @@
 //
 
 #import "MSBaseClassViewModel.h"
-#import "MSBaseProjectViewModel.h"
+#import "MSProjectViewModel.h"
 
 @interface MSProjectManagerViewModel : MSBaseClassViewModel
 

@@ -9,6 +9,7 @@
 #ifndef MSPCH_pch
 #define MSPCH_pch
 
+#import <ReactiveCocoa/RACEXTScope.h>
 #import "DefaultConstants.h"
 #import "Macro.h"
 

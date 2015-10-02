@@ -7,7 +7,10 @@
 //
 
 #import "MSBaseClassViewModel.h"
+#import "MSBaseProjectModel.h"
 
-@interface MSBaseProjectViewModel : MSBaseClassViewModel
+@interface MSProjectViewModel : MSBaseClassViewModel
+
+@property (nonatomic, strong) MSBaseProjectModel *dataModel;
 
 @end

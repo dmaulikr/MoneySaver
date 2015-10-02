@@ -18,10 +18,17 @@ static NSDateFormatter *_defaultFormatter;
     dispatch_once(&onceToken, ^{
         if (!_defaultFormatter) {
             _defaultFormatter = [[NSDateFormatter alloc] init];
-            _defaultFormatter.dateFormat = @"yyyy/MM/dd";
         }
     });
+    _defaultFormatter.dateFormat = @"yyyy/MM/dd";
     return _defaultFormatter;
+}
+
++ (instancetype)defaultFormatterWithType:(NSString *)type
+{
+    NSDateFormatter *formatter = [NSDateFormatter defaultFormatter];
+    formatter.dateFormat = type;
+    return formatter;
 }
 
 

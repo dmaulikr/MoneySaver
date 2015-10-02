@@ -6,8 +6,8 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "MSBaseProjectViewModel.h"
+#import "MSProjectViewModel.h"
 
-@implementation MSBaseProjectViewModel
+@implementation MSProjectViewModel
 
 @end

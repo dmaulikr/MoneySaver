@@ -8,13 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <ReactiveCocoa.h>
-#import <ReactiveCocoa/RACEXTScope.h>
 
 #import "MSWebDataClient.h"
 
+@protocol MSBaseClassViewModelDelegate <NSObject>
 
-@interface MSBaseClassViewModel : NSObject
 
-//- (void)initialize;
+@end
+
+
+@interface MSBaseClassViewModel : NSObject<MSBaseClassViewModelDelegate>
+
 
 @end

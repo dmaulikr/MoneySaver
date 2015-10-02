@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		0474DC344D77E677CC7AEE49 /* libPods-MoneySaver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC39D14C939FE7DCC37D7C3 /* libPods-MoneySaver.a */; };
 		6A0A539B1BAFB7F2004AD688 /* MSWebDataClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539A1BAFB7F2004AD688 /* MSWebDataClient.m */; settings = {ASSET_TAGS = (); }; };
-		6A0A53A01BAFB8C8004AD688 /* MSBaseProjectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539F1BAFB8C8004AD688 /* MSBaseProjectViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A0A53A01BAFB8C8004AD688 /* MSProjectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539F1BAFB8C8004AD688 /* MSProjectViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A0A53A31BAFB8E3004AD688 /* MSMoneySourceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A53A21BAFB8E3004AD688 /* MSMoneySourceViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A0D527F1BBE5E0A00D651B7 /* MSMSProjectTypeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D527E1BBE5E0A00D651B7 /* MSMSProjectTypeCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		6A0D52821BBE609F00D651B7 /* UIImageView+MSProjtctTypeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D52811BBE609F00D651B7 /* UIImageView+MSProjtctTypeImage.m */; settings = {ASSET_TAGS = (); }; };
+		6A0D52851BBE60E500D651B7 /* MSProjectModelTypeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D52841BBE60E500D651B7 /* MSProjectModelTypeHelper.m */; settings = {ASSET_TAGS = (); }; };
+		6A0D52881BBE616300D651B7 /* MSProjectTransactionTypeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D52871BBE616300D651B7 /* MSProjectTransactionTypeHelper.m */; settings = {ASSET_TAGS = (); }; };
 		6A3A52401BB4FF6400BA99A5 /* MSNumberKeyBord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A523F1BB4FF6400BA99A5 /* MSNumberKeyBord.m */; settings = {ASSET_TAGS = (); }; };
 		6A3A52451BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A52441BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m */; settings = {ASSET_TAGS = (); }; };
 		6A3A52491BB51FDF00BA99A5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A52481BB51FDF00BA99A5 /* UIView+Frame.m */; settings = {ASSET_TAGS = (); }; };
@@ -93,10 +97,18 @@
 		1AD1E6C10112F55358EE6C12 /* Pods-MoneySaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneySaver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneySaver/Pods-MoneySaver.debug.xcconfig"; sourceTree = "<group>"; };
 		6A0A53991BAFB7F2004AD688 /* MSWebDataClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWebDataClient.h; sourceTree = "<group>"; };
 		6A0A539A1BAFB7F2004AD688 /* MSWebDataClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWebDataClient.m; sourceTree = "<group>"; };
-		6A0A539E1BAFB8C8004AD688 /* MSBaseProjectViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBaseProjectViewModel.h; sourceTree = "<group>"; };
-		6A0A539F1BAFB8C8004AD688 /* MSBaseProjectViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBaseProjectViewModel.m; sourceTree = "<group>"; };
+		6A0A539E1BAFB8C8004AD688 /* MSProjectViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectViewModel.h; sourceTree = "<group>"; };
+		6A0A539F1BAFB8C8004AD688 /* MSProjectViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectViewModel.m; sourceTree = "<group>"; };
 		6A0A53A11BAFB8E3004AD688 /* MSMoneySourceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMoneySourceViewModel.h; sourceTree = "<group>"; };
 		6A0A53A21BAFB8E3004AD688 /* MSMoneySourceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMoneySourceViewModel.m; sourceTree = "<group>"; };
+		6A0D527D1BBE5E0A00D651B7 /* MSMSProjectTypeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMSProjectTypeCollectionViewCell.h; sourceTree = "<group>"; };
+		6A0D527E1BBE5E0A00D651B7 /* MSMSProjectTypeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMSProjectTypeCollectionViewCell.m; sourceTree = "<group>"; };
+		6A0D52801BBE609F00D651B7 /* UIImageView+MSProjtctTypeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MSProjtctTypeImage.h"; sourceTree = "<group>"; };
+		6A0D52811BBE609F00D651B7 /* UIImageView+MSProjtctTypeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MSProjtctTypeImage.m"; sourceTree = "<group>"; };
+		6A0D52831BBE60E500D651B7 /* MSProjectModelTypeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectModelTypeHelper.h; sourceTree = "<group>"; };
+		6A0D52841BBE60E500D651B7 /* MSProjectModelTypeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectModelTypeHelper.m; sourceTree = "<group>"; };
+		6A0D52861BBE616300D651B7 /* MSProjectTransactionTypeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectTransactionTypeHelper.h; sourceTree = "<group>"; };
+		6A0D52871BBE616300D651B7 /* MSProjectTransactionTypeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectTransactionTypeHelper.m; sourceTree = "<group>"; };
 		6A3A523E1BB4FF6400BA99A5 /* MSNumberKeyBord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNumberKeyBord.h; sourceTree = "<group>"; };
 		6A3A523F1BB4FF6400BA99A5 /* MSNumberKeyBord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNumberKeyBord.m; sourceTree = "<group>"; };
 		6A3A52431BB4FFBC00BA99A5 /* MSNumberKeyBordButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNumberKeyBordButton.h; sourceTree = "<group>"; };
@@ -218,6 +230,23 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		6A0D527B1BBE5DDC00D651B7 /* ProjectEditor */ = {
+			isa = PBXGroup;
+			children = (
+				6A0D527C1BBE5DDC00D651B7 /* PrivateView */,
+			);
+			path = ProjectEditor;
+			sourceTree = "<group>";
+		};
+		6A0D527C1BBE5DDC00D651B7 /* PrivateView */ = {
+			isa = PBXGroup;
+			children = (
+				6A0D527D1BBE5E0A00D651B7 /* MSMSProjectTypeCollectionViewCell.h */,
+				6A0D527E1BBE5E0A00D651B7 /* MSMSProjectTypeCollectionViewCell.m */,
+			);
+			path = PrivateView;
+			sourceTree = "<group>";
+		};
 		6A3A523D1BB4FF3F00BA99A5 /* XNumberKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +307,7 @@
 		6A84045F1BB285B900A89446 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6A0D527B1BBE5DDC00D651B7 /* ProjectEditor */,
 				6A8E18D71BB68CEB00B8F38C /* ProjectReport */,
 				6A92B38A1BB3FA83001C7A87 /* MainInterface */,
 				6A8404611BB285E500A89446 /* LoginRegister */,
@@ -318,8 +348,8 @@
 				6A85D9A21BAFB1850049D988 /* MSBaseClassViewModel.m */,
 				6A68B1CC1BAFB4C5009BA468 /* MSAccountViewModel.h */,
 				6A68B1CD1BAFB4C5009BA468 /* MSAccountViewModel.m */,
-				6A0A539E1BAFB8C8004AD688 /* MSBaseProjectViewModel.h */,
-				6A0A539F1BAFB8C8004AD688 /* MSBaseProjectViewModel.m */,
+				6A0A539E1BAFB8C8004AD688 /* MSProjectViewModel.h */,
+				6A0A539F1BAFB8C8004AD688 /* MSProjectViewModel.m */,
 				6A0A53A11BAFB8E3004AD688 /* MSMoneySourceViewModel.h */,
 				6A0A53A21BAFB8E3004AD688 /* MSMoneySourceViewModel.m */,
 				6A68B1D51BAFB664009BA468 /* Manager */,
@@ -471,6 +501,8 @@
 				6A3A52481BB51FDF00BA99A5 /* UIView+Frame.m */,
 				6A92B3871BB3F568001C7A87 /* UIColor+MSDefaultColor.h */,
 				6A92B3881BB3F568001C7A87 /* UIColor+MSDefaultColor.m */,
+				6A0D52801BBE609F00D651B7 /* UIImageView+MSProjtctTypeImage.h */,
+				6A0D52811BBE609F00D651B7 /* UIImageView+MSProjtctTypeImage.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -502,6 +534,10 @@
 			children = (
 				6AF84D9C1BB0053000B061A5 /* MSBmobObjectAdapter.h */,
 				6AF84D9D1BB0053000B061A5 /* MSBmobObjectAdapter.m */,
+				6A0D52831BBE60E500D651B7 /* MSProjectModelTypeHelper.h */,
+				6A0D52841BBE60E500D651B7 /* MSProjectModelTypeHelper.m */,
+				6A0D52861BBE616300D651B7 /* MSProjectTransactionTypeHelper.h */,
+				6A0D52871BBE616300D651B7 /* MSProjectTransactionTypeHelper.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -660,10 +696,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0D52851BBE60E500D651B7 /* MSProjectModelTypeHelper.m in Sources */,
 				6A84045A1BB25DDE00A89446 /* MSTestViewController.m in Sources */,
 				6A692EA91BB6404100AAA277 /* MSBmobDataBojectModel.m in Sources */,
 				6A3A52491BB51FDF00BA99A5 /* UIView+Frame.m in Sources */,
 				6A84046C1BB2898A00A89446 /* MSLoginMainViewController.m in Sources */,
+				6A0D527F1BBE5E0A00D651B7 /* MSMSProjectTypeCollectionViewCell.m in Sources */,
 				6A8404511BB24C3000A89446 /* MSSubmitTransitionButton.m in Sources */,
 				6A3A52451BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m in Sources */,
 				6A3A524F1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m in Sources */,
@@ -677,8 +715,10 @@
 				6A9095AF1BAF92D000672A05 /* MSAppDelegate.m in Sources */,
 				6A92B38D1BB3FA9B001C7A87 /* MSMainViewController.m in Sources */,
 				6AF84D901BAFD75100B061A5 /* MSEncryptHelper.m in Sources */,
+				6A0D52821BBE609F00D651B7 /* UIImageView+MSProjtctTypeImage.m in Sources */,
 				6A3A524C1BB51FE900BA99A5 /* UIDevice+XDevice.m in Sources */,
 				6A8404471BB1049300A89446 /* WebClientConstants.m in Sources */,
+				6A0D52881BBE616300D651B7 /* MSProjectTransactionTypeHelper.m in Sources */,
 				6A85D9A31BAFB1850049D988 /* MSBaseClassViewModel.m in Sources */,
 				6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */,
 				6A8404441BB0FE5500A89446 /* DefaultConstants.m in Sources */,
@@ -697,7 +737,7 @@
 				6A68B1CE1BAFB4C5009BA468 /* MSAccountViewModel.m in Sources */,
 				6A85D99F1BAFB14C0049D988 /* MSMoneySourceModel.m in Sources */,
 				6A84045D1BB27A5300A89446 /* MSFadeTransition.m in Sources */,
-				6A0A53A01BAFB8C8004AD688 /* MSBaseProjectViewModel.m in Sources */,
+				6A0A53A01BAFB8C8004AD688 /* MSProjectViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

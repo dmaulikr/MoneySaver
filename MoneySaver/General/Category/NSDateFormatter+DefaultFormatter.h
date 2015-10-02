@@ -11,5 +11,6 @@
 @interface NSDateFormatter (DefaultFormatter)
 
 + (instancetype)defaultFormatter;
++ (instancetype)defaultFormatterWithType:(NSString *)type;
 
 @end

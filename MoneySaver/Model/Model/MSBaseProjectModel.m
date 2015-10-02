@@ -10,6 +10,19 @@
 
 @implementation MSBaseProjectModel
 
+
+#pragma mark - Private Method
+- (void)setProjectType:(MSProjectModelType)projectType
+{
+    _projectType = projectType;
+    if (projectType == MSProjectModelIncomeType) {
+        _transactionType = MSTransactionTypeIncome;
+    }else
+    {
+        _transactionType = MSTransactionTypeOutlay;
+    }
+}
+
 #pragma mark - MTLJSONSerializing
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey

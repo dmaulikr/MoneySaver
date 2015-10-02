@@ -6,21 +6,24 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "MSMSProjectTypeCollectionViewCell.h"
-#import "UIImageView+MSProjtctTypeImage.h"
+#import "MSProjectTypeCollectionViewCell.h"
+
+#import "UIImageView+MoneySaver.h"
+#import "UILabel+MoneySaver.h"
+
 #import <Masonry.h>
 
 #define kTypeNameLableHeight 20
 
 
-@interface MSMSProjectTypeCollectionViewCell ()
+@interface MSProjectTypeCollectionViewCell ()
 
 @property (nonatomic, strong) UILabel *typeNameLable;
 @property (nonatomic, strong) UIImageView *typeImage;
 
 @end
 
-@implementation MSMSProjectTypeCollectionViewCell
+@implementation MSProjectTypeCollectionViewCell
 
 #pragma mark - Life Cycle
 
@@ -62,8 +65,8 @@
 - (void)setProjectType:(MSProjectModelType )projectType
 {
     _projectType = projectType;
-    self.typeNameLable.text = [MSProjectModelTypeHelper projectModelTypeToChinese:projectType];
     self.typeImage.projectType = projectType;
+    self.typeNameLable.projectType = projectType;
 }
 
 - (void)setSelected:(BOOL)selected

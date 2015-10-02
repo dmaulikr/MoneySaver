@@ -6,11 +6,30 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "UIColor+MSDefaultColor.h"
+#import "UIColor+MoneySaver.h"
 
-@implementation UIColor (MSDefaultColor)
+@implementation UIColor (MoneySaver)
 
-//+ (UIColor *)
++ (UIColor *)ms_DefaultColor
+{
+    return [UIColor ms_RedColor];
+}
+
++ (UIColor *)ms_DisableColor
+{
+    return [UIColor grayColor];
+}
+
++ (UIColor *)ms_itemTintColor
+{
+    return [UIColor whiteColor];
+}
+
+
+
+
+
+
 
 + (UIColor *)ms_RedColor
 {
@@ -21,5 +40,7 @@
 {
     return [UIColor colorWithRed:0.647  green:0.788  blue:0.176 alpha:1];
 }
+
+
 
 @end

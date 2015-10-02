@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UIColor+MSDefaultColor.h"
+
+#import "UIDevice+XDevice.h"
+#import "UIView+Frame.h"
+
+#import "UIColor+MoneySaver.h"
+#import "UILabel+MoneySaver.h"
+#import "UIImageView+MoneySaver.h"
+#import "UIBarButtonItem+MoneySaver.h"
+
+
+
 
 //数据库相关
 

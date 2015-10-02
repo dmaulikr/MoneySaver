@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "MSProjectModelTypeHelper.h"
 
-#define kMSMSProjectTypeCollectionViewCellWidth (SCREEN_WIDTH/5.0)
+#define kMSProjectTypeCollectionViewCellWidth (SCREEN_WIDTH/5.0)
+#define kMSProjectTypeCollectionViewCellIden @"MSProjectTypeCollectionViewCell"
 
-@interface MSMSProjectTypeCollectionViewCell : UICollectionViewCell
+@interface MSProjectTypeCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, assign) MSProjectModelType projectType;
 

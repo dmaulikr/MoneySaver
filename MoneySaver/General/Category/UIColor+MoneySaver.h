@@ -1,3 +1,4 @@
+
 //
 //  UIColor+MSDefaultColor.h
 //  MoneySaver
@@ -8,15 +9,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (MSDefaultColor)
+@interface UIColor (MoneySaver)
 
-//+ (UIColor *)ms_NormalColor;
-//+ (UIColor *)ms_DisableColor;
-//+ (UIColor *)ms_HighlightColor;
++ (UIColor *)ms_DefaultColor;
++ (UIColor *)ms_DisableColor;
+
 //+ (UIColor *)ms_TextColor;
+//+ (UIColor *)ms_HighlightColor;
 
 + (UIColor *)ms_RedColor;
 + (UIColor *)ms_GreenColor;
++ (UIColor *)ms_itemTintColor;
 
 
 @end

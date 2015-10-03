@@ -56,6 +56,7 @@
 		6A92B38D1BB3FA9B001C7A87 /* MSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92B38C1BB3FA9B001C7A87 /* MSMainViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6AAF992D1BBEB61B008D0805 /* UIImage+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF992C1BBEB61B008D0805 /* UIImage+MoneySaver.m */; settings = {ASSET_TAGS = (); }; };
 		6AAF99321BBEC038008D0805 /* MSBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF99311BBEC038008D0805 /* MSBarButtonItem.m */; settings = {ASSET_TAGS = (); }; };
+		6AD229BB1BBFFC52004DC5FC /* MSProjectValueHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD229BA1BBFFC52004DC5FC /* MSProjectValueHeaderView.m */; settings = {ASSET_TAGS = (); }; };
 		6AE69EE41BBE914500EB4CAD /* UILabel+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69EE31BBE914500EB4CAD /* UILabel+MoneySaver.m */; settings = {ASSET_TAGS = (); }; };
 		6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D891BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
 		6AF84D8D1BAFD71000B061A5 /* MSEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8C1BAFD71000B061A5 /* MSEncryptDatabase.m */; settings = {ASSET_TAGS = (); }; };
@@ -133,8 +134,8 @@
 		6A3A52511BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+DefaultFormatter.m"; sourceTree = "<group>"; };
 		6A68B1C91BAFB4B3009BA468 /* MSProjectManagerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectManagerViewModel.h; sourceTree = "<group>"; };
 		6A68B1CA1BAFB4B3009BA468 /* MSProjectManagerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectManagerViewModel.m; sourceTree = "<group>"; };
-		6A68B1CC1BAFB4C5009BA468 /* MSAccountViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAccountViewModel.h; sourceTree = "<group>"; };
-		6A68B1CD1BAFB4C5009BA468 /* MSAccountViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAccountViewModel.m; sourceTree = "<group>"; };
+		6A68B1CC1BAFB4C5009BA468 /* MSAccountViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MSAccountViewModel.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		6A68B1CD1BAFB4C5009BA468 /* MSAccountViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSAccountViewModel.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6A68B1CF1BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMoneySourceManagerViewModel.h; sourceTree = "<group>"; };
 		6A68B1D01BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMoneySourceManagerViewModel.m; sourceTree = "<group>"; };
 		6A68B1D21BAFB545009BA468 /* MSSqliteDataBaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSqliteDataBaseClient.h; sourceTree = "<group>"; };
@@ -167,8 +168,8 @@
 		6A8404631BB2860200A89446 /* MSBaseClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBaseClassViewController.m; sourceTree = "<group>"; };
 		6A84046A1BB2898A00A89446 /* MSLoginMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLoginMainViewController.h; sourceTree = "<group>"; };
 		6A84046B1BB2898A00A89446 /* MSLoginMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLoginMainViewController.m; sourceTree = "<group>"; };
-		6A85D9971BAFB14C0049D988 /* MSAccountDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAccountDataModel.h; sourceTree = "<group>"; };
-		6A85D9981BAFB14C0049D988 /* MSAccountDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAccountDataModel.m; sourceTree = "<group>"; };
+		6A85D9971BAFB14C0049D988 /* MSAccountDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MSAccountDataModel.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		6A85D9981BAFB14C0049D988 /* MSAccountDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSAccountDataModel.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6A85D9991BAFB14C0049D988 /* MSBaseProjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBaseProjectModel.h; sourceTree = "<group>"; };
 		6A85D99A1BAFB14C0049D988 /* MSBaseProjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBaseProjectModel.m; sourceTree = "<group>"; };
 		6A85D99B1BAFB14C0049D988 /* MSMoneySourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMoneySourceModel.h; sourceTree = "<group>"; };
@@ -184,7 +185,7 @@
 		6A9095A71BAF92D000672A05 /* MoneySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9095AB1BAF92D000672A05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A9095AD1BAF92D000672A05 /* MSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAppDelegate.h; sourceTree = "<group>"; };
-		6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAppDelegate.m; sourceTree = "<group>"; };
+		6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6A9095B51BAF92D000672A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A9095BC1BAF933600672A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A92B3871BB3F568001C7A87 /* UIColor+MoneySaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MoneySaver.h"; sourceTree = "<group>"; };
@@ -195,6 +196,8 @@
 		6AAF992C1BBEB61B008D0805 /* UIImage+MoneySaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MoneySaver.m"; sourceTree = "<group>"; };
 		6AAF99301BBEC038008D0805 /* MSBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBarButtonItem.h; sourceTree = "<group>"; };
 		6AAF99311BBEC038008D0805 /* MSBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBarButtonItem.m; sourceTree = "<group>"; };
+		6AD229B91BBFFC52004DC5FC /* MSProjectValueHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectValueHeaderView.h; sourceTree = "<group>"; };
+		6AD229BA1BBFFC52004DC5FC /* MSProjectValueHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectValueHeaderView.m; sourceTree = "<group>"; };
 		6AE69EE21BBE914500EB4CAD /* UILabel+MoneySaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+MoneySaver.h"; sourceTree = "<group>"; };
 		6AE69EE31BBE914500EB4CAD /* UILabel+MoneySaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MoneySaver.m"; sourceTree = "<group>"; };
 		6AF84D881BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEncryptDatabaseQueue.h; sourceTree = "<group>"; };
@@ -261,6 +264,8 @@
 			children = (
 				6A0D527D1BBE5E0A00D651B7 /* MSProjectTypeCollectionViewCell.h */,
 				6A0D527E1BBE5E0A00D651B7 /* MSProjectTypeCollectionViewCell.m */,
+				6AD229B91BBFFC52004DC5FC /* MSProjectValueHeaderView.h */,
+				6AD229BA1BBFFC52004DC5FC /* MSProjectValueHeaderView.m */,
 			);
 			path = PrivateView;
 			sourceTree = "<group>";
@@ -429,14 +434,14 @@
 		6A9095A91BAF92D000672A05 /* MoneySaver */ = {
 			isa = PBXGroup;
 			children = (
+				6A9095C21BAF96C000672A05 /* Model */,
 				6A84045F1BB285B900A89446 /* Controller */,
+				6A84044D1BB24C0200A89446 /* Views */,
 				6AF84D9B1BB0050500B061A5 /* Helper */,
 				6A9095BE1BAF96C000672A05 /* Client */,
 				6A9095BF1BAF96C000672A05 /* Constants */,
 				6A9095C11BAF96C000672A05 /* General */,
-				6A9095C21BAF96C000672A05 /* Model */,
 				6A9095C51BAF96C000672A05 /* Vendors */,
-				6A84044D1BB24C0200A89446 /* Views */,
 				6A9095BB1BAF933600672A05 /* Resource */,
 				6A9095AA1BAF92D000672A05 /* Supporting Files */,
 			);
@@ -774,6 +779,7 @@
 				6A0D52881BBE616300D651B7 /* MSProjectTransactionTypeHelper.m in Sources */,
 				6A85D9A31BAFB1850049D988 /* MSBaseClassViewModel.m in Sources */,
 				6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */,
+				6AD229BB1BBFFC52004DC5FC /* MSProjectValueHeaderView.m in Sources */,
 				6A8404441BB0FE5500A89446 /* DefaultConstants.m in Sources */,
 				6A9095AC1BAF92D000672A05 /* main.m in Sources */,
 				6A894CCC1BBB8290009A7120 /* MSProjectListTableViewCellTypeView.m in Sources */,

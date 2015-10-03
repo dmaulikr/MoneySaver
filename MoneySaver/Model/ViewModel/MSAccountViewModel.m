@@ -28,7 +28,7 @@
     }] subscribeNext:^(id x) {
 //        TODO : 自动上传图片
     } error:^(NSError *error) {
-        self.accountInfomationError = error;
+        self.infomationError = error;
     }];
     
 }
@@ -37,20 +37,20 @@
 #pragma mark - Getter
 
 
-- (MSAccountRequestModel *)accountRequestModel
+- (MSrequestModel *)requestModel
 {
-    if (!_accountRequestModel) {
-        _accountRequestModel = [MSAccountRequestModel new];
+    if (!_requestModel) {
+        _requestModel = [MSrequestModel new];
     }
-    return _accountRequestModel;
+    return _requestModel;
 }
 
 
 - (RACSignal *)accountEnable
 {
     if (!_accountEnable) {
-        _accountEnable = [RACSignal combineLatest:@[RACObserve(self, accountRequestModel.username),
-                                                    RACObserve(self, accountRequestModel.password),]
+        _accountEnable = [RACSignal combineLatest:@[RACObserve(self, requestModel.username),
+                                                    RACObserve(self, requestModel.password),]
                                            reduce:^id{
             return @YES;
         }];
@@ -61,7 +61,7 @@
 - (RACSignal *)emailEnable
 {
     if (!_emailEnable) {
-        _emailEnable = [RACObserve(self, accountRequestModel.email) map:^id(id value) {
+        _emailEnable = [RACObserve(self, requestModel.email) map:^id(id value) {
             return @NO;
         }];
     }
@@ -70,14 +70,14 @@
 
 #pragma mark RACCommand
 
-- (RACCommand *)accountLoginCommand
+- (RACCommand *)loginCommand
 {
-    if (!_accountLoginCommand) {
+    if (!_loginCommand) {
         @weakify(self);
-        _accountLoginCommand = [[RACCommand alloc] initWithEnabled:self.accountEnable signalBlock:^RACSignal *(id input) {
+        _loginCommand = [[RACCommand alloc] initWithEnabled:self.accountEnable signalBlock:^RACSignal *(id input) {
             @strongify(self);
-            NSString *username = self.accountRequestModel.username;
-            NSString *password = self.accountRequestModel.password;
+            NSString *username = self.requestModel.username;
+            NSString *password = self.requestModel.password;
             return  [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
                         [BmobUser loginInbackgroundWithAccount:username andPassword:password block:^(BmobUser *user, NSError *error) {
                              if (error) {
@@ -93,23 +93,23 @@
                         }];
                 return nil;
             }] catch:^RACSignal *(NSError *error) {
-                self.accountOperationError = error;
+                self.operationError = error;
                 return [RACSignal error:error];
             }];
         }];
     }
-    return _accountLoginCommand;
+    return _loginCommand;
 }
 
-- (RACCommand *)accountLogoutCommand
+- (RACCommand *)logoutCommand
 {
-    if (!_accountLogoutCommand) {
-        _accountLogoutCommand = [[RACCommand alloc] initWithEnabled:[RACObserve(self, accountDataModel) map:^id(id value) {
+    if (!_logoutCommand) {
+        _logoutCommand = [[RACCommand alloc] initWithEnabled:[RACObserve(self, dataModel) map:^id(id value) {
             return @(value != nil);
         }] signalBlock:^RACSignal *(id input) {
             return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
                 [BmobUser logout];
-                self.accountDataModel = nil;
+                self.dataModel = nil;
                 [[NSNotificationCenter defaultCenter] postNotificationName:kNofityUserLogoutKey object:nil];
                 [subscriber sendNext:@YES];
                 [subscriber sendCompleted];
@@ -117,7 +117,7 @@
             }];
         }];
     }
-    return _accountLogoutCommand;
+    return _logoutCommand;
 }
 
 - (RACCommand *)registerCommand
@@ -129,9 +129,9 @@
         }] signalBlock:^RACSignal *(id input) {
             @strongify(self);
             BmobUser *user = [BmobUser new];
-            user.username = self.accountRequestModel.username;
-            user.password = self.accountRequestModel.password;
-            user.email    = self.accountRequestModel.email;
+            user.username = self.requestModel.username;
+            user.password = self.requestModel.password;
+            user.email    = self.requestModel.email;
             return [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
                 [user signUpInBackgroundWithBlock:^(BOOL isSuccessful, NSError *error) {
                     if (error) {
@@ -147,7 +147,7 @@
                 }];
                 return nil;
             }] catch:^RACSignal *(NSError *error) {
-                self.accountOperationError = error;
+                self.operationError = error;
                 return [RACSignal error:error];
             }] ;
         }];
@@ -159,12 +159,12 @@
 {
     if (!_changePasswordCommand) {
         @weakify(self);
-        _changePasswordCommand = [[RACCommand alloc] initWithEnabled:[RACSignal combineLatest:@[RACObserve(self, accountRequestModel.password),RACObserve(self, accountRequestModel.changePassword)] reduce:^id{
+        _changePasswordCommand = [[RACCommand alloc] initWithEnabled:[RACSignal combineLatest:@[RACObserve(self, requestModel.password),RACObserve(self, requestModel.changePassword)] reduce:^id{
             return @YES;
         }] signalBlock:^RACSignal *(id input) {
             @strongify(self);
            return [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-               [[BmobUser getCurrentUser] updateCurrentUserPasswordWithOldPassword:self.accountRequestModel.password newPassword:self.accountRequestModel.changePassword block:^(BOOL isSuccessful, NSError *error) {
+               [[BmobUser getCurrentUser] updateCurrentUserPasswordWithOldPassword:self.requestModel.password newPassword:self.requestModel.changePassword block:^(BOOL isSuccessful, NSError *error) {
                    if (error) {
                        [subscriber sendError:error];
                    }else if (isSuccessful)
@@ -178,7 +178,7 @@
                }];
                return nil;
            }] catch:^RACSignal *(NSError *error) {
-               self.accountOperationError = error;
+               self.operationError = error;
                return [RACSignal error:error];
            }];
         }];
@@ -193,7 +193,7 @@
         _forgetPasswordCommand = [[RACCommand alloc] initWithEnabled:self.emailEnable signalBlock:^RACSignal *(id input) {
             @strongify(self);
            return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-               [BmobUser requestPasswordResetInBackgroundWithEmail:self.accountRequestModel.email];
+               [BmobUser requestPasswordResetInBackgroundWithEmail:self.requestModel.email];
                [subscriber sendNext:@YES];
                [subscriber sendCompleted];
                return nil;

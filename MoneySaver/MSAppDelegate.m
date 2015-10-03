@@ -23,6 +23,11 @@
 
 @implementation MSAppDelegate
 
+#pragma mark - Life Cycle
++ (instancetype)shareAppDelegate
+{
+    return [UIApplication sharedApplication].delegate;
+}
 
 #pragma mark - Configure
 - (void)venderConfigure
@@ -57,9 +62,9 @@
     [self configureViewController];
     
     MSAccountViewModel *account = [MSAccountViewModel new];
-    account.accountRequestModel.username = @"vfanx";
-    account.accountRequestModel.password = @"666666";
-    [[account.accountLoginCommand execute:nil] subscribeNext:^(id x) {
+    account.requestModel.username = @"vfanx";
+    account.requestModel.password = @"666666";
+    [[account.loginCommand execute:nil] subscribeNext:^(id x) {
         
     } error:^(NSError *error) {
         

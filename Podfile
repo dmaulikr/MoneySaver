@@ -22,7 +22,8 @@ target 'MoneySaver' do
    pod 'JVFloatLabeledTextField' #浮动输入框
    pod 'FontAwesomeKit/FontAwesome'  #文字转图片
    pod 'JTCalendar', '~> 2.0' #日历
-   pod 'PNChart'
+   pod 'PNChart' #图表
+   pod 'MMPopupView', :head #Popup
 
 
 # Helper

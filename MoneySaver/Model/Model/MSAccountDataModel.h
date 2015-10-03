@@ -10,7 +10,7 @@
 #import <MTLFMDBAdapter.h>
 
 
-@interface MSAccountRequestModel : MTLModel<MTLJSONSerializing>
+@interface MSrequestModel : MTLModel<MTLJSONSerializing>
 
 @property (nonatomic, copy) NSString *username; /**< 用户名 */
 @property (nonatomic, copy) NSString *password; /**< 密码 */

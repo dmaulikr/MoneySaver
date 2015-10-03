@@ -29,6 +29,8 @@ PODS:
   - Mantle/extobjc (2.0.5)
   - Masonry (0.6.2)
   - MJRefresh (2.4.10)
+  - MMPopupView (HEAD based on 1.2):
+    - Masonry
   - MTLFMDBAdapter (0.2.0):
     - FMDB (~> 2.3)
     - Mantle (~> 2.0)
@@ -69,6 +71,7 @@ DEPENDENCIES:
   - Mantle
   - Masonry
   - MJRefresh
+  - MMPopupView (HEAD)
   - MTLFMDBAdapter
   - PNChart
   - ReactiveCocoa
@@ -92,6 +95,7 @@ SPEC CHECKSUMS:
   Mantle: 1912395033f601de5adc8ee91e48f46e4c7051ad
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   MJRefresh: e52328552ed9cbfce3501e3820b18bf7643c65cc
+  MMPopupView: a094c013bf7ab3e83b401ea75d1ba7cfd77d7c4f
   MTLFMDBAdapter: 8957b2fdb61cbf93ddd8739641310f835777e490
   PNChart: c1755716bbd45386d2035b2bf2ce73e6d3f8cb22
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a

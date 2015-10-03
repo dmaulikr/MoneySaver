@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AF4A57328117217611760744"
+               BlueprintIdentifier = "0B75E271AC1C1FE9E1D2449C"
                BuildableName = "libMTLFMDBAdapter.a"
                BlueprintName = "MTLFMDBAdapter"
                ReferencedContainer = "container:Pods.xcodeproj">

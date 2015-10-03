@@ -12,17 +12,17 @@
 @interface MSAccountViewModel : MSBaseClassViewModel
 
 @property (nonatomic, strong) MSAccountRequestModel *accountRequestModel;
-@property (nonatomic, strong) MSAccountDataModel    *accountDataModel;
+@property (nonatomic, strong) MSAccountDataModel    *dataModel;
 
-@property (nonatomic, strong) NSError               *accountOperationError;
-@property (nonatomic, strong) NSError               *accountInfomationError;
+@property (nonatomic, strong) NSError               *operationError;
+@property (nonatomic, strong) NSError               *infomationError;
 
-@property (nonatomic, strong) RACCommand            *accountLoginCommand;
-@property (nonatomic, strong) RACCommand            *accountLogoutCommand;
+@property (nonatomic, strong) RACCommand            *loginCommand;
+@property (nonatomic, strong) RACCommand            *logoutCommand;
 @property (nonatomic, strong) RACCommand            *changePasswordCommand;
 @property (nonatomic, strong) RACCommand            *forgetPasswordCommand;
 @property (nonatomic, strong) RACCommand            *registerCommand;
 
-@property (nonatomic, strong) UIImage               *accountImage;
+@property (nonatomic, strong) UIImage               *userImage;
 
 @end

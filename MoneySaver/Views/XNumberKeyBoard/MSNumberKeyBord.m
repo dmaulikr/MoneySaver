@@ -44,6 +44,7 @@
         _textField = textField;
         _textField.delegate = self;
         _numberArray = [NSMutableArray new];
+        _textField.inputView = self;
         [self configureView];
         
     }

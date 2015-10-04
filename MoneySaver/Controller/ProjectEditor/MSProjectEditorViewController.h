@@ -10,6 +10,7 @@
 
 @interface MSProjectEditorViewController : MSBaseClassViewController
 
+
 + (UINavigationController *)projectEditorViewControllerForMode:(BOOL)isQuick;
 
 @end

@@ -52,8 +52,11 @@ PODS:
   - SQLCipher/common (3.1.0)
   - SQLCipher/standard (3.1.0):
     - SQLCipher/common
+  - SSKeychain (1.2.3)
   - SVProgressHUD (1.1.3)
   - UICountingLabel (1.2.0)
+  - VENTouchLock (1.11.0):
+    - SSKeychain (~> 1.0)
 
 DEPENDENCIES:
   - BmobSDK
@@ -78,6 +81,7 @@ DEPENDENCIES:
   - Routable (~> 0.2.0)
   - SDWebImage
   - SVProgressHUD
+  - VENTouchLock (~> 1.0)
 
 SPEC CHECKSUMS:
   BmobSDK: 50aad04eae8c81ccdea6d6125c97e8cec49d8869
@@ -102,7 +106,9 @@ SPEC CHECKSUMS:
   Routable: 859984d3f1613a4139795bab45941f71ed752564
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SQLCipher: c44fcca49c31483c2489cfb79aa7a69407f3794a
+  SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  VENTouchLock: f3145d6fbff243d6692dfb1107b88db06dc216c9
 
 COCOAPODS: 0.38.2

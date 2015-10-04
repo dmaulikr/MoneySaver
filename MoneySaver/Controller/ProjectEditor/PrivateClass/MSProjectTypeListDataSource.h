@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "MSProjectModelTypeHelper.h"
 
-@interface MSProjectTypeListDataSource : NSObject<UICollectionViewDataSource>
+@interface MSProjectTypeListDataSource : NSObject<UICollectionViewDataSource,UICollectionViewDelegate>
+
+@property (nonatomic, strong) UIPageControl *pageControl;
 
 + (UICollectionViewLayout *)collectionViewLayout;
 + (instancetype)registerForCollectionView:(UICollectionView *)collectionView;

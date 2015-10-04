@@ -12,6 +12,7 @@
 #import "UILabel+MoneySaver.h"
 
 #import <Masonry.h>
+#import <ReactiveCocoa.h>
 
 #define kTypeNameLableHeight 20
 
@@ -52,7 +53,12 @@
     
     [self.typeImage mas_makeConstraints:^(MASConstraintMaker *make) {
        @strongify(self);
-        make.edges.equalTo(self.contentView).insets(UIEdgeInsetsMake(8, 8, kTypeNameLableHeight+8+8, 8));
+        make.edges.equalTo(self.contentView).insets(UIEdgeInsetsMake(10, 10, kTypeNameLableHeight+(10*2), 10));
+    }];
+    
+    [RACObserve(self, selected) subscribeNext:^(NSNumber *x) {
+        @strongify(self);
+        self.typeNameLable.textColor = x.boolValue?[UIColor ms_DefaultColor]:[UIColor darkGrayColor];
     }];
     
 
@@ -66,12 +72,6 @@
     self.typeImage.projectType = projectType;
     self.typeNameLable.projectType = projectType;
 }
-
-//- (void)setSelected:(BOOL)selected
-//{
-//    self.selected = selected;
-//    self.typeImage.highlighted = selected;
-//}
 
 #pragma mark - Getter
 

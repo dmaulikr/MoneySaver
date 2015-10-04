@@ -57,6 +57,9 @@
 		6AAF992D1BBEB61B008D0805 /* UIImage+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF992C1BBEB61B008D0805 /* UIImage+MoneySaver.m */; settings = {ASSET_TAGS = (); }; };
 		6AAF99321BBEC038008D0805 /* MSBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF99311BBEC038008D0805 /* MSBarButtonItem.m */; settings = {ASSET_TAGS = (); }; };
 		6AD229BB1BBFFC52004DC5FC /* MSProjectValueHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD229BA1BBFFC52004DC5FC /* MSProjectValueHeaderView.m */; settings = {ASSET_TAGS = (); }; };
+		6AD7BD0B1BC112FC0098E1F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD7BD0A1BC112FC0098E1F0 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		6AD7BD161BC153E70098E1F0 /* MSSecurityViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD7BD151BC153E70098E1F0 /* MSSecurityViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		6AD7BD181BC155280098E1F0 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD7BD171BC155280098E1F0 /* LocalAuthentication.framework */; };
 		6AE69EE41BBE914500EB4CAD /* UILabel+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69EE31BBE914500EB4CAD /* UILabel+MoneySaver.m */; settings = {ASSET_TAGS = (); }; };
 		6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D891BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
 		6AF84D8D1BAFD71000B061A5 /* MSEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8C1BAFD71000B061A5 /* MSEncryptDatabase.m */; settings = {ASSET_TAGS = (); }; };
@@ -198,6 +201,13 @@
 		6AAF99311BBEC038008D0805 /* MSBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBarButtonItem.m; sourceTree = "<group>"; };
 		6AD229B91BBFFC52004DC5FC /* MSProjectValueHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectValueHeaderView.h; sourceTree = "<group>"; };
 		6AD229BA1BBFFC52004DC5FC /* MSProjectValueHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectValueHeaderView.m; sourceTree = "<group>"; };
+		6AD7BD0A1BC112FC0098E1F0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6AD7BD0C1BC118FD0098E1F0 /* MSBindViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBindViewModelProtocol.h; sourceTree = "<group>"; };
+		6AD7BD101BC11B3C0098E1F0 /* MSGlobalPropertyContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSGlobalPropertyContainer.h; sourceTree = "<group>"; };
+		6AD7BD111BC11B3C0098E1F0 /* MSGlobalPropertyContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSGlobalPropertyContainer.m; sourceTree = "<group>"; };
+		6AD7BD141BC153E70098E1F0 /* MSSecurityViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSecurityViewModel.h; sourceTree = "<group>"; };
+		6AD7BD151BC153E70098E1F0 /* MSSecurityViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSecurityViewModel.m; sourceTree = "<group>"; };
+		6AD7BD171BC155280098E1F0 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		6AE69EE21BBE914500EB4CAD /* UILabel+MoneySaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+MoneySaver.h"; sourceTree = "<group>"; };
 		6AE69EE31BBE914500EB4CAD /* UILabel+MoneySaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MoneySaver.m"; sourceTree = "<group>"; };
 		6AF84D881BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEncryptDatabaseQueue.h; sourceTree = "<group>"; };
@@ -225,6 +235,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AD7BD181BC155280098E1F0 /* LocalAuthentication.framework in Frameworks */,
 				0474DC344D77E677CC7AEE49 /* libPods-MoneySaver.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +255,7 @@
 		6A0A539C1BAFB848004AD688 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				6AD7BD0C1BC118FD0098E1F0 /* MSBindViewModelProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -340,6 +352,7 @@
 		6A84045F1BB285B900A89446 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6AD7BD131BC153990098E1F0 /* SecurityView */,
 				6A0D527B1BBE5DDC00D651B7 /* ProjectEditor */,
 				6A8E18D71BB68CEB00B8F38C /* ProjectReport */,
 				6A92B38A1BB3FA83001C7A87 /* MainInterface */,
@@ -379,6 +392,8 @@
 			children = (
 				6A85D9A11BAFB1850049D988 /* MSBaseClassViewModel.h */,
 				6A85D9A21BAFB1850049D988 /* MSBaseClassViewModel.m */,
+				6AD7BD141BC153E70098E1F0 /* MSSecurityViewModel.h */,
+				6AD7BD151BC153E70098E1F0 /* MSSecurityViewModel.m */,
 				6A68B1CC1BAFB4C5009BA468 /* MSAccountViewModel.h */,
 				6A68B1CD1BAFB4C5009BA468 /* MSAccountViewModel.m */,
 				6A0A539E1BAFB8C8004AD688 /* MSProjectViewModel.h */,
@@ -466,6 +481,7 @@
 			isa = PBXGroup;
 			children = (
 				6A9095BC1BAF933600672A05 /* Assets.xcassets */,
+				6AD7BD0A1BC112FC0098E1F0 /* LaunchScreen.storyboard */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -570,6 +586,13 @@
 			path = "MoneySaver+Views";
 			sourceTree = "<group>";
 		};
+		6AD7BD131BC153990098E1F0 /* SecurityView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SecurityView;
+			sourceTree = "<group>";
+		};
 		6AF84D871BAFD6C300B061A5 /* DatabaseEncrypt */ = {
 			isa = PBXGroup;
 			children = (
@@ -592,6 +615,8 @@
 				6A0D52841BBE60E500D651B7 /* MSProjectModelTypeHelper.m */,
 				6A0D52861BBE616300D651B7 /* MSProjectTransactionTypeHelper.h */,
 				6A0D52871BBE616300D651B7 /* MSProjectTransactionTypeHelper.m */,
+				6AD7BD101BC11B3C0098E1F0 /* MSGlobalPropertyContainer.h */,
+				6AD7BD111BC11B3C0098E1F0 /* MSGlobalPropertyContainer.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -599,6 +624,7 @@
 		B213BCB2A07FBF95C8BDA9A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6AD7BD171BC155280098E1F0 /* LocalAuthentication.framework */,
 				0FC39D14C939FE7DCC37D7C3 /* libPods-MoneySaver.a */,
 				6A692E961BB5AA8400AAA277 /* NotificationCenter.framework */,
 			);
@@ -697,6 +723,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AD7BD0B1BC112FC0098E1F0 /* LaunchScreen.storyboard in Resources */,
 				6A84045E1BB282E800A89446 /* Assets.xcassets in Resources */,
 				6A68B1D71BAFB73A009BA468 /* SqliteCreaterV1.0.0.sql in Resources */,
 			);
@@ -764,6 +791,7 @@
 				6A3A524F1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m in Sources */,
 				6A3A52401BB4FF6400BA99A5 /* MSNumberKeyBord.m in Sources */,
 				6A8404571BB2523D00A89446 /* NSTimer+MSSubmitTransition.m in Sources */,
+				6AD7BD161BC153E70098E1F0 /* MSSecurityViewModel.m in Sources */,
 				6A8404641BB2860200A89446 /* MSBaseClassViewController.m in Sources */,
 				6A68B1CB1BAFB4B3009BA468 /* MSProjectManagerViewModel.m in Sources */,
 				6A85D99D1BAFB14C0049D988 /* MSAccountDataModel.m in Sources */,
@@ -934,7 +962,6 @@
 			baseConfigurationReference = 1AD1E6C10112F55358EE6C12 /* Pods-MoneySaver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $PROJECT_DIR/$PROJECT_NAME/MSPCH.pch;
@@ -952,7 +979,6 @@
 			baseConfigurationReference = 9B23B3F69596401F1FA10E7E /* Pods-MoneySaver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = $PROJECT_DIR/$PROJECT_NAME/MSPCH.pch;

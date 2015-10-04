@@ -12,6 +12,7 @@ target 'MoneySaver' do
    pod 'FMDB/SQLCipher'
    pod 'BmobSDK'
    pod 'JSPatch'
+   pod 'VENTouchLock', '~> 1.0' #密码输入
    #   pod 'FMDB', '~> 2.5'
 
 # UI

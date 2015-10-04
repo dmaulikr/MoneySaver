@@ -15,6 +15,9 @@
 
 #import "MSProjectTypeListDataSource.h"
 #import "MSProjectViewModel.h"
+#import "MSSecurityViewModel.h"
+
+#import <IQKeyboardManager.h>
 
 @interface MSProjectEditorViewController ()<UICollectionViewDelegate>
 
@@ -23,9 +26,10 @@
 @property (nonatomic, strong) MSProjectValueHeaderView *headerView;
 @property (nonatomic, strong) UICollectionView *projectTypeList;
 @property (nonatomic, strong) MSProjectTypeListDataSource *typeDataSource;
+@property (nonatomic, strong) MSNumberKeyBord *numberKeybord;
 
 @property (nonatomic, strong) MSProjectViewModel *viewModel;
-
+@property (nonatomic, strong) MSSecurityViewModel *securityViewModel;
 
 @end
 
@@ -35,8 +39,10 @@
 + (UINavigationController *)projectEditorViewControllerForMode:(BOOL)isQuick
 {
     MSProjectViewModel *vm = [MSProjectViewModel new];
+    vm.dataModel = [MSBaseProjectModel new];
     MSProjectEditorViewController *project = [[MSProjectEditorViewController alloc] initWithViewModel:vm];
     project.quickMode = isQuick;
+    if (isQuick) {project.securityViewModel = [MSSecurityViewModel new];}
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:project];
     return nav;
 }
@@ -51,12 +57,24 @@
     return self;
 }
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configureViewController];
     [self layoutViewController];
     [self configureSignal];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[IQKeyboardManager sharedManager] setEnable:NO];
+    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:NO];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [[IQKeyboardManager sharedManager] setEnable:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -69,7 +87,12 @@
 {
     @weakify(self);
     if (self.isQuickMode) {
+        
         MSBarButtonItem *chartButton = [MSBarButtonItem chartButton];
+        [chartButton setBarButtonActionBlock:^(id sender) {
+            @strongify(self);
+            [self.securityViewModel authenticateUser];
+        }];
         self.navigationItem.rightBarButtonItem = chartButton;
     } else {
         MSBarButtonItem *calendarButton = [MSBarButtonItem calendarButton];
@@ -85,7 +108,7 @@
         }];
     }
     
-    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.headerView];
     [self.view addSubview:self.projectTypeList];
 }
@@ -94,15 +117,22 @@
 {
     @weakify(self);
     CGFloat headerViewHeight = kMSProjectValueHeaderViewHeight;
+    [self.headerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH, headerViewHeight));
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(self.view).offset(NORMAL_STATUS_AND_NAV_BAR_HEIGHT);
+    }];
     [self.projectTypeList mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(headerViewHeight, 0, kMSNumberKeyBordHeight, 0));
+        make.top.equalTo(self.headerView.mas_bottom);
+        make.left.bottom.and.right.equalTo(self.view).insets(UIEdgeInsetsMake(0, 0, kMSNumberKeyBordHeight, 0));
     }];
 }
 
 - (void)configureSignal
 {
-    
+    self.headerView.viewModel = self.viewModel;
 }
 
 
@@ -122,7 +152,7 @@
         _typeDataSource = [MSProjectTypeListDataSource registerForCollectionView:_projectTypeList];
         _projectTypeList.dataSource = _typeDataSource;
         _projectTypeList.delegate = self;
-        _projectTypeList.pagingEnabled = YES;
+        _projectTypeList.bounces = YES;
         _projectTypeList.backgroundColor = [UIColor clearColor];
     }
     return _projectTypeList;
@@ -133,6 +163,7 @@
 {
     if (!_headerView) {
         _headerView = [MSProjectValueHeaderView projectValueHeaderView];
+        _numberKeybord = [[MSNumberKeyBord alloc] initWithTextField:_headerView.valueFiled];
         [_headerView.valueFiled becomeFirstResponder];
     }
     return _headerView;

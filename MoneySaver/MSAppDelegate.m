@@ -14,8 +14,11 @@
 #import <BmobSDK/Bmob.h>
 #import "MSAccountViewModel.h"
 
+#import "UIColor+MoneySaver.h"
 #import "MSLoginMainViewController.h"
 #import "MSProjectEditorViewController.h"
+
+#import "MSTestViewController.h"
 
 @interface MSAppDelegate ()
 
@@ -35,9 +38,18 @@
     [Bmob registerWithAppKey:kBmobSDKAPPKey];
 }
 
+- (void)apperanceConfigure
+{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor ms_DefaultColor]];
+    
+}
+
 - (void)configureViewController
 {
     self.window.rootViewController = [MSProjectEditorViewController projectEditorViewControllerForMode:YES];
+//    self.window.rootViewController = [MSTestViewController new];
 //    if ([BmobUser getCurrentUser]) {
 //        
 //    }else
@@ -59,6 +71,7 @@
 
     
     [self venderConfigure];
+    [self apperanceConfigure];
     [self configureViewController];
     
     MSAccountViewModel *account = [MSAccountViewModel new];

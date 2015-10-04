@@ -9,6 +9,9 @@
 #import "MSProjectTypeListDataSource.h"
 #import "MSProjectTypeCollectionViewCell.h"
 
+
+//- ()
+
 @interface MSProjectTypeListDataSource ()
 
 @end
@@ -19,7 +22,10 @@
 {
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     CGFloat size = kMSProjectTypeCollectionViewCellWidth;
+//    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     layout.itemSize = CGSizeMake(size, size);
+//    layout.minimumInteritemSpacing = CGFLOAT_MIN;
+//    layout.minimumLineSpacing = CGFLOAT_MIN;
     return layout;
 }
 
@@ -55,6 +61,7 @@
 {
     MSProjectTypeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kMSProjectTypeCollectionViewCellIden forIndexPath:indexPath];
     cell.projectType = [self typeForItemAtIndexPath:indexPath];
+    if (cell.selected){cell.projectType = [self typeForItemAtIndexPath:indexPath];}
     return cell;
 }
 

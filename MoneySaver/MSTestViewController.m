@@ -25,7 +25,7 @@
     [IQKeyboardManager sharedManager].enable = NO;
     [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
      
-    UITextField *textfield = [[UITextField alloc] initWithFrame:CGRectMake(10, 50, CGRectGetWidth(self.view.bounds)-20, 30)];
+    UITextField *textfield = [[UITextField alloc] initWithFrame:CGRectMake(10, 100, CGRectGetWidth(self.view.bounds)-20, 80)];
     textfield.borderStyle = UITextBorderStyleRoundedRect;
     textfield.inputView = [[MSNumberKeyBord alloc] initWithTextField:textfield];
     [self.view addSubview:textfield];

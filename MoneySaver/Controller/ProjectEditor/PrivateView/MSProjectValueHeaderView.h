@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MSProjectViewModel.h"
 
-#define kMSProjectValueHeaderViewHeight (SCREEN_WIDTH/4.0);
+
+#define kMSProjectValueHeaderViewHeight (SCREEN_WIDTH/4.0)
 
 @interface MSProjectValueHeaderView : UIView
 
 @property (nonatomic, strong, readonly) UITextField *valueFiled;
+@property (nonatomic, strong) MSProjectViewModel *viewModel;
 
 + (instancetype)projectValueHeaderView;
 

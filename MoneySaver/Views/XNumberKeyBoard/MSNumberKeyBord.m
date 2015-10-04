@@ -17,7 +17,6 @@
 #import "UIColor+MoneySaver.h"
 
 
-#define kMSNumberKeyBordHeight 240
 
 @interface MSNumberKeyBord ()<UITextFieldDelegate>
 {

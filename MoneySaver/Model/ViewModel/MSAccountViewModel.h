@@ -11,7 +11,7 @@
 
 @interface MSAccountViewModel : MSBaseClassViewModel
 
-@property (nonatomic, strong) MSAccountRequestModel *accountRequestModel;
+@property (nonatomic, strong) MSAccountRequestModel *requestModel;
 @property (nonatomic, strong) MSAccountDataModel    *dataModel;
 
 @property (nonatomic, strong) NSError               *operationError;

@@ -15,7 +15,7 @@
 #import "MSAccountViewModel.h"
 
 #import "MSLoginMainViewController.h"
-#import "MSTestViewController.h"
+#import "MSProjectEditorViewController.h"
 
 @interface MSAppDelegate ()
 
@@ -37,12 +37,12 @@
 
 - (void)configureViewController
 {
-    self.window.rootViewController = [MSTestViewController new];
+    self.window.rootViewController = [MSProjectEditorViewController projectEditorViewControllerForMode:YES];
 //    if ([BmobUser getCurrentUser]) {
 //        
 //    }else
 //    {
-        [self.window.rootViewController presentViewController:[MSLoginMainViewController new] animated:NO completion:nil];
+//        [self.window.rootViewController presentViewController:[MSLoginMainViewController new] animated:NO completion:nil];
 //    }
 }
 

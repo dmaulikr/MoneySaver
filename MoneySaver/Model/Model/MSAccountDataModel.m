@@ -9,7 +9,7 @@
 #import "MSAccountDataModel.h"
 
 
-@implementation MSrequestModel
+@implementation MSAccountRequestModel
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {

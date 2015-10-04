@@ -8,18 +8,19 @@
 
 #import "MSProjectEditorViewController.h"
 
+#import "MSProjectValueHeaderView.h"
 #import "MSProjectTypeCollectionViewCell.h"
+#import "MSNumberKeyBord.h"
 #import "MSBarButtonItem.h"
 
 #import "MSProjectTypeListDataSource.h"
 #import "MSProjectViewModel.h"
 
 @interface MSProjectEditorViewController ()<UICollectionViewDelegate>
-{
-    BOOL _quickNoteMode;
-}
 
 @property (nonatomic, assign ,getter=isQuickMode) BOOL quickMode;
+
+@property (nonatomic, strong) MSProjectValueHeaderView *headerView;
 @property (nonatomic, strong) UICollectionView *projectTypeList;
 @property (nonatomic, strong) MSProjectTypeListDataSource *typeDataSource;
 
@@ -84,15 +85,24 @@
         }];
     }
     
+    
+    [self.view addSubview:self.headerView];
     [self.view addSubview:self.projectTypeList];
 }
 
 - (void)layoutViewController
 {
+    @weakify(self);
+    CGFloat headerViewHeight = kMSProjectValueHeaderViewHeight;
+    [self.projectTypeList mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(headerViewHeight, 0, kMSNumberKeyBordHeight, 0));
+    }];
 }
 
 - (void)configureSignal
 {
+    
 }
 
 
@@ -113,8 +123,18 @@
         _projectTypeList.dataSource = _typeDataSource;
         _projectTypeList.delegate = self;
         _projectTypeList.pagingEnabled = YES;
+        _projectTypeList.backgroundColor = [UIColor clearColor];
     }
     return _projectTypeList;
 }
 
+
+- (MSProjectValueHeaderView *)headerView
+{
+    if (!_headerView) {
+        _headerView = [MSProjectValueHeaderView projectValueHeaderView];
+        [_headerView.valueFiled becomeFirstResponder];
+    }
+    return _headerView;
+}
 @end

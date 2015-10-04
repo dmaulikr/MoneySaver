@@ -51,34 +51,34 @@
     FAKIcon *icon = nil;
     CGFloat fontSize = MIN(size.width, size.height);
     switch (type) {
-        case MSProjectModelUnkonwType:{icon = [FAKIcon iconWithCode:@"\uf128" size:fontSize];}
-        case MSProjectModelIncomeType:{icon = [FAKIcon iconWithCode:@"\uf019" size:fontSize];}
-        case MSProjectModelGeneralType:{icon = [FAKIcon iconWithCode:@"\uf02b" size:fontSize];}
-        case MSProjectModelHotelType:{icon = [FAKIcon iconWithCode:@"\uf236" size:fontSize];}
-        case MSProjectModelMakeUpType:{icon = [FAKIcon iconWithCode:@"\uf182" size:fontSize];}
-        case MSProjectModelMedicalType:{icon = [FAKIcon iconWithCode:@"\uf0c3" size:fontSize];}
-        case MSProjectModelPersonalType:{icon = [FAKIcon iconWithCode:@"\uf007" size:fontSize];}
-        case MSProjectModelAppType:{icon = [FAKIcon iconWithCode:@"\uf099" size:fontSize];}
-        case MSProjectModelPetType:{icon = [FAKIcon iconWithCode:@"\uf1b0" size:fontSize];}
-        case MSProjectModelTrafficType:{icon = [FAKIcon iconWithCode:@"\uf1b9" size:fontSize];}
-        case MSProjectModelCarType:{icon = [FAKIcon iconWithCode:@"\uf0e4" size:fontSize];}
-        case MSProjectModelMovieType:{icon = [FAKIcon iconWithCode:@"\uf008" size:fontSize];}
-        case MSProjectModelFoodType:{icon = [FAKIcon iconWithCode:@"\uf0f5" size:fontSize];}
-        case MSProjectModelBooksType:{icon = [FAKIcon iconWithCode:@"\uf02d" size:fontSize];}
-        case MSProjectModeliTunesType:{icon = [FAKIcon iconWithCode:@"\uf179" size:fontSize];}
-        case MSProjectModelComputerType:{icon = [FAKIcon iconWithCode:@"\uf108" size:fontSize];}
-        case MSProjectModelGiftType:{icon = [FAKIcon iconWithCode:@"\uf06b" size:fontSize];}
-        case MSProjectModelKidsType:{icon = [FAKIcon iconWithCode:@"\uf1ae" size:fontSize];}
-        case MSProjectModelHouseType:{icon = [FAKIcon iconWithCode:@"\uf0c0" size:fontSize];}
-        case MSProjectModelJuiceType:{icon = [FAKIcon iconWithCode:@"\uf0f4" size:fontSize];}
-        case MSProjectModelShoppingType:{icon = [FAKIcon iconWithCode:@"\uf07a" size:fontSize];}
-        case MSProjectModelTravelType:{icon = [FAKIcon iconWithCode:@"\uf006" size:fontSize];}
-        case MSProjectModelFitnessType:{icon = [FAKIcon iconWithCode:@"\uf0e7" size:fontSize];}
-        case MSProjectModelClothType:{icon = [FAKIcon iconWithCode:@"\uf21d" size:fontSize];}
-        case MSProjectModelMobileType:{icon = [FAKIcon iconWithCode:@"\uf10b" size:fontSize];}
-        default:{icon = [FAKIcon iconWithCode:@"\uf128" size:fontSize];}
+        case MSProjectModelUnkonwType:{icon = [FAKFontAwesome iconWithCode:@"\uf128" size:fontSize];}break;
+        case MSProjectModelIncomeType:{icon = [FAKFontAwesome iconWithCode:@"\uf019" size:fontSize];}break;
+        case MSProjectModelGeneralType:{icon = [FAKFontAwesome iconWithCode:@"\uf02b" size:fontSize];}break;
+        case MSProjectModelHotelType:{icon = [FAKFontAwesome iconWithCode:@"\uf1ad" size:fontSize];}break;
+        case MSProjectModelMakeUpType:{icon = [FAKFontAwesome iconWithCode:@"\uf182" size:fontSize];}break;
+        case MSProjectModelMedicalType:{icon = [FAKFontAwesome iconWithCode:@"\uf0c3" size:fontSize];}break;
+        case MSProjectModelPersonalType:{icon = [FAKFontAwesome iconWithCode:@"\uf007" size:fontSize];}break;
+        case MSProjectModelAppType:{icon = [FAKFontAwesome iconWithCode:@"\uf099" size:fontSize];}break;
+        case MSProjectModelPetType:{icon = [FAKFontAwesome iconWithCode:@"\uf1b0" size:fontSize];}break;
+        case MSProjectModelTrafficType:{icon = [FAKFontAwesome iconWithCode:@"\uf1b9" size:fontSize];}break;
+        case MSProjectModelCarType:{icon = [FAKFontAwesome iconWithCode:@"\uf0e4" size:fontSize];}break;
+        case MSProjectModelMovieType:{icon = [FAKFontAwesome iconWithCode:@"\uf008" size:fontSize];}break;
+        case MSProjectModelFoodType:{icon = [FAKFontAwesome iconWithCode:@"\uf0f5" size:fontSize];}break;
+        case MSProjectModelBooksType:{icon = [FAKFontAwesome iconWithCode:@"\uf02d" size:fontSize];}break;
+        case MSProjectModeliTunesType:{icon = [FAKFontAwesome iconWithCode:@"\uf179" size:fontSize];}break;
+        case MSProjectModelComputerType:{icon = [FAKFontAwesome iconWithCode:@"\uf108" size:fontSize];}break;
+        case MSProjectModelGiftType:{icon = [FAKFontAwesome iconWithCode:@"\uf06b" size:fontSize];}break;
+        case MSProjectModelKidsType:{icon = [FAKFontAwesome iconWithCode:@"\uf1ae" size:fontSize];}break;
+        case MSProjectModelHouseType:{icon = [FAKFontAwesome iconWithCode:@"\uf0c0" size:fontSize];}break;
+        case MSProjectModelJuiceType:{icon = [FAKFontAwesome iconWithCode:@"\uf0f4" size:fontSize];}break;
+        case MSProjectModelShoppingType:{icon = [FAKFontAwesome iconWithCode:@"\uf07a" size:fontSize];}break;
+        case MSProjectModelTravelType:{icon = [FAKFontAwesome iconWithCode:@"\uf006" size:fontSize];}break;
+        case MSProjectModelFitnessType:{icon = [FAKFontAwesome iconWithCode:@"\uf1e3" size:fontSize];}break;
+        case MSProjectModelClothType:{icon = [FAKFontAwesome iconWithCode:@"\uf1e9" size:fontSize];}break;
+        case MSProjectModelMobileType:{icon = [FAKFontAwesome iconWithCode:@"\uf10b" size:fontSize];}break;
+        default:{icon = [FAKFontAwesome iconWithCode:@"\uf128" size:fontSize];}
     }
-    UIColor *iconColor = hightlight?[UIColor darkGrayColor]:[UIColor ms_RedColor];
+    UIColor *iconColor = hightlight?[UIColor ms_RedColor]:[UIColor grayColor];
     [icon addAttribute:NSForegroundColorAttributeName value:iconColor];
     return [icon imageWithSize:size];
 }

@@ -10,7 +10,7 @@
 #import "MSProjectModelTypeHelper.h"
 #import <objc/runtime.h>
 
-//#define kNeedAddPropertyForUIImageView
+#define kNeedAddPropertyForUIImageView
 
 #ifdef kNeedAddPropertyForUIImageView
 static char const * const kMSProjectModelTypeProperty = "MSProjectModelType";
@@ -28,16 +28,19 @@ static char const * const kMSProjectModelTypeProperty = "MSProjectModelType";
 #ifdef kNeedAddPropertyForUIImageView
     objc_setAssociatedObject(self, kMSProjectModelTypeProperty, @(projectType) , OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 #endif
-    
-    {
-        self.image = [MSProjectModelTypeHelper projectModelTypeToImage:projectType
-                                                                  size:self.bounds.size
-                                                            hightlight:NO];
-        
-        self.highlightedImage = [MSProjectModelTypeHelper projectModelTypeToImage:projectType
-                                                                             size:self.bounds.size
-                                                                       hightlight:YES];
-    }
+//    if (projectType != self.projectType) {
+        @weakify(self);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            @strongify(self);
+            self.image = [MSProjectModelTypeHelper projectModelTypeToImage:projectType
+                                                                      size:self.bounds.size
+                                                                hightlight:NO];
+            
+            self.highlightedImage = [MSProjectModelTypeHelper projectModelTypeToImage:projectType
+                                                                                 size:self.bounds.size
+                                                                           hightlight:YES];
+        });
+//    }
 }
 
 

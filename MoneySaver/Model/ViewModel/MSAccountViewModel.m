@@ -23,7 +23,7 @@
 - (void)configureSignal
 {
     @weakify(self);
-    [[RACObserve(self, accountImage) map:^id(id value) {
+    [[RACObserve(self, userImage) map:^id(id value) {
         return @(value != nil);
     }] subscribeNext:^(id x) {
 //        TODO : 自动上传图片
@@ -37,10 +37,10 @@
 #pragma mark - Getter
 
 
-- (MSrequestModel *)requestModel
+- (MSAccountRequestModel *)requestModel
 {
     if (!_requestModel) {
-        _requestModel = [MSrequestModel new];
+        _requestModel = [MSAccountRequestModel new];
     }
     return _requestModel;
 }

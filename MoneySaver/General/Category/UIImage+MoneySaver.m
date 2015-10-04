@@ -29,7 +29,7 @@ NSString *MSCustomIconTypeToString(MSCustomIconType type)
     if (color == nil) {
         color = [UIColor darkGrayColor];
     }
-    FAKIcon *icon = [FAKIcon iconWithCode:code size:size];
+    FAKFontAwesome *icon = [FAKFontAwesome iconWithCode:code size:size];
     [icon addAttribute:NSForegroundColorAttributeName value:color];
     return [icon imageWithSize:CGSizeMake(size, size)];
 

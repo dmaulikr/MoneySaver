@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define kMSNumberKeyBordHeight 240
+
 @interface MSNumberKeyBord : UIView
 
 @property (nonatomic, strong) NSString *inputString;

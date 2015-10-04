@@ -43,21 +43,19 @@
     [self.contentView addSubview:self.typeImage];
     [self.contentView addSubview:self.typeNameLable];
     
-    
-    [self.typeImage mas_makeConstraints:^(MASConstraintMaker *make) {
-       @strongify(self);
-        make.top.equalTo(self.contentView).offset(8);
-        make.left.equalTo(self.contentView).offset(8);
-        make.right.equalTo(self.contentView).offset(-8);
-        make.bottom.equalTo(self.typeNameLable.mas_top).offset(8);
-    }];
-    
     [self.typeNameLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.contentView).offset(8);
         make.right.equalTo(self.contentView).offset(-8);
         make.bottom.equalTo(self.contentView).offset(-8);
         make.height.mas_equalTo(kTypeNameLableHeight);
     }];
+    
+    [self.typeImage mas_makeConstraints:^(MASConstraintMaker *make) {
+       @strongify(self);
+        make.edges.equalTo(self.contentView).insets(UIEdgeInsetsMake(8, 8, kTypeNameLableHeight+8+8, 8));
+    }];
+    
+
 }
 
 
@@ -69,11 +67,11 @@
     self.typeNameLable.projectType = projectType;
 }
 
-- (void)setSelected:(BOOL)selected
-{
-    self.selected = selected;
-    self.typeImage.highlighted = selected;
-}
+//- (void)setSelected:(BOOL)selected
+//{
+//    self.selected = selected;
+//    self.typeImage.highlighted = selected;
+//}
 
 #pragma mark - Getter
 
@@ -81,6 +79,7 @@
 {
     if (!_typeImage) {
         _typeImage = [UIImageView new];
+        _typeImage.contentMode = UIViewContentModeScaleAspectFit;
     }
     return _typeImage;
 }

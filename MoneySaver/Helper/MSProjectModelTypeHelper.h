@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-static NSInteger const kNumOfMSProjectModelType =  26;
+static NSInteger const kNumOfMSProjectModelType =  25;
 static NSInteger const kCommonEnumValueFotType  = 1000;
 
 typedef NS_ENUM(NSUInteger, MSProjectModelType) {

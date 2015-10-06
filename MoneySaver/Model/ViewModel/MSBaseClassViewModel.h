@@ -9,15 +9,32 @@
 #import <Foundation/Foundation.h>
 #import <ReactiveCocoa.h>
 
+#import "MSSqliteDataBaseClient.h"
 #import "MSWebDataClient.h"
+#import "MSBmobObjectAdapter.h"
 
-@protocol MSBaseClassViewModelDelegate <NSObject>
+#define ISNEWDATA(__objectId__) [__objectId__ isEqualToString:kNewDatabaseIdValue]
 
 
+/**
+ *  通用基类
+ */
+@interface MSBaseClassViewModel : NSObject
 @end
 
 
-@interface MSBaseClassViewModel : NSObject<MSBaseClassViewModelDelegate>
 
+/**
+ *  数据基类
+ */
+@interface MSBaseDataViewModel : NSObject
+
+- (RACSignal *)updateData;
+
+- (RACSignal *)updateToWebDatabaseWithModel:(id <MTLJSONSerializing,MTLFMDBSerializing>)model
+                                        new:(BOOL)isNew;
+
+- (RACSignal *)updateToDatabaseWithModel:(id <MTLJSONSerializing,MTLFMDBSerializing>)model
+                                     new:(BOOL)isNew;
 
 @end

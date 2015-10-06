@@ -9,7 +9,7 @@
 #import "MSBaseClassViewModel.h"
 #import "MSAccountDataModel.h"
 
-@interface MSAccountViewModel : MSBaseClassViewModel
+@interface MSAccountViewModel : MSBaseDataViewModel
 
 @property (nonatomic, strong) MSAccountRequestModel *requestModel;
 @property (nonatomic, strong) MSAccountDataModel    *dataModel;

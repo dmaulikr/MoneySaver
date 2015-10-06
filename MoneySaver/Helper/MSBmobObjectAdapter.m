@@ -9,6 +9,7 @@
 #import "MSBmobObjectAdapter.h"
 #import <BmobACL.h>
 #import <BmobUser.h>
+#import "NSDictionary+DeleteNull.h"
 
 
 @implementation MSBmobObjectAdapter
@@ -16,7 +17,7 @@
 + (BmobObject *)bmobObjectFromModel:(id <MTLJSONSerializing,MTLFMDBSerializing>)model error:(NSError **)error
 {
     BmobObject *object = [BmobObject new];
-    NSDictionary *dict = [MTLJSONAdapter JSONDictionaryFromModel:model error:error];
+    NSDictionary *dict = [[MTLJSONAdapter JSONDictionaryFromModel:model error:error] deleteNullValue];
     
     //设置数值
     for (NSString *key in dict) {

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+//TODO: 暂不支持自定义类型,所以总数为25
 static NSInteger const kNumOfMSProjectModelType =  25;
 static NSInteger const kCommonEnumValueFotType  = 1000;
 
@@ -40,6 +41,8 @@ typedef NS_ENUM(NSUInteger, MSProjectModelType) {
     MSProjectModelFitnessType  = 1020,   ///< 健身
     MSProjectModelClothType    = 1021,   ///< 衣服
     MSProjectModelMobileType   = 1022,   ///< 手机
+    
+    MSProjectModelCustomType   = 2000,   ///< 自定义
 };
 
 

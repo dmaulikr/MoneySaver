@@ -8,26 +8,29 @@
 
 #import <Foundation/Foundation.h>
 #import <MTLFMDBAdapter.h>
+#import <ReactiveCocoa.h>
+#import "MSBmobObjectAdapter.h"
+#import "MSDataOperationType.h"
 
 @interface MSSqliteDataBaseClient : NSObject
 
 + (instancetype)shareSqliteDataBaseClient;
 
-- (void)deleteAllDataFromDataBase;
+- (RACSignal *)deleteAllDataFromDataBase;
 
-- (void)insertModel:(id<MTLFMDBSerializing>)model
-      callBackBlock:(void (^)(NSError *error,BOOL success))block;
+- (RACSignal *)insertModel:(id<MTLFMDBSerializing>)model;
 
-- (void)deleteModel:(id<MTLFMDBSerializing>)model
-      callBackBlock:(void (^)(NSError *error,BOOL success))block;
+- (RACSignal *)deleteModel:(id<MTLFMDBSerializing>)model;
 
-- (void)updateModel:(id<MTLFMDBSerializing>)model
-      callBackBlock:(void (^)(NSError *error,BOOL success))block;
+- (RACSignal *)updateModel:(id<MTLFMDBSerializing>)model;
 
-- (void)selectModelsByClass:(Class)modelClass
-                  tableName:(NSString *)name
-                 condistion:(NSString *)condistion
-                    isArray:(BOOL)isArray
-              callBackBlock:(void (^)(id models,BOOL isArray))block;
+- (RACSignal *)commonDataoperationWithModel:(id<MTLFMDBSerializing>)model
+                                       type:(MSDataOperationType)type;
+
+
+- (RACSignal *)selectModelsByClass:(Class)modelClass
+                         tableName:(NSString *)name
+                        condistion:(NSString *)condistion
+                           isArray:(BOOL)isArray;
 
 @end

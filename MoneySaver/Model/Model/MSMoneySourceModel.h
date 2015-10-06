@@ -7,6 +7,8 @@
 //
 
 #import <Mantle.h>
+#import <MTLFMDBAdapter.h>
+
 
 typedef NS_ENUM(NSUInteger, MoneySourceModelType) {
     SourceModelOtherType  = 0,
@@ -15,12 +17,12 @@ typedef NS_ENUM(NSUInteger, MoneySourceModelType) {
     SourceModelCashType   = 3,
 };
 
-@interface MSMoneySourceModel : MTLModel <MTLJSONSerializing>
+@interface MSMoneySourceModel : MTLModel <MTLJSONSerializing,MTLFMDBSerializing>
 
-@property (nonatomic, copy  ) NSNumber             *sourceId;/**< 资金ID */
+@property (nonatomic, assign) MoneySourceModelType sourceType;///< 资金来源
 
-@property (nonatomic, assign) MoneySourceModelType sourceType;/**< 资金来源 */
-
-@property (nonatomic, copy  ) NSNumber             *total;/**< 资金总额 */
+@property (nonatomic, copy  ) NSString *sourceId;///<资金ID
+@property (nonatomic, copy  ) NSNumber *total;///< 资金总额
+@property (nonatomic, copy  ) NSString *sourceName;///< 资金名称
 
 @end

@@ -18,6 +18,7 @@
     return @{
              @"sourceId":kDefaultDatabaseId,
              @"sourceType":@"sourceType",
+             @"sourceName":@"sourceName",
              @"total":@"total",
              };
 }

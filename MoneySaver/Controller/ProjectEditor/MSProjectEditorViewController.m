@@ -15,7 +15,6 @@
 
 #import "MSProjectTypeListDataSource.h"
 #import "MSProjectViewModel.h"
-#import "MSSecurityViewModel.h"
 
 #import <IQKeyboardManager.h>
 
@@ -23,13 +22,12 @@
 
 @property (nonatomic, assign ,getter=isQuickMode) BOOL quickMode;
 
-@property (nonatomic, strong) MSProjectValueHeaderView *headerView;
-@property (nonatomic, strong) UICollectionView *projectTypeList;
+@property (nonatomic, strong) MSProjectValueHeaderView    *headerView;
+@property (nonatomic, strong) UICollectionView            *projectTypeList;
 @property (nonatomic, strong) MSProjectTypeListDataSource *typeDataSource;
-@property (nonatomic, strong) MSNumberKeyBord *numberKeybord;
+@property (nonatomic, strong) MSNumberKeyBord             *numberKeybord;
 
-@property (nonatomic, strong) MSProjectViewModel *viewModel;
-@property (nonatomic, strong) MSSecurityViewModel *securityViewModel;
+@property (nonatomic, strong) MSProjectViewModel          *viewModel;
 
 @end
 
@@ -42,11 +40,9 @@
     vm.dataModel = [MSBaseProjectModel new];
     MSProjectEditorViewController *project = [[MSProjectEditorViewController alloc] initWithViewModel:vm];
     project.quickMode = isQuick;
-    if (isQuick) {project.securityViewModel = [MSSecurityViewModel new];}
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:project];
     return nav;
 }
-
 
 - (instancetype)initWithViewModel:(id)viewmodel
 {
@@ -90,8 +86,7 @@
         
         MSBarButtonItem *chartButton = [MSBarButtonItem chartButton];
         [chartButton setBarButtonActionBlock:^(id sender) {
-            @strongify(self);
-            [self.securityViewModel authenticateUser];
+//            @strongify(self);
         }];
         self.navigationItem.rightBarButtonItem = chartButton;
     } else {
@@ -105,6 +100,12 @@
         [closeButton setBarButtonActionBlock:^(id sender) {
             @strongify(self);
             [self dismissViewControllerAnimated:YES completion:nil];
+        }];
+        [noteButton setBarButtonActionBlock:^(id sender) {
+//            @strongify(self);
+        }];
+        [calendarButton setBarButtonActionBlock:^(id sender) {
+//            @strongify(self);
         }];
     }
     
@@ -121,7 +122,7 @@
         @strongify(self);
         make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH, headerViewHeight));
         make.centerX.equalTo(self.view);
-        make.top.equalTo(self.view).offset(NORMAL_STATUS_AND_NAV_BAR_HEIGHT);
+        make.top.equalTo(self.view);
     }];
     [self.projectTypeList mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);

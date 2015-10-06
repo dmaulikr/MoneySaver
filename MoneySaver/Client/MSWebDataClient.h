@@ -10,12 +10,7 @@
 #import <ReactiveCocoa.h>
 #import "WebClientConstants.h"
 #import "MSBmobObjectAdapter.h"
-
-typedef NS_ENUM(NSUInteger, BmobObjectDataOperationType) {
-    BmobObjectDataUpdate,
-    BmobObjectDataDelete,
-    BmobObjectDataInsert,
-};
+#import "MSDataOperationType.h"
 
 @interface MSWebDataClient : NSObject
 
@@ -45,8 +40,6 @@ typedef NS_ENUM(NSUInteger, BmobObjectDataOperationType) {
                              modelClass:(Class)modelClass
                                 isArray:(BOOL)isArray;
 
-
-
 /**
  *  更新数据库
  *
@@ -56,7 +49,7 @@ typedef NS_ENUM(NSUInteger, BmobObjectDataOperationType) {
  *  @return 成功失败(成功返回@YES/失败返回Error)
  */
 + (RACSignal *)callDataOperationInBackground:(id <MTLJSONSerializing,MTLFMDBSerializing>)model
-                                        type:(BmobObjectDataOperationType)type;
+                                        type:(MSDataOperationType)type;
 
 
 /**

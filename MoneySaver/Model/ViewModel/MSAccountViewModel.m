@@ -8,6 +8,11 @@
 
 #import "MSAccountViewModel.h"
 #import <BmobUser.h>
+#import "NSString+XValueCheck.h"
+
+
+#define kMinUserNameLength 5
+#define kMinPasswordLength 6
 
 @interface MSAccountViewModel ()
 
@@ -22,15 +27,6 @@
 
 - (void)configureSignal
 {
-    @weakify(self);
-    [[RACObserve(self, userImage) map:^id(id value) {
-        return @(value != nil);
-    }] subscribeNext:^(id x) {
-//        TODO : 自动上传图片
-    } error:^(NSError *error) {
-        self.infomationError = error;
-    }];
-    
 }
 
 
@@ -49,10 +45,10 @@
 - (RACSignal *)accountEnable
 {
     if (!_accountEnable) {
-        _accountEnable = [RACSignal combineLatest:@[RACObserve(self, requestModel.username),
-                                                    RACObserve(self, requestModel.password),]
-                                           reduce:^id{
-            return @YES;
+        RACSignal *username =RACObserve(self, requestModel.username);
+        RACSignal *password =RACObserve(self, requestModel.password);
+        _accountEnable = [RACSignal combineLatest:@[username,password] reduce:^id(NSString *username,NSString *password){
+            return @(username.length >= kMinUserNameLength && password.length >= kMinPasswordLength);
         }];
     }
     return _accountEnable;
@@ -61,8 +57,8 @@
 - (RACSignal *)emailEnable
 {
     if (!_emailEnable) {
-        _emailEnable = [RACObserve(self, requestModel.email) map:^id(id value) {
-            return @NO;
+        _emailEnable = [RACObserve(self, requestModel.email) map:^id(NSString *value) {
+            return @([value validateEmail]);
         }];
     }
     return _emailEnable;
@@ -79,18 +75,18 @@
             NSString *username = self.requestModel.username;
             NSString *password = self.requestModel.password;
             return  [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-                        [BmobUser loginInbackgroundWithAccount:username andPassword:password block:^(BmobUser *user, NSError *error) {
-                             if (error) {
-                                 [subscriber sendError:error];
-                             }else if (user)
-                             {
-                                 [subscriber sendNext:user];
-                                 [subscriber sendCompleted];
-                             }else
-                             {
-                                 [subscriber sendError:[MSWebDataClient defaultError]];
-                             }
-                        }];
+                [BmobUser loginInbackgroundWithAccount:username andPassword:password block:^(BmobUser *user, NSError *error) {
+                    if (error) {
+                        [subscriber sendError:error];
+                    }else if (user)
+                    {
+                        [subscriber sendNext:user];
+                        [subscriber sendCompleted];
+                    }else
+                    {
+                        [subscriber sendError:[MSWebDataClient defaultError]];
+                    }
+                }];
                 return nil;
             }] catch:^RACSignal *(NSError *error) {
                 self.operationError = error;
@@ -163,24 +159,24 @@
             return @YES;
         }] signalBlock:^RACSignal *(id input) {
             @strongify(self);
-           return [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-               [[BmobUser getCurrentUser] updateCurrentUserPasswordWithOldPassword:self.requestModel.password newPassword:self.requestModel.changePassword block:^(BOOL isSuccessful, NSError *error) {
-                   if (error) {
-                       [subscriber sendError:error];
-                   }else if (isSuccessful)
-                   {
-                       [subscriber sendNext:@YES];
-                       [subscriber sendCompleted];
-                   }else
-                   {
-                       [subscriber sendError:[MSWebDataClient defaultError]];
-                   }
-               }];
-               return nil;
-           }] catch:^RACSignal *(NSError *error) {
-               self.operationError = error;
-               return [RACSignal error:error];
-           }];
+            return [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+                [[BmobUser getCurrentUser] updateCurrentUserPasswordWithOldPassword:self.requestModel.password newPassword:self.requestModel.changePassword block:^(BOOL isSuccessful, NSError *error) {
+                    if (error) {
+                        [subscriber sendError:error];
+                    }else if (isSuccessful)
+                    {
+                        [subscriber sendNext:@YES];
+                        [subscriber sendCompleted];
+                    }else
+                    {
+                        [subscriber sendError:[MSWebDataClient defaultError]];
+                    }
+                }];
+                return nil;
+            }] catch:^RACSignal *(NSError *error) {
+                self.operationError = error;
+                return [RACSignal error:error];
+            }];
         }];
     }
     return _changePasswordCommand;
@@ -192,12 +188,12 @@
         @weakify(self);
         _forgetPasswordCommand = [[RACCommand alloc] initWithEnabled:self.emailEnable signalBlock:^RACSignal *(id input) {
             @strongify(self);
-           return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-               [BmobUser requestPasswordResetInBackgroundWithEmail:self.requestModel.email];
-               [subscriber sendNext:@YES];
-               [subscriber sendCompleted];
-               return nil;
-           }];
+            return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+                [BmobUser requestPasswordResetInBackgroundWithEmail:self.requestModel.email];
+                [subscriber sendNext:@YES];
+                [subscriber sendCompleted];
+                return nil;
+            }];
         }];
     }
     return _forgetPasswordCommand;

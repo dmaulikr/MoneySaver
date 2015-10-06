@@ -23,6 +23,9 @@
 FOUNDATION_EXPORT NSString * const kDefaultDatabaseId;
 /** 数据库加密密钥 */
 FOUNDATION_EXPORT NSString * const kDatabaseEncryptKey;
+/** 新加条目Id值 */
+FOUNDATION_EXPORT NSString * const kNewDatabaseIdValue;
+
 
 
 

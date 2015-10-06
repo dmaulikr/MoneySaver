@@ -11,6 +11,18 @@
 @interface NSDateFormatter (DefaultFormatter)
 
 + (instancetype)defaultFormatter;
-+ (instancetype)defaultFormatterWithType:(NSString *)type;
+
+/**
+ *  YYYY-MM-DD
+ *
+ *  @return YYYY-MM-DD
+ */+ (instancetype)commonDateFormatter;
+
+/**
+ *  YYYY-MM-DD hh:mm:ss
+ *
+ *  @return YYYY-MM-DD hh:mm:ss
+ */
++ (instancetype)fullDateFormatter;
 
 @end

@@ -80,9 +80,13 @@
 
 
 + (RACSignal *)callDataOperationInBackground:(id <MTLJSONSerializing,MTLFMDBSerializing>)model
-                                        type:(BmobObjectDataOperationType)type
+                                        type:(MSDataOperationType)type
 {
-    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+    if (model == nil) {
+        return [RACSignal error:[NSError errorWithDomain:kNetDefaultErrorDomain
+                                                    code:0
+                                                userInfo:@{kNetResponeErrorKey:@"数据为空"}]];
+    }    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         NSError *error;
         BmobObject *object = [MSBmobObjectAdapter bmobObjectFromModel:model
                                                                 error:&error];
@@ -102,13 +106,13 @@
                 }
             };
             switch (type) {
-                case BmobObjectDataDelete:
+                case MSDataOperationDelete:
                     [object deleteInBackgroundWithBlock:block];
                     break;
-                case BmobObjectDataInsert:
+                case MSDataOperationInsert:
                     [object saveInBackgroundWithResultBlock:block];
                     break;
-                case BmobObjectDataUpdate:
+                case MSDataOperationUpdate:
                     [object updateInBackgroundWithResultBlock:block];
                     break;
                 default:

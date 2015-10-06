@@ -8,9 +8,10 @@
 
 #import "DefaultConstants.h"
 
-NSString * const kDefaultDatabaseId = @"objectId";
+NSString * const kDefaultDatabaseId  = @"objectId";
+NSString * const kNewDatabaseIdValue = @"New";
 NSString * const kDatabaseEncryptKey = @"TBXarkingDatabaseEncryptKey";
 
-NSString * const kNofityUserLoginKey = @"MoneySaverNofityUserLoginKey";
+NSString * const kNofityUserLoginKey  = @"MoneySaverNofityUserLoginKey";
 NSString * const kNofityUserLogoutKey = @"MoneySaverNofityUserLogoutKey";
 

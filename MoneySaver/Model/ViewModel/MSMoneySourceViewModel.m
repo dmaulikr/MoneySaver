@@ -8,6 +8,26 @@
 
 #import "MSMoneySourceViewModel.h"
 
+@interface MSMoneySourceViewModel ()
+
+@end
+
 @implementation MSMoneySourceViewModel
+
+#pragma mark - Life Cycle
++ (instancetype)sourceWithModel:(MSMoneySourceModel *)model
+{
+    MSMoneySourceViewModel *vm = [MSMoneySourceViewModel new];
+    vm.dataModel = model;
+    return vm;
+}
+
+#pragma mark - Public Method
+- (void)updateMoneySource
+{
+    
+}
+
+
 
 @end

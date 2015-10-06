@@ -7,7 +7,162 @@
 //
 
 #import "MSProjectManagerViewModel.h"
+#import "MSProjectModelTypeHelper.h"
+
+#import "MSSqliteDataBaseClient.h"
+
+#import "NSDateFormatter+DefaultFormatter.h"
+#import "MSSqliteQueryCondition.h"
+
+@interface MSProjectManagerViewModel ()
+
+@property (nonatomic, strong) MSSqliteQueryCondition *queryCondition;
+
+@end
 
 @implementation MSProjectManagerViewModel
 
+#pragma mark - Life Cycle
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self configureSignal];
+    }
+    return self;
+}
+
+#pragma mark - Private Method
+- (void)configureSignal
+{
+    @weakify(self);
+    [[[RACObserve(self, projectArray)
+      filter:^BOOL(id value) {
+          @strongify(self);
+          return (self.autoCreateProjectTypeDict && value != nil);
+    }]deliverOn:[RACScheduler schedulerWithPriority:RACSchedulerPriorityDefault]]
+     subscribeNext:^(id x) {
+         @strongify(self);
+         [self findProjectTypeForArray];
+    }];
+}
+
+
+- (void)findProjectTypeForArray
+{
+    //Type集合
+    NSMutableDictionary *mudict = [NSMutableDictionary new];
+    NSArray *valueForyType = [self.projectArray valueForKeyPath:@"@distinctUnionOfObjects.projectType"];
+    for (NSNumber *type in valueForyType) {
+        //筛选
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"projectType == %@",type];
+        NSArray *result = [self.projectArray filteredArrayUsingPredicate:predicate];
+        
+        //求和
+        NSNumber *sum = [result valueForKeyPath:@"@sum.value.doubleValue"];
+        NSString *typeName = [MSProjectModelTypeHelper projectModelTypeToChinese:type.unsignedIntegerValue];
+        
+        //创建存储模型
+        MSBaseProjectModel *projectModel = [MSBaseProjectModel new];
+        projectModel.projectType = type.unsignedIntegerValue;
+        projectModel.name = typeName;
+        projectModel.value = sum;
+        [mudict setObject:projectModel forKey:typeName];
+    }
+    self.projectTypeDict = mudict;
+}
+
+
+#pragma mark - Getter
+- (MSSqliteQueryCondition *)queryCondition
+{
+    if (!_queryCondition) {
+        _queryCondition = [MSSqliteQueryCondition new];
+    }
+    return _queryCondition;
+}
+
 @end
+
+
+@implementation MSProjectManagerViewModel (SQLQuery)
+
+#pragma mark - Public Method
+//Select by Date
+- (void)selectCurrentMonth
+{
+    NSString *date = [[NSDateFormatter commonDateFormatter] stringFromDate:[NSDate date]];
+    NSArray  *dateComponentArray = [date componentsSeparatedByString:@"-"];
+    [self selectByYear:[dateComponentArray firstObject] month:dateComponentArray[2] day:nil];
+}
+- (void)selectByDate:(NSDate *)date
+{
+    self.queryCondition.likeName  = @"date";
+    self.queryCondition.likeValue = [[[NSDateFormatter commonDateFormatter] stringFromDate:date] stringByAppendingString:@"%"];
+    self.queryCondition.shortName = @"date";
+    self.queryCondition.shortDesc = NO;
+    [self queryWithCondition];
+}
+- (void)selectByYear:(NSString *)year month:(NSString *)month day:(NSString *)day
+{
+    self.queryCondition.likeName  = @"date";
+    self.queryCondition.likeValue = [NSString stringWithFormat:@"%@-%@-%@%%",year?:@"____",month?:@"__",day?:@"__"];
+    self.queryCondition.shortName = @"date";
+    self.queryCondition.shortDesc = NO;
+    [self queryWithCondition];
+}
+
+
+
+
+//Short
+- (void)shortByValue:(BOOL)desc
+{
+    self.queryCondition.shortName = @"value";
+    self.queryCondition.shortDesc = desc;
+    [self queryWithCondition];
+}
+- (void)shortByDate:(BOOL)desc
+{
+    self.queryCondition.shortName = @"date";
+    self.queryCondition.shortDesc = desc;
+    [self queryWithCondition];
+}
+
+
+
+
+//filter
+- (void)filerBySourceId:(NSString *)sourceId
+{
+    self.queryCondition.filterName = @"sourceId";
+    self.queryCondition.filterValue = sourceId;
+    [self queryWithCondition];
+}
+- (void)filerByTransactionType:(MSProjectTransactionType)type
+{
+    self.queryCondition.filterName = @"transactionType";
+    self.queryCondition.filterValue = @(type);
+    [self queryWithCondition];
+}
+
+
+
+#pragma mark - Private Method
+- (void)queryWithCondition
+{
+    @weakify(self);
+    NSString *query = [self.queryCondition createQueryCondition];
+    NIDPRINT(@"%@",query);
+    [[[MSSqliteDataBaseClient shareSqliteDataBaseClient] selectModelsByClass:[MSBaseProjectModel class] tableName:[MSBaseProjectModel FMDBTableName] condistion:query isArray:YES] subscribeNext:^(NSArray *x) {
+        @strongify(self);
+        self.projectArray = x;
+    } error:^(NSError *error) {
+        @strongify(self);
+        self.selectError = error;
+    }];
+}
+
+@end
+

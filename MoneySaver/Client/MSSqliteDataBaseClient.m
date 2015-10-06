@@ -8,8 +8,15 @@
 
 #import "MSSqliteDataBaseClient.h"
 #import "MSEncryptDatabaseQueue.h"
+#import "WebClientConstants.h"
 
 static MSSqliteDataBaseClient *_defaultDataBaseClient;
+
+static NSString *kSqliteCreaterFileName  = @"SqliteCreaterV1.0.0";
+static NSString *kSqliteCleanerFileName  = @"SqliteCleanerV1.0.0";
+static NSString *kSqliteDataBaseFileName = @"MoneySaverV1.0.0.sqlite";
+
+static NSString *kDataBaseErrorDomane  = @"com.TBXark.MoneySaver.DatabaseError";
 
 @interface MSSqliteDataBaseClient ()
 
@@ -19,7 +26,7 @@ static MSSqliteDataBaseClient *_defaultDataBaseClient;
 
 @implementation MSSqliteDataBaseClient
 
-#pragma mark - Init
+#pragma mark - Life Cycle
 
 + (instancetype)shareSqliteDataBaseClient
 {
@@ -35,7 +42,7 @@ static MSSqliteDataBaseClient *_defaultDataBaseClient;
 + (NSString *)dataBasePath
 {
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
-    return [path stringByAppendingString:@"moneysaver.sqlite"];
+    return [path stringByAppendingFormat:@"/%@",kSqliteDataBaseFileName];
 }
 
 - (instancetype)init
@@ -43,121 +50,171 @@ static MSSqliteDataBaseClient *_defaultDataBaseClient;
     self = [super init];
     if (self) {
         _queue = [MSEncryptDatabaseQueue databaseQueueWithPath:[MSSqliteDataBaseClient dataBasePath]];
+        [self createTable];
     }
     return self;
 }
 
 #pragma mark - Table Operation
-- (void)createTable
+- (BOOL)createTable
 {
-    
+    __block BOOL success = NO;
+    [_queue inDatabase:^(FMDatabase *db) {
+        NSError *error;
+        NSString *createrPath = [[NSBundle mainBundle] pathForResource:kSqliteCreaterFileName ofType:@"sql"];
+        NSString *createrSQL  = [NSString stringWithContentsOfFile:createrPath encoding:NSUTF8StringEncoding error:&error];
+        if (error == nil) {
+            success = [db executeQuery:createrSQL];
+        }
+    }];
+    return success;
 }
 
-- (void)dropAllTable
+- (BOOL)dropAllTable
 {
-    
+    return NO;
 }
+
+
 
 #pragma mark - Data Operation
-- (void)insertModel:(id<MTLFMDBSerializing>)model
-      callBackBlock:(void (^)(NSError *error,BOOL success))block
+- (RACSignal *)commonDataoperationWithModel:(id<MTLFMDBSerializing>)model
+                                       type:(MSDataOperationType)type
+{
+    if (model == nil) {
+        return [RACSignal error:[NSError errorWithDomain:kDataBaseErrorDomane
+                                                    code:0
+                                                userInfo:@{kNetResponeErrorKey:@"数据为空"}]];
+    }
+    switch (type) {
+        case MSDataOperationInsert:return [self insertModel:model];
+        case MSDataOperationUpdate:return [self updateModel:model];
+        case MSDataOperationDelete:return [self deleteModel:model];
+        default:
+            return [RACSignal error:[NSError errorWithDomain:kDataBaseErrorDomane
+                                                        code:0
+                                                    userInfo:@{kNetResponeErrorKey:@"暂不支持操作"}]];
+                        break;
+    }
+}
+
+
+- (RACSignal *)insertModel:(id<MTLFMDBSerializing>)model
 {
     NSString *stmt = [MTLFMDBAdapter insertStatementForModel:model];
     NSArray *params = [MTLFMDBAdapter columnValues:model];
-    [_queue inDatabase:^(FMDatabase *db) {
-        BOOL result = NO;
-        if (params && params.count > 0) {
-            result = [db executeUpdate:stmt withArgumentsInArray:params];
-        } else {
-            result = [db executeUpdate:stmt];
-        }
-
-        if (result) {
-            block(nil,YES);
-        } else {
-            block(db.lastError,NO);
-        }
-    }];
+    return [self executeUpdate:stmt withArgumentsInArray:params];
 }
 
-- (void)deleteModel:(id<MTLFMDBSerializing>)model
-      callBackBlock:(void (^)(NSError *error,BOOL success))block
+- (RACSignal *)deleteModel:(id<MTLFMDBSerializing>)model
 
 {
     NSString *stmt = [MTLFMDBAdapter deleteStatementForModel:model];
     NSArray *params = [MTLFMDBAdapter columnValues:model];
-    [_queue inDatabase:^(FMDatabase *db) {
-        BOOL result = NO;
-
-        if (params && params.count > 0) {
-            result = [db executeUpdate:stmt withArgumentsInArray:params];
-        } else {
-            result = [db executeUpdate:stmt];
-        }
-        
-        if (result) {
-            block(nil,YES);
-        } else {
-            block(db.lastError,NO);
-        }
-    }];
+    return [self executeUpdate:stmt withArgumentsInArray:params];
 }
 
-- (void)updateModel:(id<MTLFMDBSerializing>)model
-      callBackBlock:(void (^)(NSError *error,BOOL success))block
+- (RACSignal *)updateModel:(id<MTLFMDBSerializing>)model
 
 {
     NSString *stmt = [MTLFMDBAdapter updateStatementForModel:model];
-    NSArray *params = [MTLFMDBAdapter columnValues:model];
-    [_queue inDatabase:^(FMDatabase *db) {
-        BOOL result = NO;
+    NSArray  *params = [MTLFMDBAdapter columnValues:model];
+    return [self executeUpdate:stmt withArgumentsInArray:params];
+}
 
-        if (params && params.count > 0) {
-            result = [db executeUpdate:stmt withArgumentsInArray:params];
+
+- (RACSignal *)executeUpdate:(NSString *)stmt withArgumentsInArray:(NSArray *)params
+{
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [self.queue inDatabase:^(FMDatabase *db) {
+            BOOL result = NO;
+            if (params && params.count > 0) {
+                result = [db executeUpdate:stmt withArgumentsInArray:params];
+            } else {
+                result = [db executeUpdate:stmt];
+            }
+            
+            if (result) {
+                [subscriber sendNext:@YES];
+                [subscriber sendCompleted];
+            } else {
+                [subscriber sendError:db.lastError];
+            }
+        }];
+        return nil;
+    }];
+}
+
+
+- (RACSignal *)selectModelsByClass:(Class)modelClass
+                         tableName:(NSString *)name
+                        condistion:(NSString *)condistion
+                           isArray:(BOOL)isArray
+{
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        NSString *stmt;
+        NSParameterAssert(name != nil);
+        if (condistion) {
+            stmt = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE %@;",name,condistion];
         } else {
-            result = [db executeUpdate:stmt];
+            stmt = [NSString stringWithFormat:@"SELECT * FROM %@;",name];
         }
         
-        if (result) {
-            block(nil,YES);
-        } else {
-            block(db.lastError,NO);
-        }
+        [self.queue inDatabase:^(FMDatabase *db) {
+            FMResultSet *resultSet = [db executeQuery:stmt];
+            NSError *error = nil;
+            id result;
+            if (isArray) {
+                if ([resultSet next]) {
+                    result = [MTLFMDBAdapter modelOfClass:modelClass fromFMResultSet:resultSet error:&error];
+                    
+                }
+            } else {
+                NSMutableArray *muArray = [NSMutableArray new];
+                while ([resultSet next]) {
+                    result = [MTLFMDBAdapter modelOfClass:modelClass fromFMResultSet:resultSet error:&error];
+                    [muArray addObject:result];
+                }
+                result = muArray;
+            }
+            if (result && error == nil) {
+                [subscriber sendNext:result];
+                [subscriber sendCompleted];
+            }else
+            {
+                [subscriber sendError:error];
+            }
+            
+        }];
+        return nil;
     }];
 }
 
-- (void)selectModelsByClass:(Class)modelClass
-                  tableName:(NSString *)name
-                 condistion:(NSString *)condistion
-                    isArray:(BOOL)isArray
-              callBackBlock:(void (^)(id models,BOOL isArray))block
+- (RACSignal *)deleteAllDataFromDataBase
 {
-    NSString *stmt;
-    NSParameterAssert(name != nil);
-    if (condistion) {
-        stmt = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE %@;",name,condistion];
-    } else {
-        stmt = [NSString stringWithFormat:@"SELECT * FROM %@;",name];
-    }
-    
-    [_queue inDatabase:^(FMDatabase *db) {
-        FMResultSet *resultSet = [db executeQuery:stmt];
-        NSError *error;
-        if (isArray) {
-            if ([resultSet next]) {
-                id result = [MTLFMDBAdapter modelOfClass:modelClass fromFMResultSet:resultSet error:&error];
-                block(result,NO);
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [self.queue inDatabase:^(FMDatabase *db) {
+            NSError *error;
+            NSString *createrPath = [[NSBundle mainBundle] pathForResource:kSqliteCleanerFileName ofType:@"sql"];
+            NSString *createrSQL  = [NSString stringWithContentsOfFile:createrPath encoding:NSUTF8StringEncoding error:&error];
+            BOOL success = NO;
+            if (error == nil) {
+                success = [db executeQuery:createrSQL];
             }
-        } else {
-            NSMutableArray *muArray = [NSMutableArray new];
-            while ([resultSet next]) {
-                id result = [MTLFMDBAdapter modelOfClass:modelClass fromFMResultSet:resultSet error:&error];
-                [muArray addObject:result];
+            
+            if (error || ! success) {
+                [subscriber sendError:error];
+            }else
+            {
+                [subscriber sendNext:@YES];
+                [subscriber sendCompleted];
             }
-            block(muArray,YES);
-        }
+            
+        }];
+        return nil;
     }];
 }
+
 
 
 @end

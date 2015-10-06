@@ -29,8 +29,5 @@
 
 @property (nonatomic, copy) NSNumber *monthLimit;/**< 每月限额 */
 @property (nonatomic, copy) NSURL    *userImage;/**< 头像 */
-@property (nonatomic, copy) NSURL    *backgroundImage;/**< 背景图 */
-
-
 
 @end

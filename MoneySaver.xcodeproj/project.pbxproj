@@ -158,7 +158,6 @@
 		6A4EF2421BC5093500679453 /* MSGlobalPropertyContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGlobalPropertyContainer.m; sourceTree = "<group>"; };
 		6A4EF2441BC5096E00679453 /* MSTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTestViewController.h; sourceTree = "<group>"; };
 		6A4EF2451BC5096F00679453 /* MSTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTestViewController.m; sourceTree = "<group>"; };
-		6A4EF2471BC50DF700679453 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6A550C0C1BC3A5E200AA01A5 /* MSDataOperationType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDataOperationType.h; sourceTree = "<group>"; };
 		6A550C0D1BC3B12900AA01A5 /* NSDictionary+DeleteNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DeleteNull.h"; sourceTree = "<group>"; };
 		6A550C0E1BC3B12900AA01A5 /* NSDictionary+DeleteNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DeleteNull.m"; sourceTree = "<group>"; };
@@ -529,7 +528,6 @@
 		6A9095AA1BAF92D000672A05 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6A4EF2471BC50DF700679453 /* README.md */,
 				6A8404411BB0F67100A89446 /* MSPCH.pch */,
 				6A9095AD1BAF92D000672A05 /* MSAppDelegate.h */,
 				6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */,

@@ -46,12 +46,6 @@
 {
     [self.view addSubview:self.projectList];
 }
-- (void)layoutViewController
-{
-}
-- (void)configureSignal
-{
-}
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -77,6 +71,7 @@
 {
     if (!_projectList) {
         _projectList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _projectList.height -= NORMAL_STATUS_AND_NAV_BAR_HEIGHT;
         [_projectList registerClass:[MSProjectListTableViewCell class] forCellReuseIdentifier:kMSProjectListTableViewCellIden];
         _projectList.dataSource = self;
         _projectList.delegate   = self;

@@ -27,6 +27,8 @@
 		6A3A524C1BB51FE900BA99A5 /* UIDevice+XDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A524B1BB51FE900BA99A5 /* UIDevice+XDevice.m */; settings = {ASSET_TAGS = (); }; };
 		6A3A524F1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A524E1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m */; settings = {ASSET_TAGS = (); }; };
 		6A3A52521BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A52511BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.m */; settings = {ASSET_TAGS = (); }; };
+		6A4EF2431BC5093500679453 /* MSGlobalPropertyContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4EF2421BC5093500679453 /* MSGlobalPropertyContainer.m */; settings = {ASSET_TAGS = (); }; };
+		6A4EF2461BC5096F00679453 /* MSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4EF2451BC5096F00679453 /* MSTestViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6A550C0F1BC3B12900AA01A5 /* NSDictionary+DeleteNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A550C0E1BC3B12900AA01A5 /* NSDictionary+DeleteNull.m */; settings = {ASSET_TAGS = (); }; };
 		6A550C121BC3C2EB00AA01A5 /* MSWebDateSyncClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A550C111BC3C2EB00AA01A5 /* MSWebDateSyncClient.m */; settings = {ASSET_TAGS = (); }; };
 		6A68B1CB1BAFB4B3009BA468 /* MSProjectManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CA1BAFB4B3009BA468 /* MSProjectManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
@@ -44,7 +46,6 @@
 		6A8404511BB24C3000A89446 /* MSSubmitTransitionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404501BB24C3000A89446 /* MSSubmitTransitionButton.m */; settings = {ASSET_TAGS = (); }; };
 		6A8404541BB24DCE00A89446 /* MSCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404531BB24DCE00A89446 /* MSCircleLayer.m */; settings = {ASSET_TAGS = (); }; };
 		6A8404571BB2523D00A89446 /* NSTimer+MSSubmitTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404561BB2523D00A89446 /* NSTimer+MSSubmitTransition.m */; settings = {ASSET_TAGS = (); }; };
-		6A84045A1BB25DDE00A89446 /* MSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404591BB25DDE00A89446 /* MSTestViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6A84045D1BB27A5300A89446 /* MSFadeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84045C1BB27A5300A89446 /* MSFadeTransition.m */; settings = {ASSET_TAGS = (); }; };
 		6A84045E1BB282E800A89446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A9095BC1BAF933600672A05 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		6A8404641BB2860200A89446 /* MSBaseClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404631BB2860200A89446 /* MSBaseClassViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -153,6 +154,11 @@
 		6A3A524E1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACChannelTerminal+TwoWayBinding.m"; sourceTree = "<group>"; };
 		6A3A52501BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+DefaultFormatter.h"; sourceTree = "<group>"; };
 		6A3A52511BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+DefaultFormatter.m"; sourceTree = "<group>"; };
+		6A4EF2411BC5093500679453 /* MSGlobalPropertyContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSGlobalPropertyContainer.h; sourceTree = "<group>"; };
+		6A4EF2421BC5093500679453 /* MSGlobalPropertyContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGlobalPropertyContainer.m; sourceTree = "<group>"; };
+		6A4EF2441BC5096E00679453 /* MSTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTestViewController.h; sourceTree = "<group>"; };
+		6A4EF2451BC5096F00679453 /* MSTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTestViewController.m; sourceTree = "<group>"; };
+		6A4EF2471BC50DF700679453 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6A550C0C1BC3A5E200AA01A5 /* MSDataOperationType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDataOperationType.h; sourceTree = "<group>"; };
 		6A550C0D1BC3B12900AA01A5 /* NSDictionary+DeleteNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DeleteNull.h"; sourceTree = "<group>"; };
 		6A550C0E1BC3B12900AA01A5 /* NSDictionary+DeleteNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DeleteNull.m"; sourceTree = "<group>"; };
@@ -186,8 +192,6 @@
 		6A8404531BB24DCE00A89446 /* MSCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCircleLayer.m; sourceTree = "<group>"; };
 		6A8404551BB2523D00A89446 /* NSTimer+MSSubmitTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+MSSubmitTransition.h"; sourceTree = "<group>"; };
 		6A8404561BB2523D00A89446 /* NSTimer+MSSubmitTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+MSSubmitTransition.m"; sourceTree = "<group>"; };
-		6A8404581BB25DDE00A89446 /* MSTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTestViewController.h; sourceTree = "<group>"; };
-		6A8404591BB25DDE00A89446 /* MSTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTestViewController.m; sourceTree = "<group>"; };
 		6A84045B1BB27A5300A89446 /* MSFadeTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFadeTransition.h; sourceTree = "<group>"; };
 		6A84045C1BB27A5300A89446 /* MSFadeTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSFadeTransition.m; sourceTree = "<group>"; };
 		6A8404621BB2860200A89446 /* MSBaseClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBaseClassViewController.h; sourceTree = "<group>"; };
@@ -226,8 +230,6 @@
 		6AD229BA1BBFFC52004DC5FC /* MSProjectValueHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectValueHeaderView.m; sourceTree = "<group>"; };
 		6AD7BD0A1BC112FC0098E1F0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AD7BD0C1BC118FD0098E1F0 /* MSBindViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBindViewModelProtocol.h; sourceTree = "<group>"; };
-		6AD7BD101BC11B3C0098E1F0 /* MSGlobalPropertyContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSGlobalPropertyContainer.h; sourceTree = "<group>"; };
-		6AD7BD111BC11B3C0098E1F0 /* MSGlobalPropertyContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSGlobalPropertyContainer.m; sourceTree = "<group>"; };
 		6AD7BD171BC155280098E1F0 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		6AD7BD1D1BC223490098E1F0 /* MSProjectReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectReportViewController.h; sourceTree = "<group>"; };
 		6AD7BD1E1BC223490098E1F0 /* MSProjectReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectReportViewController.m; sourceTree = "<group>"; };
@@ -348,6 +350,15 @@
 			path = XNumberKeyBoard;
 			sourceTree = "<group>";
 		};
+		6A4EF2401BC5093500679453 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				6A4EF2411BC5093500679453 /* MSGlobalPropertyContainer.h */,
+				6A4EF2421BC5093500679453 /* MSGlobalPropertyContainer.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		6A68B1D51BAFB664009BA468 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +418,8 @@
 				6A8404631BB2860200A89446 /* MSBaseClassViewController.m */,
 				6A37398A1BC4C96600DFE9CD /* MSMainNavViewController.h */,
 				6A37398B1BC4C96600DFE9CD /* MSMainNavViewController.m */,
+				6A4EF2441BC5096E00679453 /* MSTestViewController.h */,
+				6A4EF2451BC5096F00679453 /* MSTestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -516,8 +529,7 @@
 		6A9095AA1BAF92D000672A05 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6A8404581BB25DDE00A89446 /* MSTestViewController.h */,
-				6A8404591BB25DDE00A89446 /* MSTestViewController.m */,
+				6A4EF2471BC50DF700679453 /* README.md */,
 				6A8404411BB0F67100A89446 /* MSPCH.pch */,
 				6A9095AD1BAF92D000672A05 /* MSAppDelegate.h */,
 				6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */,
@@ -568,6 +580,7 @@
 		6A9095C11BAF96C000672A05 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				6A4EF2401BC5093500679453 /* Class */,
 				6A92B3861BB3F55A001C7A87 /* Category */,
 				6AF84D871BAFD6C300B061A5 /* DatabaseEncrypt */,
 				6A0A539C1BAFB848004AD688 /* Protocol */,
@@ -668,8 +681,6 @@
 				6A0D52841BBE60E500D651B7 /* MSProjectModelTypeHelper.m */,
 				6A0D52861BBE616300D651B7 /* MSProjectTransactionTypeHelper.h */,
 				6A0D52871BBE616300D651B7 /* MSProjectTransactionTypeHelper.m */,
-				6AD7BD101BC11B3C0098E1F0 /* MSGlobalPropertyContainer.h */,
-				6AD7BD111BC11B3C0098E1F0 /* MSGlobalPropertyContainer.m */,
 				6A550C101BC3C2EB00AA01A5 /* MSWebDateSyncClient.h */,
 				6A550C111BC3C2EB00AA01A5 /* MSWebDateSyncClient.m */,
 			);
@@ -835,13 +846,14 @@
 			files = (
 				6A0D528F1BBE891F00D651B7 /* MSProjectTypeListDataSource.m in Sources */,
 				6A0D52851BBE60E500D651B7 /* MSProjectModelTypeHelper.m in Sources */,
-				6A84045A1BB25DDE00A89446 /* MSTestViewController.m in Sources */,
 				6AAF99321BBEC038008D0805 /* MSBarButtonItem.m in Sources */,
 				6A550C0F1BC3B12900AA01A5 /* NSDictionary+DeleteNull.m in Sources */,
+				6A4EF2461BC5096F00679453 /* MSTestViewController.m in Sources */,
 				6A692EA91BB6404100AAA277 /* MSBmobDataBojectModel.m in Sources */,
 				6A3A52491BB51FDF00BA99A5 /* UIView+Frame.m in Sources */,
 				6A84046C1BB2898A00A89446 /* MSLoginMainViewController.m in Sources */,
 				6A29B4141BC3D759009B1B65 /* NSString+XValueCheck.m in Sources */,
+				6A4EF2431BC5093500679453 /* MSGlobalPropertyContainer.m in Sources */,
 				6A0D527F1BBE5E0A00D651B7 /* MSProjectTypeCollectionViewCell.m in Sources */,
 				6AE69EE41BBE914500EB4CAD /* UILabel+MoneySaver.m in Sources */,
 				6A8404511BB24C3000A89446 /* MSSubmitTransitionButton.m in Sources */,

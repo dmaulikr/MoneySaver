@@ -20,6 +20,7 @@
 		6A29B40B1BC3CC10009B1B65 /* NIDebuggingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A29B4091BC3CC10009B1B65 /* NIDebuggingTools.m */; settings = {ASSET_TAGS = (); }; };
 		6A29B40E1BC3CC8D009B1B65 /* MSSqliteQueryCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A29B40D1BC3CC8D009B1B65 /* MSSqliteQueryCondition.m */; settings = {ASSET_TAGS = (); }; };
 		6A29B4141BC3D759009B1B65 /* NSString+XValueCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A29B4131BC3D759009B1B65 /* NSString+XValueCheck.m */; settings = {ASSET_TAGS = (); }; };
+		6A37398C1BC4C96600DFE9CD /* MSMainNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A37398B1BC4C96600DFE9CD /* MSMainNavViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6A3A52401BB4FF6400BA99A5 /* MSNumberKeyBord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A523F1BB4FF6400BA99A5 /* MSNumberKeyBord.m */; settings = {ASSET_TAGS = (); }; };
 		6A3A52451BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A52441BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m */; settings = {ASSET_TAGS = (); }; };
 		6A3A52491BB51FDF00BA99A5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A52481BB51FDF00BA99A5 /* UIView+Frame.m */; settings = {ASSET_TAGS = (); }; };
@@ -67,6 +68,7 @@
 		6AD7BD1F1BC223490098E1F0 /* MSProjectReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD7BD1E1BC223490098E1F0 /* MSProjectReportViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6AD7BD4D1BC2CA3F0098E1F0 /* MSSqliteDataBaseClient+SQLQueryString.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD7BD4C1BC2CA3F0098E1F0 /* MSSqliteDataBaseClient+SQLQueryString.m */; settings = {ASSET_TAGS = (); }; };
 		6AD7BD4F1BC2CAED0098E1F0 /* SqliteCleanerV1.0.0.sql in Resources */ = {isa = PBXBuildFile; fileRef = 6AD7BD4E1BC2CAED0098E1F0 /* SqliteCleanerV1.0.0.sql */; settings = {ASSET_TAGS = (); }; };
+		6ADF5B251BC4CC3D00B41A7F /* MSChartDataItemAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF5B241BC4CC3D00B41A7F /* MSChartDataItemAdapter.m */; settings = {ASSET_TAGS = (); }; };
 		6AE69EE41BBE914500EB4CAD /* UILabel+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69EE31BBE914500EB4CAD /* UILabel+MoneySaver.m */; settings = {ASSET_TAGS = (); }; };
 		6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D891BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
 		6AF84D8D1BAFD71000B061A5 /* MSEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8C1BAFD71000B061A5 /* MSEncryptDatabase.m */; settings = {ASSET_TAGS = (); }; };
@@ -136,6 +138,8 @@
 		6A29B40D1BC3CC8D009B1B65 /* MSSqliteQueryCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSqliteQueryCondition.m; sourceTree = "<group>"; };
 		6A29B4121BC3D759009B1B65 /* NSString+XValueCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XValueCheck.h"; sourceTree = "<group>"; };
 		6A29B4131BC3D759009B1B65 /* NSString+XValueCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XValueCheck.m"; sourceTree = "<group>"; };
+		6A37398A1BC4C96600DFE9CD /* MSMainNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMainNavViewController.h; sourceTree = "<group>"; };
+		6A37398B1BC4C96600DFE9CD /* MSMainNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMainNavViewController.m; sourceTree = "<group>"; };
 		6A3A523E1BB4FF6400BA99A5 /* MSNumberKeyBord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNumberKeyBord.h; sourceTree = "<group>"; };
 		6A3A523F1BB4FF6400BA99A5 /* MSNumberKeyBord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNumberKeyBord.m; sourceTree = "<group>"; };
 		6A3A52431BB4FFBC00BA99A5 /* MSNumberKeyBordButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNumberKeyBordButton.h; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 		6AD7BD4B1BC2CA3F0098E1F0 /* MSSqliteDataBaseClient+SQLQueryString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSSqliteDataBaseClient+SQLQueryString.h"; sourceTree = "<group>"; };
 		6AD7BD4C1BC2CA3F0098E1F0 /* MSSqliteDataBaseClient+SQLQueryString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MSSqliteDataBaseClient+SQLQueryString.m"; sourceTree = "<group>"; };
 		6AD7BD4E1BC2CAED0098E1F0 /* SqliteCleanerV1.0.0.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SqliteCleanerV1.0.0.sql; sourceTree = "<group>"; };
+		6ADF5B231BC4CC3D00B41A7F /* MSChartDataItemAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSChartDataItemAdapter.h; sourceTree = "<group>"; };
+		6ADF5B241BC4CC3D00B41A7F /* MSChartDataItemAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSChartDataItemAdapter.m; sourceTree = "<group>"; };
 		6AE69EE21BBE914500EB4CAD /* UILabel+MoneySaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+MoneySaver.h"; sourceTree = "<group>"; };
 		6AE69EE31BBE914500EB4CAD /* UILabel+MoneySaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MoneySaver.m"; sourceTree = "<group>"; };
 		6AF84D881BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEncryptDatabaseQueue.h; sourceTree = "<group>"; };
@@ -399,6 +405,8 @@
 				6A8404611BB285E500A89446 /* LoginRegister */,
 				6A8404621BB2860200A89446 /* MSBaseClassViewController.h */,
 				6A8404631BB2860200A89446 /* MSBaseClassViewController.m */,
+				6A37398A1BC4C96600DFE9CD /* MSMainNavViewController.h */,
+				6A37398B1BC4C96600DFE9CD /* MSMainNavViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -654,6 +662,8 @@
 			children = (
 				6AF84D9C1BB0053000B061A5 /* MSBmobObjectAdapter.h */,
 				6AF84D9D1BB0053000B061A5 /* MSBmobObjectAdapter.m */,
+				6ADF5B231BC4CC3D00B41A7F /* MSChartDataItemAdapter.h */,
+				6ADF5B241BC4CC3D00B41A7F /* MSChartDataItemAdapter.m */,
 				6A0D52831BBE60E500D651B7 /* MSProjectModelTypeHelper.h */,
 				6A0D52841BBE60E500D651B7 /* MSProjectModelTypeHelper.m */,
 				6A0D52861BBE616300D651B7 /* MSProjectTransactionTypeHelper.h */,
@@ -867,6 +877,8 @@
 				6A894CCB1BBB8290009A7120 /* MSProjectListTableViewCell.m in Sources */,
 				6AF84D8D1BAFD71000B061A5 /* MSEncryptDatabase.m in Sources */,
 				6AD7BD4D1BC2CA3F0098E1F0 /* MSSqliteDataBaseClient+SQLQueryString.m in Sources */,
+				6A37398C1BC4C96600DFE9CD /* MSMainNavViewController.m in Sources */,
+				6ADF5B251BC4CC3D00B41A7F /* MSChartDataItemAdapter.m in Sources */,
 				6A68B1D11BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m in Sources */,
 				6A92B3891BB3F568001C7A87 /* UIColor+MoneySaver.m in Sources */,
 				6A85D99E1BAFB14C0049D988 /* MSBaseProjectModel.m in Sources */,

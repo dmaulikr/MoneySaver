@@ -12,8 +12,8 @@
 @interface MSProjectManagerViewModel : MSBaseClassViewModel
 
 
-@property (nonatomic, strong) NSArray <__kindof MSBaseProjectModel*> *projectArray;
-@property (nonatomic, strong) NSDictionary <NSString *,MSBaseProjectModel *> *projectTypeDict;
+@property (nonatomic, strong) NSArray <MSBaseProjectModel*> *projectArray;
+@property (nonatomic, strong) NSArray <MSBaseProjectModel *> *projectTypeArray;
 
 @property (nonatomic, assign) BOOL autoCreateProjectTypeDict;
 @property (nonatomic, strong) NSError *selectError;

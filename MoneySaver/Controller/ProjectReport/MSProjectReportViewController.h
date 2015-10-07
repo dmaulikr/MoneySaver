@@ -7,7 +7,11 @@
 //
 
 #import "MSBaseClassViewController.h"
+#import "MSProjectManagerViewModel.h"
 
 @interface MSProjectReportViewController : MSBaseClassViewController
+
+- (instancetype)initWithViewModel:(MSProjectManagerViewModel *)viewmodel;
+
 
 @end

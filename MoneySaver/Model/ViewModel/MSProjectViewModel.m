@@ -67,9 +67,16 @@
 - (RACSignal *)updateData
 {
     @weakify(self);
-    self.newData = ISNEWDATA(self.dataModel.projectId);
+//    self.newData = ISNEWDATA(self.dataModel.projectId);
     RACSignal *localSignal = [self updateToDatabaseWithModel:self.dataModel new:self.newData];
     RACSignal *webSignal   = [self updateToWebDatabaseWithModel:self.dataModel new:self.newData];
+    
+    //更新ObjID
+    [webSignal  doNext:^(BmobObject *x) {
+        @strongify(self);
+        self.dataModel.projectId = x.objectId;
+    }];
+    
     return [[webSignal concat:localSignal] doCompleted:^{
         @strongify(self);
         [self updateMoneySource];
@@ -81,8 +88,11 @@
 {
     if (self.cacheSourceId) {
         [[MSMoneySourceManagerViewModel shareManager] updateMoneySourceWithSourceId:self.cacheSourceId];
+        self.cacheSourceId = nil;
     }
-    [[MSMoneySourceManagerViewModel shareManager] updateMoneySourceWithSourceId:self.dataModel.sourceId];
+    if (![self.cacheSourceId isEqual:self.dataModel.projectId]) {
+        [[MSMoneySourceManagerViewModel shareManager] updateMoneySourceWithSourceId:self.dataModel.sourceId];
+    }
 }
 
 

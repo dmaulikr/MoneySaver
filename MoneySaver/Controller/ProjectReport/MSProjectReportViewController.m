@@ -8,7 +8,6 @@
 
 #import "MSProjectReportViewController.h"
 
-#import "MSProjectManagerViewModel.h"
 #import "MSProjectListHeaderView.h"
 #import "MSProjectListTableViewCell.h"
 
@@ -46,12 +45,10 @@
 - (void)configureViewController
 {
     [self.view addSubview:self.projectList];
-    self.headerView.viewModel = self.viewModel;
 }
 - (void)layoutViewController
 {
 }
-
 - (void)configureSignal
 {
 }
@@ -59,18 +56,20 @@
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return self.viewModel.projectArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MSProjectListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kMSProjectListTableViewCellIden forIndexPath:indexPath];
+    cell.dataModel = [self.viewModel.projectArray objectAtIndex:indexPath.row];
     return cell;
 }
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //TODO: 跳转至详情
 }
 
 #pragma mark - Getter
@@ -91,6 +90,7 @@
 {
     if (!_headerView) {
         _headerView = [MSProjectListHeaderView projectListHeaderView];
+        _headerView.viewModel = self.viewModel;
     }
     return _headerView;
 }

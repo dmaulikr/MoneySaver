@@ -11,6 +11,7 @@
 
 @interface MSWebDateSyncClient : NSObject
 
-+ (void)sync;
+@property (nonatomic, copy) NSString *syncState;
+- (void)sync;
 
 @end

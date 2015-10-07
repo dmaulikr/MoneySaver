@@ -8,12 +8,11 @@ target 'MoneySaver' do
    pod 'ReactiveCocoa'
    pod 'Masonry'
    pod 'SDWebImage'
-   pod 'Routable', '~> 0.2.0'
-   pod 'FMDB/SQLCipher'
+   pod 'Routable', '~> 0.2.0' #Router
+   pod 'FMDB/SQLCipher' #SQL加密
    pod 'BmobSDK'
-   pod 'JSPatch'
+   pod 'JSPatch' #JS热修复
    pod 'VENTouchLock', '~> 1.0' #密码输入
-   #   pod 'FMDB', '~> 2.5'
 
 # UI
    pod 'SVProgressHUD' #HUD
@@ -25,7 +24,6 @@ target 'MoneySaver' do
    pod 'JTCalendar', '~> 2.0' #日历
    pod 'PNChart' #图表
    pod 'MMPopupView', :head #Popup
-
 
 # Helper
    pod 'IQKeyboardManager', '~> 3.2.4' 

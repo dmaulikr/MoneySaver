@@ -28,6 +28,7 @@
 {
     self = [super init];
     if (self) {
+        _autoCreateProjectTypeDict = YES;
         [self configureSignal];
     }
     return self;
@@ -52,7 +53,7 @@
 - (void)findProjectTypeForArray
 {
     //Type集合
-    NSMutableDictionary *mudict = [NSMutableDictionary new];
+    NSMutableArray *muArry = [NSMutableArray new];
     NSArray *valueForyType = [self.projectArray valueForKeyPath:@"@distinctUnionOfObjects.projectType"];
     for (NSNumber *type in valueForyType) {
         //筛选
@@ -68,9 +69,9 @@
         projectModel.projectType = type.unsignedIntegerValue;
         projectModel.name = typeName;
         projectModel.value = sum;
-        [mudict setObject:projectModel forKey:typeName];
+        [muArry addObject:projectModel];
     }
-    self.projectTypeDict = mudict;
+    self.projectTypeArray = muArry;
 }
 
 
@@ -112,7 +113,6 @@
     self.queryCondition.shortDesc = NO;
     [self queryWithCondition];
 }
-
 
 
 

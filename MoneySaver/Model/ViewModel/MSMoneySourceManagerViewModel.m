@@ -8,8 +8,6 @@
 
 #import "MSMoneySourceManagerViewModel.h"
 
-
-
 @interface MSMoneySourceManagerViewModel ()
 
 

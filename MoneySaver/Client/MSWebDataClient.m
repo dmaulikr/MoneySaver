@@ -86,7 +86,8 @@
         return [RACSignal error:[NSError errorWithDomain:kNetDefaultErrorDomain
                                                     code:0
                                                 userInfo:@{kNetResponeErrorKey:@"数据为空"}]];
-    }    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+    }
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         NSError *error;
         BmobObject *object = [MSBmobObjectAdapter bmobObjectFromModel:model
                                                                 error:&error];
@@ -101,7 +102,7 @@
                         [subscriber sendError:[MSWebDataClient defaultError]];
                     }
                 } else {
-                    [subscriber sendNext:@(isSuccessful)];
+                    [subscriber sendNext:object];
                     [subscriber sendCompleted];
                 }
             };

@@ -1,19 +1,21 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '6.0'
+
+platform :ios, '8.0'
 
 target 'MoneySaver' do
 
 # Framework
    pod 'Mantle'
-   pod 'ReactiveCocoa'
+   pod 'ReactiveCocoa', '~>2.5'
    pod 'Masonry'
    pod 'SDWebImage'
    pod 'Routable', '~> 0.2.0' #Router
-   pod 'LKDBHelper', :head #ORM 助手
-   pod 'FMDB/SQLCipher' #SQL加密
    pod 'BmobSDK'
    pod 'JSPatch' #JS热修复
    pod 'VENTouchLock', '~> 1.0' #密码输入
+   pod 'FMDB/SQLCipher',:head
+   pod 'LKDBHelper',:head
+
 
 # UI
    pod 'SVProgressHUD' #HUD
@@ -29,13 +31,14 @@ target 'MoneySaver' do
 # Helper
    pod 'IQKeyboardManager', '~> 3.2.4' 
    pod 'ChameleonFramework'
-   #   pod 'MTLFMDBAdapter'
 
 # Category & Extensions
    pod 'FDFullscreenPopGesture', '1.1'
 
 # Other
    pod 'Harpy'  #版本更新
+
+
 
 end
 

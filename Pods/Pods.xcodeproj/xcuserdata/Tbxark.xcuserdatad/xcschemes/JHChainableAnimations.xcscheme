@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7BDFBED6A744C1D02AFA06D7"
+               BlueprintIdentifier = "A585C75EF8FC485D98BC00F5"
                BuildableName = "libJHChainableAnimations.a"
                BlueprintName = "JHChainableAnimations"
                ReferencedContainer = "container:Pods.xcodeproj">

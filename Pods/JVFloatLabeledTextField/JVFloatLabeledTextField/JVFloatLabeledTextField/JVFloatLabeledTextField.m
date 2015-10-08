@@ -74,20 +74,6 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
     _isFloatingLabelFontDefault = YES;
 }
 
-
-- (void)drawRect:(CGRect)rect
-{
-    CGContextRef  contex = UIGraphicsGetCurrentContext();
-    CGPoint star = CGPointMake(0, CGRectGetHeight(rect));
-    CGPoint end  = CGPointMake(CGRectGetWidth(rect), CGRectGetHeight(rect));
-    CGPoint points[] = {star,end};
-    CGContextAddLines(contex, points, 2);
-    [[UIColor colorWithWhite:0.8 alpha:1] setStroke];
-    CGContextSetLineCap(contex, kCGLineCapRound);
-    CGContextSetLineWidth(contex, 2);
-    CGContextStrokePath(contex);
-}
-
 #pragma mark -
 
 - (UIFont *)defaultFloatingLabelFont

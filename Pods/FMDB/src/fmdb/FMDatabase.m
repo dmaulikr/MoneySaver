@@ -151,11 +151,14 @@
 
 #if SQLITE_VERSION_NUMBER >= 3005000
 - (BOOL)openWithFlags:(int)flags {
+    return [self openWithFlags:flags vfs:nil];
+}
+- (BOOL)openWithFlags:(int)flags vfs:(NSString *)vfsName; {
     if (_db) {
         return YES;
     }
 
-    int err = sqlite3_open_v2([self sqlitePath], &_db, flags, NULL /* Name of VFS module to use */);
+    int err = sqlite3_open_v2([self sqlitePath], &_db, flags, [vfsName UTF8String]);
     if(err != SQLITE_OK) {
         NSLog(@"error opening!: %d", err);
         return NO;
@@ -231,7 +234,7 @@ static int FMDBDatabaseBusyHandler(void *f, int count) {
     NSTimeInterval delta = [NSDate timeIntervalSinceReferenceDate] - (self->_startBusyRetryTime);
     
     if (delta < [self maxBusyRetryTimeInterval]) {
-        int requestedSleepInMillseconds = arc4random_uniform(50) + 50;
+        int requestedSleepInMillseconds = (int) arc4random_uniform(50) + 50;
         int actualSleepInMilliseconds = sqlite3_sleep(requestedSleepInMillseconds);
         if (actualSleepInMilliseconds != requestedSleepInMillseconds) {
             NSLog(@"WARNING: Requested sleep of %i milliseconds, but SQLite returned %i. Maybe SQLite wasn't built with HAVE_USLEEP=1?", requestedSleepInMillseconds, actualSleepInMilliseconds);
@@ -1312,7 +1315,9 @@ static NSString *FMDBEscapeSavePointName(NSString *savepointName) {
         return err;
     }
     
-    block(&shouldRollback);
+    if (block) {
+        block(&shouldRollback);
+    }
     
     if (shouldRollback) {
         // We need to rollback and release this savepoint to remove it
@@ -1353,7 +1358,9 @@ void FMDBBlockSQLiteCallBackFunction(sqlite3_context *context, int argc, sqlite3
 #else
     void (^block)(sqlite3_context *context, int argc, sqlite3_value **argv) = (__bridge id)sqlite3_user_data(context);
 #endif
-    block(context, argc, argv);
+    if (block) {
+        block(context, argc, argv);
+    }
 }
 
 

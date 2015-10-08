@@ -5,23 +5,31 @@
 ### About
 **Harpy** checks a user's currently installed version of your iOS app against the version that is currently available in the App Store. If a new version is available, an alert can be presented to the user informing them of the newer version, and giving them the option to update the application.
 
-This library is built to work with the [Semantic Versioning](http://semver.org/) system.
+Harpy is built to work with the [http://www.semver.org](Semantic Versioning) system.
+- Semantic Versioning is a three number versioning system (e.g., 1.0.0)
+- Harpy also supports two-number versioning (e.g., 1.0)
+- Harpy also supports four-number versioning (e.g., 1.0.0.0)
 
 ### Swift Support
 Harpy has been ported to Swift by myself and [**Aaron Brager**](http://twitter.com/GetAaron). We've called the new project [**Siren**](https://github.com/ArtSabintsev/Siren) and it can be found [here](https://github.com/ArtSabintsev/Siren).
 
 ### Changelog
-#### 3.3.10
-- Added Latvian and Estonian localization (thanks to  [Tanel Suurhans](https://github.com/tanelsuurhans) and [Jaroslav_](https://github.com/jaroslavas))
+
+### 3.4.2
+- Added support for two-number and four-number versioning systems
+
+#### 3.4.0 and 3.4.1
+- Added new delegate method to present update message via custom UI.
+- Added Sample Project
+- Dropped iOS 7 Support
+- Cleaned up codebase
+- Cleaned up README
 
 ### Features
 - [x] CocoaPods Support
-- [x] Support for `UIAlertController` (iOS 8+) and `UIAlertView` (iOS 7)
 - [x] Three types of alerts (see **Screenshots & Alert Types**)
 - [x] Optional delegate methods (see **Optional Delegate** section)
 - [x] Localized for 20+ languages
-- [x] ~~Check for Supported Devices~~
-	- Removed in 2.7.1. See **Supported Devices Compatibility** section.
 
 ### Screenshots
 
@@ -66,6 +74,9 @@ Copy the 'Harpy' folder into your Xcode project. It contains the Harpy.h and Har
 	// Set the UIViewController that will present an instance of UIAlertController
 	[[Harpy sharedInstance] setPresentingViewController:_window.rootViewController];
 
+  // (Optional) Set the Delegate to track what a user clicked on, or to use a custom UI to present your message.
+      [[Harpy sharedInstance] setDelegate:self];
+
 	// (Optional) The tintColor for the alertController
 	[[Harpy sharedInstance] setAlertControllerTintColor:@"<#alert_controller_tint_color#>"];
 
@@ -76,13 +87,13 @@ Copy the 'Harpy' folder into your Xcode project. It contains the Harpy.h and Har
 	 By default, Harpy is configured to use HarpyAlertTypeOption */
 	[[Harpy sharedInstance] setAlertType:<#alert_type#>];
 
-	/* (Optional) If your application is not availabe in the U.S. App Store, you must specify the two-letter
+	/* (Optional) If your application is not available in the U.S. App Store, you must specify the two-letter
 	 country code for the region in which your applicaiton is available. */
 	[[Harpy sharedInstance] setCountryCode:@"<#country_code#>"];
 
-	/* (Optional) Overides system language to predefined language.
+	/* (Optional) Overrides system language to predefined language.
 	 Please use the HarpyLanguage constants defined in Harpy.h. */
-	[[Harpy sharedInstance] setForceLanguageLocalization<#HarpyLanguageConstant#>];
+	[[Harpy sharedInstance] setForceLanguageLocalization:<#HarpyLanguageConstant#>];
 
 	// Perform check for new version of your app
 	[[Harpy sharedInstance] checkVersion];
@@ -130,13 +141,14 @@ Copy the 'Harpy' folder into your Xcode project. It contains the Harpy.h and Har
 And you're all set!
 
 ### Differentiated Alerts for Patch, Minor, and Major Updates
-If you would like to set a different type of alert for patch, minor, and/or major updates, simply add one or all of the following *optional* lines to your setup *before* calling any of the `checkVersion` methods:
+If you would like to set a different type of alert for revision, patch, minor, and/or major updates, simply add one or all of the following *optional* lines to your setup *before* calling any of the `checkVersion` methods:
 
 ``` obj-c
 	/* By default, Harpy is configured to use HarpyAlertTypeOption for all version updates */
 	[[Harpy sharedInstance] setPatchUpdateAlertType:<#alert_type#>];
 	[[Harpy sharedInstance] setMinorUpdateAlertType:<#alert_type#>];
 	[[Harpy sharedInstance] setMajorUpdateAlertType:<#alert_type#>];
+	[[Harpy sharedInstance] setRevisionUpdateAlertType:<#alert_type#>];
 ```
 
 ### Optional Delegate and Delegate Methods
@@ -156,6 +168,12 @@ If you'd like to handle or track the end-user's behavior, four delegate methods 
 	- (void)harpyUserDidCancel;
 ```
 
+If you would like to use your own UI, please use the following delegate method to obtain the localized update message if a new version is available:
+
+``` obj-c
+- (void)harpyDidDetectNewVersionWithoutAlert:(NSString *)message;
+```
+
 ### Force Localization
 Harpy has localizations for Arabic, Basque, Chinese (Simplified), Chinese (Traditional), Danish, Dutch, English, Estonian, French, German, Hebrew, Hungarian, Italian, Japanese, Korean, Latvian, Lithuanian, Polish, Portuguese (Brazil), Portuguese (Portugal), Russian, Slovenian, Swedish, Spanish, Thai, and Turkish.
 
@@ -166,18 +184,6 @@ You can enable it like this:
 ``` obj-c
 [[Harpy sharedInstance] setForceLanguageLocalization<#HarpyLanguageConstant#>];
 ```
-
-### Testing Harpy
-Temporarily change the version string in Xcode (within the `.xcodeproj`) to an older version than the one that's currently available in the App Store. Afterwards, build and run your app, and you should see the alert.
-
-If you currently don't have an app in the store, use the **AppID** for the iTunes Connect App (*376771144*), or any other app, and temporarily change the version string in `.xcodeproj` to an older version than the one that's currently available in the App Store.
-
-For your convenience, you may turn on `NSLog()` debugging statements by setting `debugEnabled = true` before calling any of the `checkVersion()` methods.
-
-### Supported Devices Compatibility
-As of **v2.7.1**, this feature was removed, as Apple  stopped updating the `supportedDevices` key in the iTunes Lookup API route.
-
-<del>Every new release of iOS deprecates support for one or more older device models. Harpy checks to make sure that a user's current device supports the new version of your app. If it it does, the `UIAlertView` pops up as usual. If it does not, no alert is shown. This extra check was added into Harpy after a [lengthy discussion](https://github.com/ArtSabintsev/Harpy/issues/35). A new helper utility, [UIDevice+SupportedDevices](https://github.com/ArtSabintsev/UIDevice-SupportedDevices), came out of this discussion and is included with Harpy.</del>
 
 ### Important Note on App Store Submissions
 The App Store reviewer will **not** see the alert.

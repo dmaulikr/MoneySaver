@@ -98,7 +98,7 @@
 
 - (instancetype)init
 {
-    return [self initWithDBName:@"MOneySaver"];
+    return [self initWithDBName:@"LKDB"];
 }
 
 - (instancetype)initWithDBName:(NSString *)dbname

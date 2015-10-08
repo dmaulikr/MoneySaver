@@ -6,9 +6,7 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import <Mantle.h>
-#import <MTLFMDBAdapter.h>
-
+#import "MSBaseClassDataModel.h"
 
 @interface MSAccountRequestModel : MTLModel<MTLJSONSerializing>
 
@@ -22,9 +20,10 @@
 /**
  *  用户模型
  */
-@interface MSAccountDataModel : MTLModel <MTLJSONSerializing,MTLFMDBSerializing>
+@interface MSAccountDataModel : MSBaseClassDataModel <MTLJSONSerializing,MTLFMDBSerializing>
 
-@property (nonatomic, copy) NSString *accoundId;/**< 唯一值 */
+//@property (nonatomic, strong) NSString *objectId; ///< 主键(父类中)
+
 @property (nonatomic, copy) NSString *account;/**< 用户名 */
 
 @property (nonatomic, copy) NSNumber *monthLimit;/**< 每月限额 */

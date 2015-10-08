@@ -7,6 +7,8 @@
 //
 
 #import "MSMoneySourceManagerViewModel.h"
+#import "MSMoneySourceViewModel.h"
+
 
 @interface MSMoneySourceManagerViewModel ()
 
@@ -41,7 +43,7 @@
 - (void)updateMoneySourceWithSourceId:(NSString *)sourceId
 {
     for (MSMoneySourceViewModel *vm in self.sourceArray) {
-        if ([vm.dataModel.sourceId isEqual:sourceId]) {
+        if ([vm.dataModel.objectId isEqual:sourceId]) {
             [vm updateMoneySource];
             break;
         }

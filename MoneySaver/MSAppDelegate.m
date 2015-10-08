@@ -17,6 +17,7 @@
 #import "UIColor+MoneySaver.h"
 #import "MSLoginMainViewController.h"
 #import "MSProjectEditorViewController.h"
+#import "MSMainNavViewController.h"
 
 #import "MSTestViewController.h"
 
@@ -49,7 +50,10 @@
 
 - (void)configureViewController
 {
-    self.window.rootViewController = [MSProjectEditorViewController projectEditorViewControllerForMode:YES];
+    MSProjectEditorViewController *editor = [MSProjectEditorViewController projectEditorViewControllerForMode:YES];
+    MSMainNavViewController *nav = [[MSMainNavViewController alloc] initWithRootViewController:editor];
+    self.window.rootViewController = nav;
+//    self.window.rootViewController = 
 //    self.window.rootViewController = [MSTestViewController new];
 //    if ([BmobUser getCurrentUser]) {
 //        

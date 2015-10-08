@@ -45,7 +45,7 @@
 - (void)setNewData:(BOOL)newData
 {
     if (newData) {
-        self.dataModel.projectId = kNewDatabaseIdValue;
+        self.dataModel.objectId = kNewDatabaseIdValue;
     }
 }
 
@@ -70,11 +70,11 @@
 //    self.newData = ISNEWDATA(self.dataModel.projectId);
     RACSignal *localSignal = [self updateToDatabaseWithModel:self.dataModel new:self.newData];
     RACSignal *webSignal   = [self updateToWebDatabaseWithModel:self.dataModel new:self.newData];
-    
+
     //更新ObjID
     [webSignal  doNext:^(BmobObject *x) {
         @strongify(self);
-        self.dataModel.projectId = x.objectId;
+        self.dataModel.objectId = x.objectId;
     }];
     
     return [[webSignal concat:localSignal] doCompleted:^{
@@ -90,7 +90,7 @@
         [[MSMoneySourceManagerViewModel shareManager] updateMoneySourceWithSourceId:self.cacheSourceId];
         self.cacheSourceId = nil;
     }
-    if (![self.cacheSourceId isEqual:self.dataModel.projectId]) {
+    if (![self.cacheSourceId isEqual:self.dataModel.objectId]) {
         [[MSMoneySourceManagerViewModel shareManager] updateMoneySourceWithSourceId:self.dataModel.sourceId];
     }
 }

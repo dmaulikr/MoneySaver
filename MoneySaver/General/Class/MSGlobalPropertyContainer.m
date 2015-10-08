@@ -56,8 +56,8 @@ static bool isFirstAccess = YES;
 
 - (instancetype) init
 {
-    if(SINGLETON){
-        return SINGLETON;
+    if(kMSGlobalPropertyContainer){
+        return kMSGlobalPropertyContainer;
     }
     if (isFirstAccess) {
         [self doesNotRecognizeSelector:_cmd];

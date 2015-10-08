@@ -11,7 +11,6 @@
 
 #import <ReactiveCocoa/RACEXTScope.h>
 #import "NIDebuggingTools.h"
-#import "NimbusKitBasics.h"
 #import "DefaultConstants.h"
 #import "Macro.h"
 

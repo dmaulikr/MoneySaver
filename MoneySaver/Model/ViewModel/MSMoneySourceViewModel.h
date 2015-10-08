@@ -8,8 +8,9 @@
 
 #import "MSBaseClassViewModel.h"
 #import "MSMoneySourceModel.h"
+
 #import "MSProjectManagerViewModel.h"
-#import "MSProjectViewModel.m"
+#import "MSProjectViewModel.h"
 
 @interface MSMoneySourceViewModel : MSBaseDataViewModel
 

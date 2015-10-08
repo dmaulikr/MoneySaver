@@ -136,7 +136,7 @@
 //filter
 - (void)filerBySourceId:(NSString *)sourceId
 {
-    self.queryCondition.filterName = @"sourceId";
+    self.queryCondition.filterName = @"objectId";
     self.queryCondition.filterValue = sourceId;
     [self queryWithCondition];
 }
@@ -162,6 +162,7 @@
         @strongify(self);
         self.selectError = error;
     }];
+    
 }
 
 @end

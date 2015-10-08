@@ -11,14 +11,11 @@
 
 @interface MSProjectManagerViewModel : MSBaseClassViewModel
 
-
 @property (nonatomic, strong) NSArray <MSBaseProjectModel*> *projectArray;
 @property (nonatomic, strong) NSArray <MSBaseProjectModel *> *projectTypeArray;
 
 @property (nonatomic, assign) BOOL autoCreateProjectTypeDict;
 @property (nonatomic, strong) NSError *selectError;
-
-
 
 @end
 
@@ -34,10 +31,8 @@
 - (void)shortByValue:(BOOL)desc;
 - (void)shortByDate:(BOOL)desc;
 
-
 //filter
 - (void)filerBySourceId:(NSString *)sourceId;
 - (void)filerByTransactionType:(MSProjectTransactionType)type;
-
 
 @end

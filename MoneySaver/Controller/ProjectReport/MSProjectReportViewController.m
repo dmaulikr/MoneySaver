@@ -56,7 +56,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MSProjectListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kMSProjectListTableViewCellIden forIndexPath:indexPath];
-    cell.dataModel = [self.viewModel.projectArray objectAtIndex:indexPath.row];
+//    cell.dataModel = [self.viewModel.projectArray objectAtIndex:indexPath.row];
     return cell;
 }
 

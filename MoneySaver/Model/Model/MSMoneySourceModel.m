@@ -10,35 +10,15 @@
 
 @implementation MSMoneySourceModel
 
-
 #pragma mark - MTLJSONSerializing
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{
-             @"sourceId":kDefaultDatabaseId,
+             kDefaultDatabaseId:kDefaultDatabaseId,
              @"sourceType":@"sourceType",
              @"sourceName":@"sourceName",
              @"total":@"total",
              };
 }
-
-#pragma mark - MTLFMDBSerializing
-
-+ (NSDictionary *)FMDBColumnsByPropertyKey
-{
-    return [MSMoneySourceModel JSONKeyPathsByPropertyKey];
-}
-
-+ (NSArray *)FMDBPrimaryKeys
-{
-    return @[@"sourceId"];
-}
-
-+ (NSString *)FMDBTableName
-{
-    return @"MSMoneySourceModel";
-}
-
-
 @end

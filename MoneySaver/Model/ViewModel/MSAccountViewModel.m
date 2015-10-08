@@ -11,13 +11,9 @@
 #import "NSString+XValueCheck.h"
 
 
-#define kMinUserNameLength 5
-#define kMinPasswordLength 6
 
 @interface MSAccountViewModel ()
 
-@property (nonatomic, strong) RACSignal *accountEnable;
-@property (nonatomic, strong) RACSignal *emailEnable;
 
 
 @end
@@ -46,19 +42,35 @@
 {
     if (!_accountEnable) {
         RACSignal *username =RACObserve(self, requestModel.username);
-        RACSignal *password =RACObserve(self, requestModel.password);
-        _accountEnable = [RACSignal combineLatest:@[username,password] reduce:^id(NSString *username,NSString *password){
-            return @(username.length >= kMinUserNameLength && password.length >= kMinPasswordLength);
+        _accountEnable = [username map:^id(id value) {
+            return @([value isValidWithMinLenth:kMinUserNameLength
+                                       maxLenth:kMaxUserNameLength
+                                 containChinese:NO
+                            firstCannotBeDigtal:NO]);
         }];
     }
     return _accountEnable;
+}
+
+- (RACSignal *)passwordEnable
+{
+    if (!_passwordEnable) {
+        RACSignal *password = RACObserve(self, requestModel.username);
+        _passwordEnable = [password map:^id(id value) {
+            return @([value isValidWithMinLenth:kMinPasswordLength
+                                       maxLenth:kMaxPasswordLength
+                                 containChinese:NO
+                            firstCannotBeDigtal:NO]);
+        }];
+    }
+    return _passwordEnable;
 }
 
 - (RACSignal *)emailEnable
 {
     if (!_emailEnable) {
         _emailEnable = [RACObserve(self, requestModel.email) map:^id(NSString *value) {
-            return @([value validateEmail]);
+            return @([value isValidEmail]);
         }];
     }
     return _emailEnable;

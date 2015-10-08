@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MSBaseProjectModel.h"
+//#import "MSBaseProjectModel.h"
 
-CGFloat const kMSProjectListTableViewCellHeight  = 60;
-#define kMSProjectListTableViewCellIden  @"MSProjectListTableViewCellIden"
+#define kMSProjectListTableViewCellHeight   60
+#define kMSProjectListTableViewCellIden     @"MSProjectListTableViewCellIden"
 
 @interface MSProjectListTableViewCell : UITableViewCell
 
-@property (nonatomic, strong) MSBaseProjectModel *dataModel;
+//@property (nonatomic, strong) MSBaseProjectModel *dataModel;
 
 @end

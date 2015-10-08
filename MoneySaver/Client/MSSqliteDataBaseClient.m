@@ -151,6 +151,7 @@ static NSString *kDataBaseErrorDomane  = @"com.TBXark.MoneySaver.DatabaseError";
                         condistion:(NSString *)condistion
                            isArray:(BOOL)isArray
 {
+    NSString *tableName = NSStringFromClass(modelClass);
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         NSString *stmt;
         NSParameterAssert(name != nil);

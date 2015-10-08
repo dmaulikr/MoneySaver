@@ -6,21 +6,18 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import <Mantle.h>
-#import <UIKit/UIKit.h>
-#import <MTLFMDBAdapter.h>
+#import "MSBaseClassDataModel.h"
 #import "MSProjectModelTypeHelper.h"
 #import "MSProjectTransactionTypeHelper.h"
-
 
 
 
 /**
  *  账单项目模型
  */
-@interface MSBaseProjectModel : MTLModel <MTLJSONSerializing,MTLFMDBSerializing>
+@interface MSBaseProjectModel : MSBaseClassDataModel <MTLJSONSerializing,MTLFMDBSerializing>
 
-@property (nonatomic, copy  ) NSString                 *projectId;/**< 项目id*/
+//@property (nonatomic, strong) NSString *objectId; ///< 主键(父类中)
 
 @property (nonatomic, assign) MSProjectTransactionType transactionType;/**< 交易类型 */
 @property (nonatomic, assign) MSProjectModelType       projectType;/**< 账单类型 */

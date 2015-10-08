@@ -34,14 +34,13 @@
 @implementation MSProjectEditorViewController
 
 #pragma mark - Life Cycle
-+ (UINavigationController *)projectEditorViewControllerForMode:(BOOL)isQuick
++ (instancetype)projectEditorViewControllerForMode:(BOOL)isQuick
 {
     MSProjectViewModel *vm = [MSProjectViewModel new];
     vm.dataModel = [MSBaseProjectModel new];
     MSProjectEditorViewController *project = [[MSProjectEditorViewController alloc] initWithViewModel:vm];
     project.quickMode = isQuick;
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:project];
-    return nav;
+    return project;
 }
 
 - (instancetype)initWithViewModel:(id)viewmodel

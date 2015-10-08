@@ -32,30 +32,13 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{
-             @"accountId":kDefaultDatabaseId,
+             kDefaultDatabaseId:kDefaultDatabaseId,
              @"account":@"account",
              @"token":@"token",
              @"monthLimit":@"monthLimit",
              @"userImage":@"userImage",
              @"backgroundImage":@"backgroundImage",
              };
-}
-
-#pragma mark - MTLFMDBSerializing
-
-+ (NSDictionary *)FMDBColumnsByPropertyKey
-{
-    return [MSAccountDataModel JSONKeyPathsByPropertyKey];
-}
-
-+ (NSArray *)FMDBPrimaryKeys
-{
-    return @[@"account"];
-}
-
-+ (NSString *)FMDBTableName
-{
-    return @"MSAccountDataModel";
 }
 
 @end

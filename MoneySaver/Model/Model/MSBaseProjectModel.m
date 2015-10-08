@@ -28,7 +28,7 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{
-             @"projectId":kDefaultDatabaseId,
+             kDefaultDatabaseId:kDefaultDatabaseId,
 
              @"transactionType":@"transactionType",
              @"projectType":@"projectType",
@@ -41,23 +41,5 @@
              @"sourceId":@"sourceId",
              };
 }
-
-#pragma mark - MTLFMDBSerializing
-
-+ (NSDictionary *)FMDBColumnsByPropertyKey
-{
-    return [MSBaseProjectModel JSONKeyPathsByPropertyKey];
-}
-
-+ (NSArray *)FMDBPrimaryKeys
-{
-    return @[@"projectId"];
-}
-
-+ (NSString *)FMDBTableName
-{
-    return @"MSBaseProjectModel";
-}
-
 
 @end

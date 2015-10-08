@@ -54,19 +54,19 @@
 #pragma mark - Private Method
 - (void)updateMoneySource
 {
-    @weakify(self);
-    [[[MSSqliteDataBaseClient shareSqliteDataBaseClient] selectModelsByClass:[MSMoneySourceModel class] tableName:[MSMoneySourceModel FMDBTableName] condistion:nil isArray:YES] subscribeNext:^(NSArray *x) {
-        @strongify(self);
-        [self.sourceArray removeAllObjects];
-        for (MSMoneySourceModel *model in x) {
-            MSMoneySourceViewModel *vm = [MSMoneySourceViewModel new];
-            vm.dataModel = model;
-            [self.sourceArray addObject:vm];
-        }
-    } error:^(NSError *error) {
-        @strongify(self);
-        self.soureError = error;
-    }];
+//    @weakify(self);
+//    [[[MSSqliteDataBaseClient shareSqliteDataBaseClient] selectModelsByClass:[MSMoneySourceModel class] tableName:[MSMoneySourceModel FMDBTableName] condistion:nil isArray:YES] subscribeNext:^(NSArray *x) {
+//        @strongify(self);
+//        [self.sourceArray removeAllObjects];
+//        for (MSMoneySourceModel *model in x) {
+//            MSMoneySourceViewModel *vm = [MSMoneySourceViewModel new];
+//            vm.dataModel = model;
+//            [self.sourceArray addObject:vm];
+//        }
+//    } error:^(NSError *error) {
+//        @strongify(self);
+//        self.soureError = error;
+//    }];
 }
 
 

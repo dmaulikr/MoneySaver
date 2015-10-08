@@ -14,7 +14,7 @@
 
 @implementation MSBmobObjectAdapter
 
-+ (BmobObject *)bmobObjectFromModel:(id <MTLJSONSerializing,MTLFMDBSerializing>)model error:(NSError **)error
++ (BmobObject *)bmobObjectFromModel:(id <MTLJSONSerializing>)model error:(NSError **)error
 {
     BmobObject *object = [BmobObject new];
     NSDictionary *dict = [[MTLJSONAdapter JSONDictionaryFromModel:model error:error] deleteNullValue];
@@ -30,7 +30,7 @@
         return nil;
     }
     [object setObject:[BmobUser getCurrentUser] forKey:@"account"];
-    object.className = [[(NSObject *)model class] FMDBTableName];
+    object.className = NSStringFromClass([(NSObject *)model class]);
     
     
     //设置权限

@@ -15,7 +15,7 @@
 /**
  *  账单项目模型
  */
-@interface MSBaseProjectModel : MSBaseClassDataModel <MTLJSONSerializing,MTLFMDBSerializing>
+@interface MSBaseProjectModel : MSBaseClassDataModel <MTLJSONSerializing>
 
 //@property (nonatomic, strong) NSString *objectId; ///< 主键(父类中)
 

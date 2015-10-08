@@ -9,12 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <BmobObject.h>
 #import <MTLJSONAdapter.h>
-#import <MTLFMDBAdapter.h>
 
 
 @interface MSBmobObjectAdapter : NSObject
 
-+ (BmobObject *)bmobObjectFromModel:(id <MTLJSONSerializing,MTLFMDBSerializing>)model
++ (BmobObject *)bmobObjectFromModel:(id <MTLJSONSerializing>)model
                               error:(NSError **)error;
 
 @end

@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MTLFMDBAdapter.h>
 #import <ReactiveCocoa.h>
 #import "MSBmobObjectAdapter.h"
 #import "MSDataOperationType.h"

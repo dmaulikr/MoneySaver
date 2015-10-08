@@ -34,7 +34,6 @@
 		6A68B1CB1BAFB4B3009BA468 /* MSProjectManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CA1BAFB4B3009BA468 /* MSProjectManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A68B1CE1BAFB4C5009BA468 /* MSAccountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CD1BAFB4C5009BA468 /* MSAccountViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		6A68B1D11BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D01BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A68B1D41BAFB545009BA468 /* MSSqliteDataBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D31BAFB545009BA468 /* MSSqliteDataBaseClient.m */; settings = {ASSET_TAGS = (); }; };
 		6A692E971BB5AA8400AAA277 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A692E961BB5AA8400AAA277 /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
 		6A692E9B1BB5AA8400AAA277 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A692E9A1BB5AA8400AAA277 /* TodayViewController.m */; };
 		6A692E9E1BB5AA8400AAA277 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A692E9C1BB5AA8400AAA277 /* MainInterface.storyboard */; };
@@ -65,11 +64,11 @@
 		6ACE19C11BC60297007E0884 /* MSBaseClassDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACE19C01BC60297007E0884 /* MSBaseClassDataModel.m */; settings = {ASSET_TAGS = (); }; };
 		6ACE19C71BC60484007E0884 /* SqliteCleanerV1.0.0.sql in Resources */ = {isa = PBXBuildFile; fileRef = 6ACE19C51BC60484007E0884 /* SqliteCleanerV1.0.0.sql */; settings = {ASSET_TAGS = (); }; };
 		6ACE19C81BC60484007E0884 /* SqliteCreaterV1.0.0.sql in Resources */ = {isa = PBXBuildFile; fileRef = 6ACE19C61BC60484007E0884 /* SqliteCreaterV1.0.0.sql */; settings = {ASSET_TAGS = (); }; };
+		6ACE19CF1BC61298007E0884 /* MSLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACE19CE1BC61298007E0884 /* MSLaunchViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6AD229BB1BBFFC52004DC5FC /* MSProjectValueHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD229BA1BBFFC52004DC5FC /* MSProjectValueHeaderView.m */; settings = {ASSET_TAGS = (); }; };
 		6AD7BD0B1BC112FC0098E1F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD7BD0A1BC112FC0098E1F0 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		6AD7BD181BC155280098E1F0 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD7BD171BC155280098E1F0 /* LocalAuthentication.framework */; };
 		6AD7BD1F1BC223490098E1F0 /* MSProjectReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD7BD1E1BC223490098E1F0 /* MSProjectReportViewController.m */; settings = {ASSET_TAGS = (); }; };
-		6AD7BD4D1BC2CA3F0098E1F0 /* MSSqliteDataBaseClient+SQLQueryString.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD7BD4C1BC2CA3F0098E1F0 /* MSSqliteDataBaseClient+SQLQueryString.m */; settings = {ASSET_TAGS = (); }; };
 		6ADF5B251BC4CC3D00B41A7F /* MSChartDataItemAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF5B241BC4CC3D00B41A7F /* MSChartDataItemAdapter.m */; settings = {ASSET_TAGS = (); }; };
 		6AE69EE41BBE914500EB4CAD /* UILabel+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69EE31BBE914500EB4CAD /* UILabel+MoneySaver.m */; settings = {ASSET_TAGS = (); }; };
 		6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D891BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
@@ -169,8 +168,6 @@
 		6A68B1CD1BAFB4C5009BA468 /* MSAccountViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MSAccountViewModel.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6A68B1CF1BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMoneySourceManagerViewModel.h; sourceTree = "<group>"; };
 		6A68B1D01BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMoneySourceManagerViewModel.m; sourceTree = "<group>"; };
-		6A68B1D21BAFB545009BA468 /* MSSqliteDataBaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSqliteDataBaseClient.h; sourceTree = "<group>"; };
-		6A68B1D31BAFB545009BA468 /* MSSqliteDataBaseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSqliteDataBaseClient.m; sourceTree = "<group>"; };
 		6A692E951BB5AA8400AAA277 /* MoneySaverToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MoneySaverToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A692E961BB5AA8400AAA277 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		6A692E991BB5AA8400AAA277 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -228,6 +225,8 @@
 		6ACE19C01BC60297007E0884 /* MSBaseClassDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBaseClassDataModel.m; sourceTree = "<group>"; };
 		6ACE19C51BC60484007E0884 /* SqliteCleanerV1.0.0.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SqliteCleanerV1.0.0.sql; sourceTree = "<group>"; };
 		6ACE19C61BC60484007E0884 /* SqliteCreaterV1.0.0.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SqliteCreaterV1.0.0.sql; sourceTree = "<group>"; };
+		6ACE19CD1BC61298007E0884 /* MSLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLaunchViewController.h; sourceTree = "<group>"; };
+		6ACE19CE1BC61298007E0884 /* MSLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLaunchViewController.m; sourceTree = "<group>"; };
 		6AD229B91BBFFC52004DC5FC /* MSProjectValueHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectValueHeaderView.h; sourceTree = "<group>"; };
 		6AD229BA1BBFFC52004DC5FC /* MSProjectValueHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectValueHeaderView.m; sourceTree = "<group>"; };
 		6AD7BD0A1BC112FC0098E1F0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -235,8 +234,6 @@
 		6AD7BD171BC155280098E1F0 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		6AD7BD1D1BC223490098E1F0 /* MSProjectReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectReportViewController.h; sourceTree = "<group>"; };
 		6AD7BD1E1BC223490098E1F0 /* MSProjectReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectReportViewController.m; sourceTree = "<group>"; };
-		6AD7BD4B1BC2CA3F0098E1F0 /* MSSqliteDataBaseClient+SQLQueryString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSSqliteDataBaseClient+SQLQueryString.h"; sourceTree = "<group>"; };
-		6AD7BD4C1BC2CA3F0098E1F0 /* MSSqliteDataBaseClient+SQLQueryString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MSSqliteDataBaseClient+SQLQueryString.m"; sourceTree = "<group>"; };
 		6ADF5B231BC4CC3D00B41A7F /* MSChartDataItemAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSChartDataItemAdapter.h; sourceTree = "<group>"; };
 		6ADF5B241BC4CC3D00B41A7F /* MSChartDataItemAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSChartDataItemAdapter.m; sourceTree = "<group>"; };
 		6AE69EE21BBE914500EB4CAD /* UILabel+MoneySaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+MoneySaver.h"; sourceTree = "<group>"; };
@@ -409,7 +406,6 @@
 		6A84045F1BB285B900A89446 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6AD7BD131BC153990098E1F0 /* SecurityView */,
 				6A0D527B1BBE5DDC00D651B7 /* ProjectEditor */,
 				6A8E18D71BB68CEB00B8F38C /* ProjectReport */,
 				6A92B38A1BB3FA83001C7A87 /* MainInterface */,
@@ -418,6 +414,8 @@
 				6A8404631BB2860200A89446 /* MSBaseClassViewController.m */,
 				6A37398A1BC4C96600DFE9CD /* MSMainNavViewController.h */,
 				6A37398B1BC4C96600DFE9CD /* MSMainNavViewController.m */,
+				6ACE19CD1BC61298007E0884 /* MSLaunchViewController.h */,
+				6ACE19CE1BC61298007E0884 /* MSLaunchViewController.m */,
 				6A4EF2441BC5096E00679453 /* MSTestViewController.h */,
 				6A4EF2451BC5096F00679453 /* MSTestViewController.m */,
 			);
@@ -557,10 +555,6 @@
 				6A550C0C1BC3A5E200AA01A5 /* MSDataOperationType.h */,
 				6A0A53991BAFB7F2004AD688 /* MSWebDataClient.h */,
 				6A0A539A1BAFB7F2004AD688 /* MSWebDataClient.m */,
-				6A68B1D21BAFB545009BA468 /* MSSqliteDataBaseClient.h */,
-				6A68B1D31BAFB545009BA468 /* MSSqliteDataBaseClient.m */,
-				6AD7BD4B1BC2CA3F0098E1F0 /* MSSqliteDataBaseClient+SQLQueryString.h */,
-				6AD7BD4C1BC2CA3F0098E1F0 /* MSSqliteDataBaseClient+SQLQueryString.m */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -649,13 +643,6 @@
 				6AAF99311BBEC038008D0805 /* MSBarButtonItem.m */,
 			);
 			path = "MoneySaver+Views";
-			sourceTree = "<group>";
-		};
-		6AD7BD131BC153990098E1F0 /* SecurityView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SecurityView;
 			sourceTree = "<group>";
 		};
 		6AF84D871BAFD6C300B061A5 /* DatabaseEncrypt */ = {
@@ -874,6 +861,7 @@
 				6A92B38D1BB3FA9B001C7A87 /* MSMainViewController.m in Sources */,
 				6AF84D901BAFD75100B061A5 /* MSEncryptHelper.m in Sources */,
 				6A550C121BC3C2EB00AA01A5 /* MSWebDateSyncClient.m in Sources */,
+				6ACE19CF1BC61298007E0884 /* MSLaunchViewController.m in Sources */,
 				6A0D52821BBE609F00D651B7 /* UIImageView+MoneySaver.m in Sources */,
 				6A3A524C1BB51FE900BA99A5 /* UIDevice+XDevice.m in Sources */,
 				6A8404471BB1049300A89446 /* WebClientConstants.m in Sources */,
@@ -890,13 +878,11 @@
 				6A0A53A31BAFB8E3004AD688 /* MSMoneySourceViewModel.m in Sources */,
 				6A894CCB1BBB8290009A7120 /* MSProjectListTableViewCell.m in Sources */,
 				6AF84D8D1BAFD71000B061A5 /* MSEncryptDatabase.m in Sources */,
-				6AD7BD4D1BC2CA3F0098E1F0 /* MSSqliteDataBaseClient+SQLQueryString.m in Sources */,
 				6A37398C1BC4C96600DFE9CD /* MSMainNavViewController.m in Sources */,
 				6ADF5B251BC4CC3D00B41A7F /* MSChartDataItemAdapter.m in Sources */,
 				6A68B1D11BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m in Sources */,
 				6A92B3891BB3F568001C7A87 /* UIColor+MoneySaver.m in Sources */,
 				6A85D99E1BAFB14C0049D988 /* MSBaseProjectModel.m in Sources */,
-				6A68B1D41BAFB545009BA468 /* MSSqliteDataBaseClient.m in Sources */,
 				6AF84D9E1BB0053000B061A5 /* MSBmobObjectAdapter.m in Sources */,
 				6A0D528B1BBE88A300D651B7 /* MSProjectEditorViewController.m in Sources */,
 				6A68B1CE1BAFB4C5009BA468 /* MSAccountViewModel.m in Sources */,

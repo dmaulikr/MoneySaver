@@ -48,7 +48,7 @@
  *
  *  @return 成功失败(成功返回@YES/失败返回Error)
  */
-+ (RACSignal *)callDataOperationInBackground:(id <MTLJSONSerializing,MTLFMDBSerializing>)model
++ (RACSignal *)callDataOperationInBackground:(id <MTLJSONSerializing>)model
                                         type:(MSDataOperationType)type;
 
 

@@ -20,7 +20,7 @@
 /**
  *  用户模型
  */
-@interface MSAccountDataModel : MSBaseClassDataModel <MTLJSONSerializing,MTLFMDBSerializing>
+@interface MSAccountDataModel : MSBaseClassDataModel <MTLJSONSerializing>
 
 //@property (nonatomic, strong) NSString *objectId; ///< 主键(父类中)
 

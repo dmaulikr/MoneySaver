@@ -9,7 +9,6 @@
 #import "MSProjectManagerViewModel.h"
 #import "MSProjectModelTypeHelper.h"
 
-#import "MSSqliteDataBaseClient.h"
 
 #import "NSDateFormatter+DefaultFormatter.h"
 #import "MSSqliteQueryCondition.h"
@@ -152,16 +151,9 @@
 #pragma mark - Private Method
 - (void)queryWithCondition
 {
-    @weakify(self);
     NSString *query = [self.queryCondition createQueryCondition];
     NIDPRINT(@"%@",query);
-    [[[MSSqliteDataBaseClient shareSqliteDataBaseClient] selectModelsByClass:[MSBaseProjectModel class] tableName:[MSBaseProjectModel FMDBTableName] condistion:query isArray:YES] subscribeNext:^(NSArray *x) {
-        @strongify(self);
-        self.projectArray = x;
-    } error:^(NSError *error) {
-        @strongify(self);
-        self.selectError = error;
-    }];
+    self.projectArray = [MSBaseProjectModel searchWithWhere:query];
     
 }
 

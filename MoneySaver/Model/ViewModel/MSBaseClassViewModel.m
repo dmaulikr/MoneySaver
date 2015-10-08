@@ -8,7 +8,6 @@
 
 #import "MSBaseClassViewModel.h"
 
-
 @implementation MSBaseClassViewModel
 @end
 
@@ -24,18 +23,30 @@
     return [RACSignal empty];
 }
 
-- (RACSignal *)updateToWebDatabaseWithModel:(id <MTLJSONSerializing,MTLFMDBSerializing>)model
+- (RACSignal *)updateToWebDatabaseWithModel:(id <MTLJSONSerializing>)model
                                      new:(BOOL)isNew
 {
     MSDataOperationType type = isNew?MSDataOperationInsert:MSDataOperationUpdate;
     return [MSWebDataClient callDataOperationInBackground:model type:type];
 }
 
-- (RACSignal *)updateToDatabaseWithModel:(id <MTLJSONSerializing,MTLFMDBSerializing>)model
-                                  new:(BOOL)isNew
+- (RACSignal *)updateToDatabaseWithModel:(MSBaseClassDataModel *)model
+                                     new:(BOOL)isNew
 {
-    MSDataOperationType type = isNew?MSDataOperationInsert:MSDataOperationUpdate;
-    return [[MSSqliteDataBaseClient shareSqliteDataBaseClient] commonDataoperationWithModel:model type:type];
+    return [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
+        BOOL success = NO;
+        if (isNew) {
+           success = [(NSObject *)model saveToDB];
+        } else {
+            success = [(NSObject *)model updateToDB];
+        }
+        if (success) {
+            [subscriber sendCompleted];
+        } else {
+            [subscriber sendError:nil];
+        }
+        return nil;
+    }];
 }
 
 

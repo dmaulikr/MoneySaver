@@ -9,6 +9,7 @@ target 'MoneySaver' do
    pod 'Masonry'
    pod 'SDWebImage'
    pod 'Routable', '~> 0.2.0' #Router
+   pod 'LKDBHelper', :head #ORM 助手
    pod 'FMDB/SQLCipher' #SQL加密
    pod 'BmobSDK'
    pod 'JSPatch' #JS热修复
@@ -28,7 +29,7 @@ target 'MoneySaver' do
 # Helper
    pod 'IQKeyboardManager', '~> 3.2.4' 
    pod 'ChameleonFramework'
-   pod 'MTLFMDBAdapter'
+   #   pod 'MTLFMDBAdapter'
 
 # Category & Extensions
    pod 'FDFullscreenPopGesture', '1.1'

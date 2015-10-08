@@ -8,20 +8,20 @@
 
 #import <Foundation/Foundation.h>
 #import <ReactiveCocoa.h>
+#import <LKDBHelper.h>
 
-#import "MSSqliteDataBaseClient.h"
 #import "MSWebDataClient.h"
 #import "MSBmobObjectAdapter.h"
 
 #define ISNEWDATA(__objectId__) [__objectId__ isEqualToString:kNewDatabaseIdValue]
 
+@class MSBaseClassDataModel;
 
 /**
  *  通用基类
  */
 @interface MSBaseClassViewModel : NSObject
 @end
-
 
 
 /**
@@ -31,10 +31,10 @@
 
 - (RACSignal *)updateData;
 
-- (RACSignal *)updateToWebDatabaseWithModel:(id <MTLJSONSerializing,MTLFMDBSerializing>)model
+- (RACSignal *)updateToWebDatabaseWithModel:(id <MTLJSONSerializing>)model
                                         new:(BOOL)isNew;
 
-- (RACSignal *)updateToDatabaseWithModel:(id <MTLJSONSerializing,MTLFMDBSerializing>)model
+- (RACSignal *)updateToDatabaseWithModel:(MSBaseClassDataModel *)model
                                      new:(BOOL)isNew;
 
 @end

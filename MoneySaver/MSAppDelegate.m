@@ -18,10 +18,15 @@
 #import "MSLoginMainViewController.h"
 #import "MSProjectEditorViewController.h"
 #import "MSMainNavViewController.h"
+#import "MSLaunchViewController.h"
 
 #import "MSTestViewController.h"
 
 @interface MSAppDelegate ()
+
+@property (nonatomic, assign, getter=hadShowSecurityView) BOOL showSecurityView;
+@property (nonatomic, strong) MSMainNavViewController *mainNavigation;
+@property (nonatomic, strong) MSLaunchViewController  *launchController;
 
 @end
 
@@ -30,7 +35,7 @@
 #pragma mark - Life Cycle
 + (instancetype)shareAppDelegate
 {
-    return [UIApplication sharedApplication].delegate;
+    return (MSAppDelegate *)[UIApplication sharedApplication].delegate;
 }
 
 #pragma mark - Configure
@@ -51,16 +56,8 @@
 - (void)configureViewController
 {
     MSProjectEditorViewController *editor = [MSProjectEditorViewController projectEditorViewControllerForMode:YES];
-    MSMainNavViewController *nav = [[MSMainNavViewController alloc] initWithRootViewController:editor];
-    self.window.rootViewController = nav;
-//    self.window.rootViewController = 
-//    self.window.rootViewController = [MSTestViewController new];
-//    if ([BmobUser getCurrentUser]) {
-//        
-//    }else
-//    {
-//        [self.window.rootViewController presentViewController:[MSLoginMainViewController new] animated:NO completion:nil];
-//    }
+    self.mainNavigation = [[MSMainNavViewController alloc] initWithRootViewController:editor];
+    self.window.rootViewController = self.mainNavigation;
 }
 
 
@@ -92,11 +89,24 @@
 }
 
 
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    self.launchController = [MSLaunchViewController new];
+//    self.launchController.
+    [self.window.rootViewController presentViewController:self.launchController animated:YES completion:nil];
+    self.showSecurityView = YES;
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    if (self.hadShowSecurityView) {
+        [self.launchController dismissViewControllerAnimated:YES completion:nil];
+        self.launchController = nil;
+        self.showSecurityView = NO;
+        
+    }
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {}
-- (void)applicationDidEnterBackground:(UIApplication *)application {}
-- (void)applicationWillEnterForeground:(UIApplication *)application {}
 - (void)applicationDidBecomeActive:(UIApplication *)application {}
 - (void)applicationWillTerminate:(UIApplication *)application {}
 

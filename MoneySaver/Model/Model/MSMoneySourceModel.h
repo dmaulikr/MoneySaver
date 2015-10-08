@@ -14,7 +14,7 @@ typedef NS_ENUM(NSUInteger, MoneySourceModelType) {
     SourceModelCashType   = 3,
 };
 
-@interface MSMoneySourceModel : MSBaseClassDataModel <MTLJSONSerializing,MTLFMDBSerializing>
+@interface MSMoneySourceModel : MSBaseClassDataModel <MTLJSONSerializing>
 
 //@property (nonatomic, strong) NSString *objectId; ///< 主键(父类中)
 

@@ -15,7 +15,6 @@
 @implementation MSBaseClassViewController
 
 #pragma mark - Life Cycle
-
 - (instancetype)initWithViewModel:(id)viewmodel
 {
     self = [super init];
@@ -28,6 +27,12 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+#pragma mark - Rewrite Method
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 #pragma mark - Private Method

@@ -7,10 +7,10 @@
 //
 
 #import <Mantle.h>
-#import <MTLFMDBAdapter.h>
+#import <LKDBHelper.h>
 
 //数据基类
-@interface MSBaseClassDataModel : MTLModel<MTLJSONSerializing,MTLFMDBSerializing>
+@interface MSBaseClassDataModel : MTLModel
 
 @property (nonatomic, strong) NSString *objectId;
 

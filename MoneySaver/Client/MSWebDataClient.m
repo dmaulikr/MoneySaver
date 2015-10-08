@@ -79,7 +79,7 @@
 }
 
 
-+ (RACSignal *)callDataOperationInBackground:(id <MTLJSONSerializing,MTLFMDBSerializing>)model
++ (RACSignal *)callDataOperationInBackground:(id <MTLJSONSerializing>)model
                                         type:(MSDataOperationType)type
 {
     if (model == nil) {

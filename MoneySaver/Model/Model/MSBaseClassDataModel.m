@@ -7,32 +7,32 @@
 //
 
 #import "MSBaseClassDataModel.h"
+#import "DefaultConstants.h"
 
 @implementation MSBaseClassDataModel
 
-#pragma mark - MTLJSONSerializing
-+ (NSDictionary *)JSONKeyPathsByPropertyKey
++ (LKDBHelper *)getUsingLKDBHelper
 {
-    NSAssert(NO, @"子类必须重写该方法");
-    return nil;
+    static LKDBHelper *_dataBaseHelper = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (_dataBaseHelper) {
+            _dataBaseHelper = [[LKDBHelper alloc] initWithDBName:@"MoneySaver"];
+            [_dataBaseHelper setEncryptionKey:kDatabaseEncryptKey];
+        }
+    });
+   return   _dataBaseHelper;
+    
 }
 
-#pragma mark - MTLFMDBSerializing
-
-+ (NSDictionary *)FMDBColumnsByPropertyKey
++ (NSString *)getTableName
 {
-    return [self JSONKeyPathsByPropertyKey];
+    return NSStringFromClass([self class]);
 }
 
-+ (NSArray *)FMDBPrimaryKeys
++ (NSString *)getPrimaryKey
 {
-    return @[kDefaultDatabaseId];
+    return kDefaultDatabaseId;
 }
-
-+ (NSString *)FMDBTableName
-{
-    return  NSStringFromClass([self class]);
-}
-
 
 @end

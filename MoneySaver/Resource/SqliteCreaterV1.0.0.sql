@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS MSAccountDataModel (
     objectId text PRIMARY KEY NOT NULL,
     account text(128),
     monthLimit double(128),
-    userImage text(128)
+    userImage text(128),
 );
 
 /*创建项目信息缓存*/
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS MSBaseProjectModel (
     name text(128),
     value double(128),
     note text(128),
-    sourceId text(128)
+    sourceId text(128),
 );
 
 /*创建来源信息缓存*/
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS MSMoneySourceModel (
     objectId integer PRIMARY KEY NOT NULL,
     sourceType double(128),
     sourceName text(128),
-    total double(128)
+    total double(128),
 );
 
 

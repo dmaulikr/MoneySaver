@@ -1,18 +1,18 @@
 //
-//  MSMainViewController.m
+//  MSLaunchViewController.m
 //  MoneySaver
 //
-//  Created by Tbxark on 15/10/7.
+//  Created by Tbxark on 15/10/8.
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "MSMainNavViewController.h"
+#import "MSLaunchViewController.h"
 
-@interface MSMainNavViewController ()
+@interface MSLaunchViewController ()
 
 @end
 
-@implementation MSMainNavViewController
+@implementation MSLaunchViewController
 
 #pragma mark - Life Cycle
 - (instancetype)initWithViewModel:(id)viewmodel
@@ -29,18 +29,10 @@
     [super didReceiveMemoryWarning];
 }
 
-#pragma mark - Rewrite Method
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
-}
-
-
 #pragma mark - Private Method
 - (void)configureViewController{}
 - (void)layoutViewController{}
 - (void)configureSignal{}
-
 
 
 @end

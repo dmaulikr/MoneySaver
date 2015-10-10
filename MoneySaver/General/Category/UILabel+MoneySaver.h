@@ -14,3 +14,10 @@
 @property (nonatomic, assign) MSProjectModelType projectType; ///< 项目类型
 
 @end
+
+
+@interface UILabel (MSLogoText)
+
++ (instancetype)ms_logoTextWithSize:(CGFloat)size;
+
+@end

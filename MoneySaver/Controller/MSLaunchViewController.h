@@ -10,4 +10,6 @@
 
 @interface MSLaunchViewController : MSBaseClassViewController
 
+- (instancetype)initWithCompletionBlock:(void (^)(void))completionBlock;
+
 @end

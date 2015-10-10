@@ -124,7 +124,7 @@
         buttonFrame.origin.y += buttonHeight*2;
         MSNumberKeyBordButton *commtieButton = [MSNumberKeyBordButton buttonWithType:MSNumberKeyBordCommiteButtonType];
         commtieButton.frame = buttonFrame;
-        commtieButton.backgroundColor = [UIColor ms_RedColor];
+        commtieButton.backgroundColor = [UIColor ms_DefaultColor];
         [commtieButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [commtieButton setTitleColor:[UIColor colorWithWhite:0.9 alpha:1] forState:UIControlStateHighlighted];
         [commtieButton addTarget:self action:@selector(commiteButtonAction:) forControlEvents:UIControlEventTouchUpInside];

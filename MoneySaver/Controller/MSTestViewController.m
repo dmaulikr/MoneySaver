@@ -10,6 +10,7 @@
 #import "MSNumberKeyBord.h"
 
 #import <IQKeyboardManager.h>
+#import "MoneySaverIconAnimate.h"
 
 @interface MSTestViewController ()
 
@@ -22,15 +23,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [IQKeyboardManager sharedManager].enable = NO;
-    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
-     
-    UITextField *textfield = [[UITextField alloc] initWithFrame:CGRectMake(10, 100, CGRectGetWidth(self.view.bounds)-20, 80)];
-    textfield.borderStyle = UITextBorderStyleRoundedRect;
-    textfield.inputView = [[MSNumberKeyBord alloc] initWithTextField:textfield];
-    [self.view addSubview:textfield];
+//    [IQKeyboardManager sharedManager].enable = NO;
+//    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
+//     
+//    UITextField *textfield = [[UITextField alloc] initWithFrame:CGRectMake(10, 100, CGRectGetWidth(self.view.bounds)-20, 80)];
+//    textfield.borderStyle = UITextBorderStyleRoundedRect;
+//    textfield.inputView = [[MSNumberKeyBord alloc] initWithTextField:textfield];
+//    [self.view addSubview:textfield];
     
+    MoneySaverIconAnimate *money = [[MoneySaverIconAnimate alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    money.center = self.view.center;
+    [self.view addSubview:money];
     
+    [NSTimer scheduledTimerWithTimeInterval:5.0f target:money selector:@selector(addMoneyDropAnimation) userInfo:nil repeats:YES];
 }
 
 

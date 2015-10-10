@@ -23,3 +23,13 @@ typedef NS_ENUM(NSUInteger, MSCustomIconType) {
 
 
 @end
+
+@interface UIImage (Baseoperation)
+
+@property (nonatomic, assign) CGContextRef aRGBBitmapContext;
+
+- (UIColor *)getPixelColorAtLocation:(CGPoint)point;
+- (UIImage *)scaleImageToSize:(CGSize)size;
+
+
+@end

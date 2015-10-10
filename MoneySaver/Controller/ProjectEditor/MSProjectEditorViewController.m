@@ -64,6 +64,7 @@
     [super viewWillAppear:animated];
     [[IQKeyboardManager sharedManager] setEnable:NO];
     [[IQKeyboardManager sharedManager] setEnableAutoToolbar:NO];
+    [self.headerView.valueFiled becomeFirstResponder];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -164,7 +165,6 @@
     if (!_headerView) {
         _headerView = [MSProjectValueHeaderView projectValueHeaderView];
         _numberKeybord = [[MSNumberKeyBord alloc] initWithTextField:_headerView.valueFiled];
-        [_headerView.valueFiled becomeFirstResponder];
     }
     return _headerView;
 }

@@ -7,12 +7,13 @@
 //
 
 #import "UIColor+MoneySaver.h"
+#import <Chameleon.h>
 
 @implementation UIColor (MoneySaver)
 
 + (UIColor *)ms_DefaultColor
 {
-    return [UIColor ms_RedColor];
+    return [UIColor ms_GreenColor];
 }
 
 + (UIColor *)ms_DisableColor
@@ -38,7 +39,7 @@
 
 + (UIColor *)ms_GreenColor
 {
-    return [UIColor colorWithRed:0.647  green:0.788  blue:0.176 alpha:1];
+    return [UIColor colorWithRed:0.427  green:0.796  blue:0.541 alpha:1];
 }
 
 

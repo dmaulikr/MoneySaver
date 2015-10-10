@@ -81,7 +81,7 @@
                                                                hightlight:hightlight];}
     }
     FAKIcon *icon = [FAKFontAwesome iconWithCode:codeString size:fontSize];
-    UIColor *iconColor = hightlight?[UIColor ms_RedColor]:[UIColor grayColor];
+    UIColor *iconColor = hightlight?[UIColor ms_DefaultColor]:[UIColor grayColor];
     [icon addAttribute:NSForegroundColorAttributeName value:iconColor];
     return [icon imageWithSize:size];
 }

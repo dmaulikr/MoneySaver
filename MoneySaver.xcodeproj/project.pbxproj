@@ -39,6 +39,9 @@
 		6A692E9E1BB5AA8400AAA277 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A692E9C1BB5AA8400AAA277 /* MainInterface.storyboard */; };
 		6A692EA21BB5AA8400AAA277 /* MoneySaverToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6A692E951BB5AA8400AAA277 /* MoneySaverToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6A692EA91BB6404100AAA277 /* MSBmobDataBojectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A692EA81BB6404100AAA277 /* MSBmobDataBojectModel.m */; settings = {ASSET_TAGS = (); }; };
+		6A6C36811BC7668500B10820 /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C367D1BC7668500B10820 /* QCMethod.m */; settings = {ASSET_TAGS = (); }; };
+		6A6C36821BC7668500B10820 /* MoneySaverIconAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C367F1BC7668500B10820 /* MoneySaverIconAnimate.m */; settings = {ASSET_TAGS = (); }; };
+		6A6C36941BC81E7F00B10820 /* UIView+XExplode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C36931BC81E7F00B10820 /* UIView+XExplode.m */; settings = {ASSET_TAGS = (); }; };
 		6A8404441BB0FE5500A89446 /* DefaultConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404431BB0FE5500A89446 /* DefaultConstants.m */; settings = {ASSET_TAGS = (); }; };
 		6A8404471BB1049300A89446 /* WebClientConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404461BB1049300A89446 /* WebClientConstants.m */; settings = {ASSET_TAGS = (); }; };
 		6A8404511BB24C3000A89446 /* MSSubmitTransitionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404501BB24C3000A89446 /* MSSubmitTransitionButton.m */; settings = {ASSET_TAGS = (); }; };
@@ -176,6 +179,12 @@
 		6A692E9F1BB5AA8400AAA277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A692EA71BB6404100AAA277 /* MSBmobDataBojectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBmobDataBojectModel.h; sourceTree = "<group>"; };
 		6A692EA81BB6404100AAA277 /* MSBmobDataBojectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBmobDataBojectModel.m; sourceTree = "<group>"; };
+		6A6C367D1BC7668500B10820 /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
+		6A6C367E1BC7668500B10820 /* MoneySaverIconAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneySaverIconAnimate.h; sourceTree = "<group>"; };
+		6A6C367F1BC7668500B10820 /* MoneySaverIconAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneySaverIconAnimate.m; sourceTree = "<group>"; };
+		6A6C36801BC7668500B10820 /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMethod.h; sourceTree = "<group>"; };
+		6A6C36921BC81E7F00B10820 /* UIView+XExplode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XExplode.h"; sourceTree = "<group>"; };
+		6A6C36931BC81E7F00B10820 /* UIView+XExplode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XExplode.m"; sourceTree = "<group>"; };
 		6A8404411BB0F67100A89446 /* MSPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSPCH.pch; sourceTree = "<group>"; };
 		6A8404421BB0FE5500A89446 /* DefaultConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultConstants.h; sourceTree = "<group>"; };
 		6A8404431BB0FE5500A89446 /* DefaultConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultConstants.m; sourceTree = "<group>"; };
@@ -378,9 +387,21 @@
 			path = MoneySaverToday;
 			sourceTree = "<group>";
 		};
+		6A6C36771BC66A9200B10820 /* MoneySaverIcon */ = {
+			isa = PBXGroup;
+			children = (
+				6A6C367E1BC7668500B10820 /* MoneySaverIconAnimate.h */,
+				6A6C367F1BC7668500B10820 /* MoneySaverIconAnimate.m */,
+				6A6C36801BC7668500B10820 /* QCMethod.h */,
+				6A6C367D1BC7668500B10820 /* QCMethod.m */,
+			);
+			path = MoneySaverIcon;
+			sourceTree = "<group>";
+		};
 		6A84044D1BB24C0200A89446 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6A6C36771BC66A9200B10820 /* MoneySaverIcon */,
 				6AAF992F1BBEC02A008D0805 /* MoneySaver+Views */,
 				6A3A523D1BB4FF3F00BA99A5 /* XNumberKeyBoard */,
 				6A84044E1BB24C2300A89446 /* XSubmitTransition */,
@@ -632,6 +653,8 @@
 				6AE69EE31BBE914500EB4CAD /* UILabel+MoneySaver.m */,
 				6AAF992B1BBEB61B008D0805 /* UIImage+MoneySaver.h */,
 				6AAF992C1BBEB61B008D0805 /* UIImage+MoneySaver.m */,
+				6A6C36921BC81E7F00B10820 /* UIView+XExplode.h */,
+				6A6C36931BC81E7F00B10820 /* UIView+XExplode.m */,
 			);
 			name = "MoneySaver+Category";
 			sourceTree = "<group>";
@@ -858,7 +881,9 @@
 				6A0A539B1BAFB7F2004AD688 /* MSWebDataClient.m in Sources */,
 				6A3A52521BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.m in Sources */,
 				6A9095AF1BAF92D000672A05 /* MSAppDelegate.m in Sources */,
+				6A6C36811BC7668500B10820 /* QCMethod.m in Sources */,
 				6A92B38D1BB3FA9B001C7A87 /* MSMainViewController.m in Sources */,
+				6A6C36941BC81E7F00B10820 /* UIView+XExplode.m in Sources */,
 				6AF84D901BAFD75100B061A5 /* MSEncryptHelper.m in Sources */,
 				6A550C121BC3C2EB00AA01A5 /* MSWebDateSyncClient.m in Sources */,
 				6ACE19CF1BC61298007E0884 /* MSLaunchViewController.m in Sources */,
@@ -870,6 +895,7 @@
 				6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */,
 				6AD229BB1BBFFC52004DC5FC /* MSProjectValueHeaderView.m in Sources */,
 				6A8404441BB0FE5500A89446 /* DefaultConstants.m in Sources */,
+				6A6C36821BC7668500B10820 /* MoneySaverIconAnimate.m in Sources */,
 				6A9095AC1BAF92D000672A05 /* main.m in Sources */,
 				6A894CCC1BBB8290009A7120 /* MSProjectListTableViewCellTypeView.m in Sources */,
 				6A29B40B1BC3CC10009B1B65 /* NIDebuggingTools.m in Sources */,

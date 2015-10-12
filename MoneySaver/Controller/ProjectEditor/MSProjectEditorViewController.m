@@ -14,7 +14,6 @@
 #import "MSBarButtonItem.h"
 
 #import "MSProjectTypeListDataSource.h"
-#import "MSProjectViewModel.h"
 
 #import <IQKeyboardManager.h>
 
@@ -28,20 +27,26 @@
 @property (nonatomic, strong) MSNumberKeyBord             *numberKeybord;
 
 @property (nonatomic, strong) MSProjectViewModel          *viewModel;
-
 @end
 
 @implementation MSProjectEditorViewController
 
 #pragma mark - Life Cycle
-+ (instancetype)projectEditorViewControllerForMode:(BOOL)isQuick
++ (instancetype)projectEditorViewControllerForQuickMode
 {
     MSProjectViewModel *vm = [MSProjectViewModel new];
     vm.dataModel = [MSBaseProjectModel new];
     MSProjectEditorViewController *project = [[MSProjectEditorViewController alloc] initWithViewModel:vm];
-    project.quickMode = isQuick;
+    project.quickMode = YES;
     return project;
 }
+
++ (instancetype)projectEditorViewControllerForModel:(MSProjectViewModel *)model
+{
+    
+}
+
+
 
 - (instancetype)initWithViewModel:(id)viewmodel
 {
@@ -109,9 +114,18 @@
         }];
     }
     
+    self.viewModel.newData = YES;
+    
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.headerView];
     [self.view addSubview:self.projectTypeList];
+    
+    [self.numberKeybord setInputComplete:^(NSString *value) {
+        @strongify(self);
+        self.viewModel.dataModel.value = [NSNumber numberWithDouble:value.doubleValue];
+        [self.viewModel.updateCommand execute:nil];
+    }];
+
 }
 
 - (void)layoutViewController

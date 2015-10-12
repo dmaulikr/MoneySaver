@@ -7,10 +7,13 @@
 //
 
 #import "MSBaseClassViewController.h"
+#import "MSProjectViewModel.h"
 
 @interface MSProjectEditorViewController : MSBaseClassViewController
 
 
-+ (instancetype)projectEditorViewControllerForMode:(BOOL)isQuick;
++ (instancetype)projectEditorViewControllerForQuickMode;
++ (instancetype)projectEditorViewControllerForModel:(MSProjectViewModel *)model;
+
 
 @end

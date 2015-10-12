@@ -41,13 +41,13 @@
 }
 
 
-#pragma mark - Setter
-- (void)setNewData:(BOOL)newData
-{
-    if (newData) {
-        self.dataModel.objectId = kNewDatabaseIdValue;
-    }
-}
+//#pragma mark - Setter
+//- (void)setNewData:(BOOL)newData
+//{
+//    if (newData) {
+//        self.dataModel.objectId = kNewDatabaseIdValue;
+//    }
+//}
 
 #pragma mark - Getter
 - (RACCommand *)updateCommand
@@ -67,14 +67,16 @@
 - (RACSignal *)updateData
 {
     @weakify(self);
-//    self.newData = ISNEWDATA(self.dataModel.projectId);
-    RACSignal *localSignal = [self updateToDatabaseWithModel:self.dataModel new:self.newData];
-    RACSignal *webSignal   = [self updateToWebDatabaseWithModel:self.dataModel new:self.newData];
+    BOOL flag = ISNEWDATA(self.dataModel.objectId);
+    RACSignal *localSignal = [self updateToDatabaseWithModel:self.dataModel new:flag];
+    RACSignal *webSignal   = [self updateToWebDatabaseWithModel:self.dataModel new:flag];
 
     //更新ObjID
-    [webSignal  doNext:^(BmobObject *x) {
+    [[webSignal  doNext:^(BmobObject *x) {
         @strongify(self);
         self.dataModel.objectId = x.objectId;
+    }] doError:^(NSError *error) {
+        
     }];
     
     return [[webSignal concat:localSignal] doCompleted:^{

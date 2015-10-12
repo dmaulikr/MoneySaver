@@ -255,6 +255,7 @@
     return circlePath;
 }
 
+// $
 - (UIBezierPath*)textPath{
     UIBezierPath *textPath = [UIBezierPath bezierPath];
     [textPath moveToPoint:CGPointMake(18, 30)];
@@ -314,6 +315,7 @@
     return backgroundMaskPath;
 }
 
+// +
 - (UIBezierPath*)plusSharrpPath{
     UIBezierPath *plusSharrpPath = [UIBezierPath bezierPath];
     [plusSharrpPath moveToPoint:CGPointMake(0, 5)];

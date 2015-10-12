@@ -15,8 +15,8 @@ static char const * const kBoomCellsProperty     = "BoomCellsProperty";
 static char const * const kScaleSnapshotProperty = "ScaleSnapshotProperty";
 
 
-static NSString *kBoomCellsName     = @"BoomCells";
-static NSString *kScaleSnapshotName = @"BoomScaleSnapshot";
+static NSString *kBoomCellsName       = @"BoomCells";
+static NSString *kScaleSnapshotName   = @"BoomScaleSnapshot";
 
 static NSString *kScaleAnimationKey   = @"scaleAnimation";
 static NSString *kOpacityAnimationKey = @"opacityAnimation";
@@ -26,12 +26,6 @@ static NSString *kMoveAnimationKey    = @"moveAnimation";
 
 @implementation UIView (XExplode)
 
-
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
-{
-
-
-}
 
 #pragma mark - Public Method
 - (UIImage *)snapshot

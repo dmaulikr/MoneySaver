@@ -9,7 +9,20 @@
 #import "MSBaseClassDataModel.h"
 #import "DefaultConstants.h"
 
+
 @implementation MSBaseClassDataModel
++ (NSDateFormatter *)getModelDateFormatter
+{
+    static NSDateFormatter *_modelDateFormatter = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (!_modelDateFormatter) {
+            _modelDateFormatter = [NSDateFormatter new];
+            _modelDateFormatter.dateFormat = @"YYYY-MM-DD hh:mm:ss";
+        }
+    });
+    return _modelDateFormatter;
+}
 
 + (LKDBHelper *)getUsingLKDBHelper
 {

@@ -96,14 +96,14 @@
         } else {
             BmobBooleanResultBlock block =  ^(BOOL isSuccessful, NSError *error){
                 if (isSuccessful) {
+                    [subscriber sendNext:object];
+                    [subscriber sendCompleted];
+                } else {
                     if (error) {
                         [subscriber sendError:error];
                     } else {
                         [subscriber sendError:[MSWebDataClient defaultError]];
                     }
-                } else {
-                    [subscriber sendNext:object];
-                    [subscriber sendCompleted];
                 }
             };
             switch (type) {

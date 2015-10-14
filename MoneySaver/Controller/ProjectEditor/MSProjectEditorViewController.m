@@ -36,16 +36,17 @@
 {
     MSProjectViewModel *vm = [MSProjectViewModel new];
     vm.dataModel = [MSBaseProjectModel new];
+    vm.dataModel.date = [NSDate date];
     MSProjectEditorViewController *project = [[MSProjectEditorViewController alloc] initWithViewModel:vm];
     project.quickMode = YES;
     return project;
 }
 
-+ (instancetype)projectEditorViewControllerForModel:(MSProjectViewModel *)model
-{
-    
-}
-
+//+ (instancetype)projectEditorViewControllerForModel:(MSProjectViewModel *)model
+//{
+//    
+//}
+//
 
 
 - (instancetype)initWithViewModel:(id)viewmodel

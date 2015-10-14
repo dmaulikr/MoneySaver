@@ -16,7 +16,7 @@
 @property (nonatomic, strong) MSBaseProjectModel *dataModel;        ///< 数据模型
 
 @property (nonatomic, strong) NSError            *updateDataError;  ///< 更新数据错误
-@property (nonatomic, assign) BOOL               newData;           ///< 是否未新数据
+@property (nonatomic, assign, getter=isNewData) BOOL               newData;           ///< 是否未新数据
 
 @property (nonatomic, strong) RACCommand         *updateCommand;    ///< 更新命令
 

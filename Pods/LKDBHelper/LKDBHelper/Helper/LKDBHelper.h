@@ -17,6 +17,9 @@
 #import "NSObject+LKModel.h"
 #import "NSObject+LKDBHelper.h"
 
+#define kChangeDataBaseName
+
+
 @interface LKDBHelper : NSObject
 /**
  *	@brief  filepath the use of : "documents/db/" + fileName + ".db"

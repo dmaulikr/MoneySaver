@@ -6,7 +6,7 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "MSBaseClassDataModel.h"
+#import "MSDataModelDelegate.h"
 #import "MSProjectModelTypeHelper.h"
 #import "MSProjectTransactionTypeHelper.h"
 
@@ -15,9 +15,9 @@
 /**
  *  账单项目模型
  */
-@interface MSBaseProjectModel : MSBaseClassDataModel <MTLJSONSerializing>
+@interface MSBaseProjectModel : MTLModel <MTLJSONSerializing,MSDataModelDelegate>
 
-//@property (nonatomic, strong) NSString *objectId; ///< 主键(父类中)
+//@property (nonatomic, copy) NSString *projectId; ///< 主键(父类中)
 
 @property (nonatomic, assign) MSProjectTransactionType transactionType;/**< 交易类型 */
 @property (nonatomic, assign) MSProjectModelType       projectType;/**< 账单类型 */

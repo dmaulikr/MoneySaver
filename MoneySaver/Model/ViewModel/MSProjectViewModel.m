@@ -40,15 +40,6 @@
     }];
 }
 
-
-//#pragma mark - Setter
-//- (void)setNewData:(BOOL)newData
-//{
-//    if (newData) {
-//        self.dataModel.objectId = kNewDatabaseIdValue;
-//    }
-//}
-
 #pragma mark - Getter
 - (RACCommand *)updateCommand
 {
@@ -67,9 +58,8 @@
 - (RACSignal *)updateData
 {
     @weakify(self);
-    BOOL flag = ISNEWDATA(self.dataModel.objectId);
-    RACSignal *localSignal = [self updateToDatabaseWithModel:self.dataModel new:flag];
-    RACSignal *webSignal   = [self updateToWebDatabaseWithModel:self.dataModel new:flag];
+    RACSignal *localSignal = [self updateToDatabaseWithModel:self.dataModel new:self.isNewData];
+    RACSignal *webSignal   = [self updateToWebDatabaseWithModel:self.dataModel new:self.isNewData];
 
     //更新ObjID
     [[webSignal  doNext:^(BmobObject *x) {

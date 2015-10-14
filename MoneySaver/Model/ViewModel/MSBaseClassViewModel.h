@@ -13,7 +13,6 @@
 #import "MSWebDataClient.h"
 #import "MSBmobObjectAdapter.h"
 
-#define ISNEWDATA(__objectId__) [__objectId__ isEqualToString:kNewDatabaseIdValue]
 
 @class MSBaseClassDataModel;
 
@@ -31,10 +30,10 @@
 
 - (RACSignal *)updateData;
 
-- (RACSignal *)updateToWebDatabaseWithModel:(id <MTLJSONSerializing>)model
+- (RACSignal *)updateToWebDatabaseWithModel:(MTLModel <MTLJSONSerializing>*)model
                                         new:(BOOL)isNew;
 
-- (RACSignal *)updateToDatabaseWithModel:(MSBaseClassDataModel *)model
+- (RACSignal *)updateToDatabaseWithModel:(MTLModel <MTLJSONSerializing>*)model
                                      new:(BOOL)isNew;
 
 @end

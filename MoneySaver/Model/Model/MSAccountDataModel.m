@@ -25,6 +25,7 @@
 @end
 
 @implementation MSAccountDataModel
+@synthesize objectId = _objectId;
 
 
 #pragma mark - MTLJSONSerializing
@@ -40,5 +41,18 @@
              @"backgroundImage":@"backgroundImage",
              };
 }
+
+
+//#pragma mark - Getter
+//- (void)setObjectId:(NSString *)objectId
+//{
+//    _accountId = objectId;
+//}
+//
+//#pragma mark - Setter
+//- (NSString *)objectId
+//{
+//    return _accountId;
+//}
 
 @end

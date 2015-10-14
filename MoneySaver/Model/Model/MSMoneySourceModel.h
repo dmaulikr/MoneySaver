@@ -6,7 +6,8 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "MSBaseClassDataModel.h"
+#import "MSDataModelDelegate.h"
+
 typedef NS_ENUM(NSUInteger, MoneySourceModelType) {
     SourceModelOtherType  = 0,
     SourceModelBankType   = 1,
@@ -14,9 +15,9 @@ typedef NS_ENUM(NSUInteger, MoneySourceModelType) {
     SourceModelCashType   = 3,
 };
 
-@interface MSMoneySourceModel : MSBaseClassDataModel <MTLJSONSerializing>
+@interface MSMoneySourceModel : MTLModel <MTLJSONSerializing,MSDataModelDelegate>
 
-//@property (nonatomic, strong) NSString *objectId; ///< 主键(父类中)
+//@property (nonatomic, strong) NSString *sourceId; ///< 主键(父类中)
 
 @property (nonatomic, assign) MoneySourceModelType sourceType;///< 资金来源
 

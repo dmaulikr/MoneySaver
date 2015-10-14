@@ -8,6 +8,7 @@
 
 #import "LKDBHelper.h"
 
+
 #define LKDBCheck_tableNameIsInvalid(tableName)                           \
     if ([LKDBUtils checkStringIsEmpty:tableName]) {                       \
         LKErrorLog(@" \n Fail!Fail!Fail!Fail! \n with TableName is nil"); \
@@ -98,7 +99,8 @@
 
 - (instancetype)init
 {
-    return [self initWithDBName:@"LKDB"];
+#warning 在此处修改了数据库的名字
+    return [self initWithDBName:@"MoneySaver"];
 }
 
 - (instancetype)initWithDBName:(NSString *)dbname

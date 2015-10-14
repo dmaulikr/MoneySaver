@@ -23,14 +23,14 @@
     return [RACSignal empty];
 }
 
-- (RACSignal *)updateToWebDatabaseWithModel:(id <MTLJSONSerializing>)model
+- (RACSignal *)updateToWebDatabaseWithModel:(MTLModel <MTLJSONSerializing> *)model
                                      new:(BOOL)isNew
 {
     MSDataOperationType type = isNew?MSDataOperationInsert:MSDataOperationUpdate;
     return [MSWebDataClient callDataOperationInBackground:model type:type];
 }
 
-- (RACSignal *)updateToDatabaseWithModel:(MSBaseClassDataModel *)model
+- (RACSignal *)updateToDatabaseWithModel:(MTLModel <MTLJSONSerializing> *)model
                                      new:(BOOL)isNew
 {
     return [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {

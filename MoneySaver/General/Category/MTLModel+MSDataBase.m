@@ -1,16 +1,15 @@
 //
-//  MSBaseClassDataModel.m
+//  MTLModel+MSDataBase.m
 //  MoneySaver
 //
-//  Created by Tbxark on 15/10/8.
+//  Created by Tbxark on 15/10/14.
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "MSBaseClassDataModel.h"
-#import "DefaultConstants.h"
+#import "MTLModel+MSDataBase.h"
 
+@implementation MTLModel (MSDataBase)
 
-@implementation MSBaseClassDataModel
 + (NSDateFormatter *)getModelDateFormatter
 {
     static NSDateFormatter *_modelDateFormatter = nil;
@@ -18,7 +17,7 @@
     dispatch_once(&onceToken, ^{
         if (!_modelDateFormatter) {
             _modelDateFormatter = [NSDateFormatter new];
-            _modelDateFormatter.dateFormat = @"YYYY-MM-DD hh:mm:ss";
+            _modelDateFormatter.dateFormat = @"yyyy-MM-dd hh:mm:ss";
         }
     });
     return _modelDateFormatter;
@@ -29,12 +28,14 @@
     static LKDBHelper *_dataBaseHelper = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        if (_dataBaseHelper) {
+        if (!_dataBaseHelper) {
             _dataBaseHelper = [[LKDBHelper alloc] initWithDBName:@"MoneySaver"];
-            [_dataBaseHelper setEncryptionKey:kDatabaseEncryptKey];
+#warning 屏蔽了数据库加密,再Release 版本中记得打开
+            //TODO:屏蔽了数据库加密,再Release 版本中记得打开
+//            [_dataBaseHelper setEncryptionKey:kDatabaseEncryptKey];
         }
     });
-   return   _dataBaseHelper;
+    return   _dataBaseHelper;
     
 }
 
@@ -45,7 +46,7 @@
 
 + (NSString *)getPrimaryKey
 {
-    return kDefaultDatabaseId;
+    return @"objectId";
 }
 
 @end

@@ -56,7 +56,7 @@
 - (void)configureViewController
 {
     @weakify(self);
-    MSProjectEditorViewController *editor = [MSProjectEditorViewController projectEditorViewControllerForMode:YES];
+    MSProjectEditorViewController *editor = [MSProjectEditorViewController projectEditorViewControllerForQuickMode];
     self.mainNavigation = [[MSMainNavViewController alloc] initWithRootViewController:editor];
     MSLaunchViewController *launch = [[MSLaunchViewController alloc] initWithCompletionBlock:^{
         @strongify(self);

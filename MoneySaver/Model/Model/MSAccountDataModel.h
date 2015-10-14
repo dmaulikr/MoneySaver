@@ -6,7 +6,7 @@
 //  Copyright © 2015年 TBXark. All rights reserved.
 //
 
-#import "MSBaseClassDataModel.h"
+#import "MSDataModelDelegate.h"
 
 @interface MSAccountRequestModel : MTLModel<MTLJSONSerializing>
 
@@ -20,9 +20,9 @@
 /**
  *  用户模型
  */
-@interface MSAccountDataModel : MSBaseClassDataModel <MTLJSONSerializing>
+@interface MSAccountDataModel : MTLModel <MTLJSONSerializing,MSDataModelDelegate>
 
-//@property (nonatomic, strong) NSString *objectId; ///< 主键(父类中)
+//@property (nonatomic, copy) NSString *accountId; ///< 主键(父类中)
 
 @property (nonatomic, copy) NSString *account;/**< 用户名 */
 

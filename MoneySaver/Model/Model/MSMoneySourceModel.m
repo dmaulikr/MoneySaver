@@ -9,6 +9,7 @@
 #import "MSMoneySourceModel.h"
 
 @implementation MSMoneySourceModel
+@synthesize  objectId = _objectId;
 
 #pragma mark - MTLJSONSerializing
 
@@ -21,4 +22,17 @@
              @"total":@"total",
              };
 }
+
+
+//#pragma mark - Getter
+//- (void)setObjectId:(NSString *)objectId
+//{
+//    _sourceId = objectId;
+//}
+//#pragma mark - Setter
+//- (NSString *)objectId
+//{
+//    return _sourceId;
+//}
+
 @end

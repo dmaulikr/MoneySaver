@@ -62,7 +62,7 @@
 		6A92B3891BB3F568001C7A87 /* UIColor+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92B3881BB3F568001C7A87 /* UIColor+MoneySaver.m */; settings = {ASSET_TAGS = (); }; };
 		6AAF992D1BBEB61B008D0805 /* UIImage+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF992C1BBEB61B008D0805 /* UIImage+MoneySaver.m */; settings = {ASSET_TAGS = (); }; };
 		6AAF99321BBEC038008D0805 /* MSBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF99311BBEC038008D0805 /* MSBarButtonItem.m */; settings = {ASSET_TAGS = (); }; };
-		6ACE19C11BC60297007E0884 /* MSBaseClassDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACE19C01BC60297007E0884 /* MSBaseClassDataModel.m */; settings = {ASSET_TAGS = (); }; };
+		6ABCE3E41BCE35C600582215 /* MTLModel+MSDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABCE3E31BCE35C600582215 /* MTLModel+MSDataBase.m */; settings = {ASSET_TAGS = (); }; };
 		6AD229BB1BBFFC52004DC5FC /* MSProjectValueHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD229BA1BBFFC52004DC5FC /* MSProjectValueHeaderView.m */; settings = {ASSET_TAGS = (); }; };
 		6AD7BD0B1BC112FC0098E1F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD7BD0A1BC112FC0098E1F0 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		6AD7BD181BC155280098E1F0 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD7BD171BC155280098E1F0 /* LocalAuthentication.framework */; };
@@ -223,8 +223,9 @@
 		6AAF992C1BBEB61B008D0805 /* UIImage+MoneySaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MoneySaver.m"; sourceTree = "<group>"; };
 		6AAF99301BBEC038008D0805 /* MSBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBarButtonItem.h; sourceTree = "<group>"; };
 		6AAF99311BBEC038008D0805 /* MSBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBarButtonItem.m; sourceTree = "<group>"; };
-		6ACE19BF1BC60297007E0884 /* MSBaseClassDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBaseClassDataModel.h; sourceTree = "<group>"; };
-		6ACE19C01BC60297007E0884 /* MSBaseClassDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBaseClassDataModel.m; sourceTree = "<group>"; };
+		6ABCE3E21BCE35C600582215 /* MTLModel+MSDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLModel+MSDataBase.h"; sourceTree = "<group>"; };
+		6ABCE3E31BCE35C600582215 /* MTLModel+MSDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLModel+MSDataBase.m"; sourceTree = "<group>"; };
+		6ACE19BF1BC60297007E0884 /* MSDataModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDataModelDelegate.h; sourceTree = "<group>"; };
 		6AD229B91BBFFC52004DC5FC /* MSProjectValueHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProjectValueHeaderView.h; sourceTree = "<group>"; };
 		6AD229BA1BBFFC52004DC5FC /* MSProjectValueHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProjectValueHeaderView.m; sourceTree = "<group>"; };
 		6AD7BD0A1BC112FC0098E1F0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -444,8 +445,7 @@
 		6A85D9961BAFB14C0049D988 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6ACE19BF1BC60297007E0884 /* MSBaseClassDataModel.h */,
-				6ACE19C01BC60297007E0884 /* MSBaseClassDataModel.m */,
+				6ACE19BF1BC60297007E0884 /* MSDataModelDelegate.h */,
 				6A85D9971BAFB14C0049D988 /* MSAccountDataModel.h */,
 				6A85D9981BAFB14C0049D988 /* MSAccountDataModel.m */,
 				6A85D9991BAFB14C0049D988 /* MSBaseProjectModel.h */,
@@ -634,6 +634,8 @@
 		6AAF992E1BBEBD67008D0805 /* MoneySaver+Category */ = {
 			isa = PBXGroup;
 			children = (
+				6ABCE3E21BCE35C600582215 /* MTLModel+MSDataBase.h */,
+				6ABCE3E31BCE35C600582215 /* MTLModel+MSDataBase.m */,
 				6A92B3871BB3F568001C7A87 /* UIColor+MoneySaver.h */,
 				6A92B3881BB3F568001C7A87 /* UIColor+MoneySaver.m */,
 				6A0D52801BBE609F00D651B7 /* UIImageView+MoneySaver.h */,
@@ -853,12 +855,12 @@
 				6A29B4141BC3D759009B1B65 /* NSString+XValueCheck.m in Sources */,
 				6A4EF2431BC5093500679453 /* MSGlobalPropertyContainer.m in Sources */,
 				6A0D527F1BBE5E0A00D651B7 /* MSProjectTypeCollectionViewCell.m in Sources */,
-				6ACE19C11BC60297007E0884 /* MSBaseClassDataModel.m in Sources */,
 				6AE69EE41BBE914500EB4CAD /* UILabel+MoneySaver.m in Sources */,
 				6A8404511BB24C3000A89446 /* MSSubmitTransitionButton.m in Sources */,
 				6A3A52451BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m in Sources */,
 				6A3A524F1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m in Sources */,
 				6A3A52401BB4FF6400BA99A5 /* MSNumberKeyBord.m in Sources */,
+				6ABCE3E41BCE35C600582215 /* MTLModel+MSDataBase.m in Sources */,
 				6A8404571BB2523D00A89446 /* NSTimer+MSSubmitTransition.m in Sources */,
 				6A8404641BB2860200A89446 /* MSBaseClassViewController.m in Sources */,
 				6A29B40E1BC3CC8D009B1B65 /* MSSqliteQueryCondition.m in Sources */,

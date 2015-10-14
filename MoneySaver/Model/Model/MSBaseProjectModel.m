@@ -9,7 +9,7 @@
 #import "MSBaseProjectModel.h"
 
 @implementation MSBaseProjectModel
-
+@synthesize  objectId = _objectId;
 
 #pragma mark - Private Method
 - (void)setProjectType:(MSProjectModelType)projectType
@@ -29,7 +29,6 @@
 {
     return @{
              kDefaultDatabaseId:kDefaultDatabaseId,
-
              @"transactionType":@"transactionType",
              @"projectType":@"projectType",
 
@@ -41,5 +40,17 @@
              @"sourceId":@"sourceId",
              };
 }
+
+
+//#pragma mark - Getter
+//- (void)setObjectId:(NSString *)objectId
+//{
+//    _projectId = objectId;
+//}
+//#pragma mark - Setter
+//- (NSString *)objectId
+//{
+//    return _projectId;
+//}
 
 @end

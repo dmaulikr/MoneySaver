@@ -8,8 +8,10 @@
 
 #import <Mantle.h>
 #import <LKDBHelper.h>
-#import "DefaultConstants.h"
 
 @interface MTLModel (MSDataBase)
+
+
++ (NSError *)databaseLastError;
 
 @end

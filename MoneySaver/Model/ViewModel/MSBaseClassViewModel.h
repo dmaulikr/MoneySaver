@@ -28,6 +28,9 @@
  */
 @interface MSBaseDataViewModel : NSObject
 
+
+@property (nonatomic, strong, readonly) NSError *updataError;
+
 - (RACSignal *)updateData;
 
 - (RACSignal *)updateToWebDatabaseWithModel:(MTLModel <MTLJSONSerializing>*)model

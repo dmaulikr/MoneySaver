@@ -10,7 +10,7 @@
 
 @implementation MSWebDateSyncClient
 
-+ (void)sync
+- (void)sync
 {
     
 }

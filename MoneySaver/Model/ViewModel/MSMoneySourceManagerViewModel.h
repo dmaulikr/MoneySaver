@@ -7,15 +7,15 @@
 //
 
 #import "MSBaseClassViewModel.h"
-
+#import "MSMoneySourceViewModel.h"
 
 @interface MSMoneySourceManagerViewModel : MSBaseClassViewModel
 
 + (instancetype)shareManager;
 
-@property (nonatomic, strong) NSMutableArray *sourceArray;
+@property (nonatomic, strong) NSMutableArray <MSMoneySourceViewModel *> *sourceArray;
 
-@property (nonatomic, strong) NSError *soureError;
+@property (nonatomic, strong , readonly) NSError *soureError;
 
 - (void)updateMoneySourceWithSourceId:(NSString *)sourceId;
 

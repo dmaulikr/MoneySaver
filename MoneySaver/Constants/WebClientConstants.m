@@ -15,6 +15,6 @@ NSString * const kNetResponeErrorKey  = @"errMsg";
 
 NSInteger  const kNetResponeSuccessCode        = 200;
 NSInteger  const kNetResponeDefaultErrorCode   = 10000;
-NSString * const kNetErrorUserInfoReasonkey    = @"error";
+NSString * const kNetErrorUserInfoReasonkey    = @"reason";
 NSString * const kNetErrorUserInfoDefautValue  = @"未知错误";
 NSString * const kNetDefaultErrorDomain        = @"com.TBXark.MoneySaver.NetError";

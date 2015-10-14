@@ -62,7 +62,7 @@ static char const * const kaRGBBitmapContextName = "aRGBBitmapContext";
 - (void)setARGBBitmapContext:(CGContextRef)aRGBBitmapContext
 {
     NSValue *value = [NSValue valueWithBytes:aRGBBitmapContext objCType:@encode(CGContextRef)];
-    objc_setAssociatedObject(self, kaRGBBitmapContextName, value , OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, kaRGBBitmapContextName, value , OBJC_ASSOCIATION_ASSIGN);
 }
 
 #pragma mark - Public Method

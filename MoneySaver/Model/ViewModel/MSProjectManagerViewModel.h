@@ -11,6 +11,14 @@
 
 @interface MSProjectManagerViewModel : MSBaseClassViewModel
 
+/**
+ *  当前屏幕显示的项目管理器
+ *
+ *  @return 项目管理器单例
+ */
++ (instancetype)currentProjectManager;
+
+
 @property (nonatomic, strong) NSArray <MSBaseProjectModel*> *projectArray;
 @property (nonatomic, strong) NSArray <MSBaseProjectModel *> *projectTypeArray;
 

@@ -21,6 +21,10 @@
 
 
 @interface LKDBHelper : NSObject
+
+
+//@property(weak, nonatomic, readonly)   FMDatabase *usingdb;
+//@property(strong, nonatomic, readonly) FMDatabaseQueue *bindingQueue;
 /**
  *	@brief  filepath the use of : "documents/db/" + fileName + ".db"
  *  refer:  FMDatabase.h  + (instancetype)databaseWithPath:(NSString*)inPath;

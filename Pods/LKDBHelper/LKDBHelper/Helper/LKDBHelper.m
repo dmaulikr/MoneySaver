@@ -47,8 +47,8 @@
 
 @property(strong, nonatomic) NSMutableArray *createdTableNames;
 
-@property(LKDBWeak, nonatomic) FMDatabase *usingdb;
-@property(strong, nonatomic) FMDatabaseQueue *bindingQueue;
+@property(LKDBWeak, nonatomic, readwrite) FMDatabase *usingdb;
+@property(strong, nonatomic, readwrite) FMDatabaseQueue *bindingQueue;
 @property(copy, nonatomic) NSString *dbPath;
 
 @property(strong, nonatomic) NSRecursiveLock *threadLock;
@@ -99,7 +99,7 @@
 
 - (instancetype)init
 {
-#warning 在此处修改了数据库的名字
+//#warning 在此处修改了数据库的名字
     return [self initWithDBName:@"MoneySaver"];
 }
 

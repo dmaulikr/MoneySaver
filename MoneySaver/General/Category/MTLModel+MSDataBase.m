@@ -7,6 +7,8 @@
 //
 
 #import "MTLModel+MSDataBase.h"
+#import "DefaultConstants.h"
+
 
 @implementation MTLModel (MSDataBase)
 
@@ -30,8 +32,8 @@
     dispatch_once(&onceToken, ^{
         if (!_dataBaseHelper) {
             _dataBaseHelper = [[LKDBHelper alloc] initWithDBName:@"MoneySaver"];
-#warning 屏蔽了数据库加密,再Release 版本中记得打开
-            //TODO:屏蔽了数据库加密,再Release 版本中记得打开
+#warning Block database encryption function and then in the Release version remember to open
+//TODO:屏蔽了数据库加密,再Release 版本中记得打开 (为什么要用英文呢,因为装逼)
 //            [_dataBaseHelper setEncryptionKey:kDatabaseEncryptKey];
         }
     });
@@ -48,5 +50,16 @@
 {
     return @"objectId";
 }
+
+
++ (NSError *)databaseLastError
+{
+    __block NSError *error = nil;
+    [[self getUsingLKDBHelper] executeDB:^(FMDatabase *db) {
+        error = db.lastError;
+    }];
+    return error;
+}
+
 
 @end

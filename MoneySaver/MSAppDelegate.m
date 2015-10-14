@@ -33,6 +33,7 @@
 @implementation MSAppDelegate
 
 #pragma mark - Life Cycle
+
 + (instancetype)shareAppDelegate
 {
     return (MSAppDelegate *)[UIApplication sharedApplication].delegate;
@@ -42,6 +43,14 @@
 - (void)venderConfigure
 {
     [Bmob registerWithAppKey:kBmobSDKAPPKey];
+    {
+        //只支持 OS >= 8.0
+        UIMutableUserNotificationCategory *categorys = [[UIMutableUserNotificationCategory alloc]init];
+        categorys.identifier=@"com.TBXark.MoneySaver";
+        UIUserNotificationSettings *userNotifiSetting = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound) categories:[NSSet setWithObjects:categorys,nil]];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:userNotifiSetting];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    }
 }
 
 - (void)apperanceConfigure
@@ -50,7 +59,6 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTranslucent:NO];
     [[UINavigationBar appearance] setBarTintColor:[UIColor ms_DefaultColor]];
-    
 }
 
 - (void)configureViewController
@@ -62,7 +70,6 @@
         @strongify(self);
         self.window.rootViewController = self.mainNavigation;
     }];
-
     self.window.rootViewController = launch;
 }
 
@@ -90,30 +97,37 @@
     } error:^(NSError *error) {
         
     }];
-//
+    
+    
     return YES;
 }
 
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
     self.launchController = [MSLaunchViewController new];
-//    self.launchController.
     [self.window.rootViewController presentViewController:self.launchController animated:YES completion:nil];
     self.showSecurityView = YES;
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
     if (self.hadShowSecurityView) {
         [self.launchController dismissViewControllerAnimated:YES completion:nil];
         self.launchController = nil;
         self.showSecurityView = NO;
-        
     }
 }
 
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    BmobInstallation  *currentIntallation = [BmobInstallation currentInstallation];
+    [currentIntallation setDeviceTokenFromData:deviceToken];
+    [currentIntallation saveInBackground];
+}
 
-- (void)applicationWillResignActive:(UIApplication *)application {}
-- (void)applicationDidBecomeActive:(UIApplication *)application {}
-- (void)applicationWillTerminate:(UIApplication *)application {}
+//- (void)applicationWillResignActive:(UIApplication *)application {}
+//- (void)applicationDidBecomeActive:(UIApplication *)application {}
+//- (void)applicationWillTerminate:(UIApplication *)application {}
 
 @end

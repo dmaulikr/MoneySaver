@@ -12,11 +12,14 @@
 @interface MSProjectViewModel ()
 
 @property (nonatomic, strong) NSString *cacheSourceId;
+@property (nonatomic, strong, readwrite) NSError *updataError;
+
 
 @end
 
 
 @implementation MSProjectViewModel
+@synthesize updataError = _updataError;
 
 #pragma mark - Life Cycle
 + (instancetype)projectWithModel:(MSBaseProjectModel *)model
@@ -62,16 +65,20 @@
     RACSignal *webSignal   = [self updateToWebDatabaseWithModel:self.dataModel new:self.isNewData];
 
     //更新ObjID
-    [[webSignal  doNext:^(BmobObject *x) {
+    [webSignal  doNext:^(BmobObject *x) {
         @strongify(self);
         self.dataModel.objectId = x.objectId;
-    }] doError:^(NSError *error) {
-        
     }];
     
-    return [[webSignal concat:localSignal] doCompleted:^{
+    return [[[webSignal concat:localSignal] doCompleted:^{
         @strongify(self);
+        if (self.isNewData) {
+            self.newData = NO;
+        }
         [self updateMoneySource];
+    }] doError:^(NSError *error) {
+        @strongify(self);
+        self.updataError = error;
     }];
 }
 
@@ -80,11 +87,11 @@
 {
     if (self.cacheSourceId) {
         [[MSMoneySourceManagerViewModel shareManager] updateMoneySourceWithSourceId:self.cacheSourceId];
-        self.cacheSourceId = nil;
     }
     if (![self.cacheSourceId isEqual:self.dataModel.objectId]) {
         [[MSMoneySourceManagerViewModel shareManager] updateMoneySourceWithSourceId:self.dataModel.sourceId];
     }
+    self.cacheSourceId = nil;
 }
 
 

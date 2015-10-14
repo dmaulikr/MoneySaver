@@ -7,6 +7,7 @@
 //
 
 #import "MSBaseClassViewModel.h"
+#import "MSDataModelDelegate.h"
 
 @implementation MSBaseClassViewModel
 @end
@@ -36,14 +37,14 @@
     return [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
         BOOL success = NO;
         if (isNew) {
-           success = [(NSObject *)model saveToDB];
+            success = [(NSObject *)model saveToDB];
         } else {
             success = [(NSObject *)model updateToDB];
         }
         if (success) {
             [subscriber sendCompleted];
         } else {
-            [subscriber sendError:nil];
+            [subscriber sendError:[MTLModel databaseLastError]];
         }
         return nil;
     }];

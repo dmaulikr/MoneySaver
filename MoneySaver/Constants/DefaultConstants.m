@@ -11,6 +11,11 @@
 NSString * const kDefaultDatabaseId  = @"objectId";
 NSString * const kNewDatabaseIdValue = @"New";
 NSString * const kDatabaseEncryptKey = @"TBXarkingDatabaseEncryptKey";
+NSString * const kDataBaseResponeErrorDomain = @"com.MoneySaver.DataBaseError";
+NSString * const kDataBaseResponeErrorKey = @"reason";
+
+
+
 
 NSString * const kNofityUserLoginKey  = @"MoneySaverNofityUserLoginKey";
 NSString * const kNofityUserLogoutKey = @"MoneySaverNofityUserLogoutKey";

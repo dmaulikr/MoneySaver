@@ -12,6 +12,7 @@
 
 @interface MSMoneySourceManagerViewModel ()
 
+@property (nonatomic, strong , readwrite) NSError *soureError;
 
 @end
 

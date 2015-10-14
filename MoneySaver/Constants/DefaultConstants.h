@@ -25,6 +25,10 @@ FOUNDATION_EXPORT NSString * const kDefaultDatabaseId;
 FOUNDATION_EXPORT NSString * const kDatabaseEncryptKey;
 /** 新加条目Id值 */
 FOUNDATION_EXPORT NSString * const kNewDatabaseIdValue;
+/** 数据库错误 */
+FOUNDATION_EXPORT NSString * const kDataBaseResponeErrorDomain;
+/** 数据库错误原因 */
+FOUNDATION_EXPORT NSString * const kDataBaseResponeErrorKey;
 
 
 

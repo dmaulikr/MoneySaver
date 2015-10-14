@@ -23,6 +23,19 @@
 
 #pragma mark - Life Cycle
 
++ (instancetype)currentProjectManager
+{
+    static MSProjectManagerViewModel *_projectManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (!_projectManager) {
+            _projectManager = [MSProjectManagerViewModel new];
+        }
+    });
+    return _projectManager;
+}
+
+
 - (instancetype)init
 {
     self = [super init];

@@ -8,73 +8,73 @@
 
 /* Begin PBXBuildFile section */
 		0474DC344D77E677CC7AEE49 /* libPods-MoneySaver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC39D14C939FE7DCC37D7C3 /* libPods-MoneySaver.a */; };
-		6A0A539B1BAFB7F2004AD688 /* MSWebDataClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539A1BAFB7F2004AD688 /* MSWebDataClient.m */; settings = {ASSET_TAGS = (); }; };
-		6A0A53A01BAFB8C8004AD688 /* MSProjectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539F1BAFB8C8004AD688 /* MSProjectViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A0A53A31BAFB8E3004AD688 /* MSMoneySourceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A53A21BAFB8E3004AD688 /* MSMoneySourceViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A0D527F1BBE5E0A00D651B7 /* MSProjectTypeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D527E1BBE5E0A00D651B7 /* MSProjectTypeCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		6A0D52821BBE609F00D651B7 /* UIImageView+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D52811BBE609F00D651B7 /* UIImageView+MoneySaver.m */; settings = {ASSET_TAGS = (); }; };
-		6A0D52851BBE60E500D651B7 /* MSProjectModelTypeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D52841BBE60E500D651B7 /* MSProjectModelTypeHelper.m */; settings = {ASSET_TAGS = (); }; };
-		6A0D52881BBE616300D651B7 /* MSProjectTransactionTypeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D52871BBE616300D651B7 /* MSProjectTransactionTypeHelper.m */; settings = {ASSET_TAGS = (); }; };
-		6A0D528B1BBE88A300D651B7 /* MSProjectEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D528A1BBE88A300D651B7 /* MSProjectEditorViewController.m */; settings = {ASSET_TAGS = (); }; };
-		6A0D528F1BBE891F00D651B7 /* MSProjectTypeListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D528E1BBE891F00D651B7 /* MSProjectTypeListDataSource.m */; settings = {ASSET_TAGS = (); }; };
-		6A29B40B1BC3CC10009B1B65 /* NIDebuggingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A29B4091BC3CC10009B1B65 /* NIDebuggingTools.m */; settings = {ASSET_TAGS = (); }; };
-		6A29B40E1BC3CC8D009B1B65 /* MSSqliteQueryCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A29B40D1BC3CC8D009B1B65 /* MSSqliteQueryCondition.m */; settings = {ASSET_TAGS = (); }; };
-		6A29B4141BC3D759009B1B65 /* NSString+XValueCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A29B4131BC3D759009B1B65 /* NSString+XValueCheck.m */; settings = {ASSET_TAGS = (); }; };
-		6A3A52401BB4FF6400BA99A5 /* MSNumberKeyBord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A523F1BB4FF6400BA99A5 /* MSNumberKeyBord.m */; settings = {ASSET_TAGS = (); }; };
-		6A3A52451BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A52441BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m */; settings = {ASSET_TAGS = (); }; };
-		6A3A52491BB51FDF00BA99A5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A52481BB51FDF00BA99A5 /* UIView+Frame.m */; settings = {ASSET_TAGS = (); }; };
-		6A3A524C1BB51FE900BA99A5 /* UIDevice+XDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A524B1BB51FE900BA99A5 /* UIDevice+XDevice.m */; settings = {ASSET_TAGS = (); }; };
-		6A3A524F1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A524E1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m */; settings = {ASSET_TAGS = (); }; };
-		6A3A52521BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A52511BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.m */; settings = {ASSET_TAGS = (); }; };
-		6A4EF2431BC5093500679453 /* MSGlobalPropertyContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4EF2421BC5093500679453 /* MSGlobalPropertyContainer.m */; settings = {ASSET_TAGS = (); }; };
-		6A4EF2461BC5096F00679453 /* MSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4EF2451BC5096F00679453 /* MSTestViewController.m */; settings = {ASSET_TAGS = (); }; };
-		6A550C0F1BC3B12900AA01A5 /* NSDictionary+DeleteNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A550C0E1BC3B12900AA01A5 /* NSDictionary+DeleteNull.m */; settings = {ASSET_TAGS = (); }; };
-		6A550C121BC3C2EB00AA01A5 /* MSWebDateSyncClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A550C111BC3C2EB00AA01A5 /* MSWebDateSyncClient.m */; settings = {ASSET_TAGS = (); }; };
-		6A68B1CB1BAFB4B3009BA468 /* MSProjectManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CA1BAFB4B3009BA468 /* MSProjectManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A68B1CE1BAFB4C5009BA468 /* MSAccountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CD1BAFB4C5009BA468 /* MSAccountViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A68B1D11BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D01BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A692E971BB5AA8400AAA277 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A692E961BB5AA8400AAA277 /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
+		6A0A539B1BAFB7F2004AD688 /* MSWebDataClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539A1BAFB7F2004AD688 /* MSWebDataClient.m */; };
+		6A0A53A01BAFB8C8004AD688 /* MSProjectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A539F1BAFB8C8004AD688 /* MSProjectViewModel.m */; };
+		6A0A53A31BAFB8E3004AD688 /* MSMoneySourceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A53A21BAFB8E3004AD688 /* MSMoneySourceViewModel.m */; };
+		6A0D527F1BBE5E0A00D651B7 /* MSProjectTypeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D527E1BBE5E0A00D651B7 /* MSProjectTypeCollectionViewCell.m */; };
+		6A0D52821BBE609F00D651B7 /* UIImageView+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D52811BBE609F00D651B7 /* UIImageView+MoneySaver.m */; };
+		6A0D52851BBE60E500D651B7 /* MSProjectModelTypeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D52841BBE60E500D651B7 /* MSProjectModelTypeHelper.m */; };
+		6A0D52881BBE616300D651B7 /* MSProjectTransactionTypeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D52871BBE616300D651B7 /* MSProjectTransactionTypeHelper.m */; };
+		6A0D528B1BBE88A300D651B7 /* MSProjectEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D528A1BBE88A300D651B7 /* MSProjectEditorViewController.m */; };
+		6A0D528F1BBE891F00D651B7 /* MSProjectTypeListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D528E1BBE891F00D651B7 /* MSProjectTypeListDataSource.m */; };
+		6A29B40B1BC3CC10009B1B65 /* NIDebuggingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A29B4091BC3CC10009B1B65 /* NIDebuggingTools.m */; };
+		6A29B40E1BC3CC8D009B1B65 /* MSSqliteQueryCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A29B40D1BC3CC8D009B1B65 /* MSSqliteQueryCondition.m */; };
+		6A29B4141BC3D759009B1B65 /* NSString+XValueCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A29B4131BC3D759009B1B65 /* NSString+XValueCheck.m */; };
+		6A3A52401BB4FF6400BA99A5 /* MSNumberKeyBord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A523F1BB4FF6400BA99A5 /* MSNumberKeyBord.m */; };
+		6A3A52451BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A52441BB4FFBC00BA99A5 /* MSNumberKeyBordButton.m */; };
+		6A3A52491BB51FDF00BA99A5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A52481BB51FDF00BA99A5 /* UIView+Frame.m */; };
+		6A3A524C1BB51FE900BA99A5 /* UIDevice+XDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A524B1BB51FE900BA99A5 /* UIDevice+XDevice.m */; };
+		6A3A524F1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A524E1BB51FF500BA99A5 /* RACChannelTerminal+TwoWayBinding.m */; };
+		6A3A52521BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3A52511BB5200000BA99A5 /* NSDateFormatter+DefaultFormatter.m */; };
+		6A4EF2431BC5093500679453 /* MSGlobalPropertyContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4EF2421BC5093500679453 /* MSGlobalPropertyContainer.m */; };
+		6A4EF2461BC5096F00679453 /* MSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4EF2451BC5096F00679453 /* MSTestViewController.m */; };
+		6A550C0F1BC3B12900AA01A5 /* NSDictionary+DeleteNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A550C0E1BC3B12900AA01A5 /* NSDictionary+DeleteNull.m */; };
+		6A550C121BC3C2EB00AA01A5 /* MSWebDateSyncClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A550C111BC3C2EB00AA01A5 /* MSWebDateSyncClient.m */; };
+		6A68B1CB1BAFB4B3009BA468 /* MSProjectManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CA1BAFB4B3009BA468 /* MSProjectManagerViewModel.m */; };
+		6A68B1CE1BAFB4C5009BA468 /* MSAccountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1CD1BAFB4C5009BA468 /* MSAccountViewModel.m */; };
+		6A68B1D11BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B1D01BAFB4E3009BA468 /* MSMoneySourceManagerViewModel.m */; };
+		6A692E971BB5AA8400AAA277 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A692E961BB5AA8400AAA277 /* NotificationCenter.framework */; };
 		6A692E9B1BB5AA8400AAA277 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A692E9A1BB5AA8400AAA277 /* TodayViewController.m */; };
 		6A692E9E1BB5AA8400AAA277 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A692E9C1BB5AA8400AAA277 /* MainInterface.storyboard */; };
 		6A692EA21BB5AA8400AAA277 /* MoneySaverToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6A692E951BB5AA8400AAA277 /* MoneySaverToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		6A692EA91BB6404100AAA277 /* MSBmobDataBojectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A692EA81BB6404100AAA277 /* MSBmobDataBojectModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A6C36811BC7668500B10820 /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C367D1BC7668500B10820 /* QCMethod.m */; settings = {ASSET_TAGS = (); }; };
-		6A6C36821BC7668500B10820 /* MoneySaverIconAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C367F1BC7668500B10820 /* MoneySaverIconAnimate.m */; settings = {ASSET_TAGS = (); }; };
-		6A6C36941BC81E7F00B10820 /* UIView+XExplode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C36931BC81E7F00B10820 /* UIView+XExplode.m */; settings = {ASSET_TAGS = (); }; };
-		6A8404441BB0FE5500A89446 /* DefaultConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404431BB0FE5500A89446 /* DefaultConstants.m */; settings = {ASSET_TAGS = (); }; };
-		6A8404471BB1049300A89446 /* WebClientConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404461BB1049300A89446 /* WebClientConstants.m */; settings = {ASSET_TAGS = (); }; };
-		6A8404511BB24C3000A89446 /* MSSubmitTransitionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404501BB24C3000A89446 /* MSSubmitTransitionButton.m */; settings = {ASSET_TAGS = (); }; };
-		6A8404541BB24DCE00A89446 /* MSCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404531BB24DCE00A89446 /* MSCircleLayer.m */; settings = {ASSET_TAGS = (); }; };
-		6A8404571BB2523D00A89446 /* NSTimer+MSSubmitTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404561BB2523D00A89446 /* NSTimer+MSSubmitTransition.m */; settings = {ASSET_TAGS = (); }; };
-		6A84045D1BB27A5300A89446 /* MSFadeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84045C1BB27A5300A89446 /* MSFadeTransition.m */; settings = {ASSET_TAGS = (); }; };
-		6A84045E1BB282E800A89446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A9095BC1BAF933600672A05 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
-		6A8404641BB2860200A89446 /* MSBaseClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404631BB2860200A89446 /* MSBaseClassViewController.m */; settings = {ASSET_TAGS = (); }; };
-		6A84046C1BB2898A00A89446 /* MSLoginMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84046B1BB2898A00A89446 /* MSLoginMainViewController.m */; settings = {ASSET_TAGS = (); }; };
-		6A85D99D1BAFB14C0049D988 /* MSAccountDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9981BAFB14C0049D988 /* MSAccountDataModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A85D99E1BAFB14C0049D988 /* MSBaseProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99A1BAFB14C0049D988 /* MSBaseProjectModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A85D99F1BAFB14C0049D988 /* MSMoneySourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99C1BAFB14C0049D988 /* MSMoneySourceModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A85D9A31BAFB1850049D988 /* MSBaseClassViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9A21BAFB1850049D988 /* MSBaseClassViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		6A894CCA1BBB8290009A7120 /* MSProjectListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A894CC51BBB8290009A7120 /* MSProjectListHeaderView.m */; settings = {ASSET_TAGS = (); }; };
-		6A894CCB1BBB8290009A7120 /* MSProjectListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A894CC71BBB8290009A7120 /* MSProjectListTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		6A894CCC1BBB8290009A7120 /* MSProjectListTableViewCellTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A894CC91BBB8290009A7120 /* MSProjectListTableViewCellTypeView.m */; settings = {ASSET_TAGS = (); }; };
+		6A692EA91BB6404100AAA277 /* MSBmobDataBojectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A692EA81BB6404100AAA277 /* MSBmobDataBojectModel.m */; };
+		6A6C36811BC7668500B10820 /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C367D1BC7668500B10820 /* QCMethod.m */; };
+		6A6C36821BC7668500B10820 /* MoneySaverIconAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C367F1BC7668500B10820 /* MoneySaverIconAnimate.m */; };
+		6A6C36941BC81E7F00B10820 /* UIView+XExplode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C36931BC81E7F00B10820 /* UIView+XExplode.m */; };
+		6A8404441BB0FE5500A89446 /* DefaultConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404431BB0FE5500A89446 /* DefaultConstants.m */; };
+		6A8404471BB1049300A89446 /* WebClientConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404461BB1049300A89446 /* WebClientConstants.m */; };
+		6A8404511BB24C3000A89446 /* MSSubmitTransitionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404501BB24C3000A89446 /* MSSubmitTransitionButton.m */; };
+		6A8404541BB24DCE00A89446 /* MSCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404531BB24DCE00A89446 /* MSCircleLayer.m */; };
+		6A8404571BB2523D00A89446 /* NSTimer+MSSubmitTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404561BB2523D00A89446 /* NSTimer+MSSubmitTransition.m */; };
+		6A84045D1BB27A5300A89446 /* MSFadeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84045C1BB27A5300A89446 /* MSFadeTransition.m */; };
+		6A84045E1BB282E800A89446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A9095BC1BAF933600672A05 /* Assets.xcassets */; };
+		6A8404641BB2860200A89446 /* MSBaseClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8404631BB2860200A89446 /* MSBaseClassViewController.m */; };
+		6A84046C1BB2898A00A89446 /* MSLoginMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84046B1BB2898A00A89446 /* MSLoginMainViewController.m */; };
+		6A85D99D1BAFB14C0049D988 /* MSAccountDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9981BAFB14C0049D988 /* MSAccountDataModel.m */; };
+		6A85D99E1BAFB14C0049D988 /* MSBaseProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99A1BAFB14C0049D988 /* MSBaseProjectModel.m */; };
+		6A85D99F1BAFB14C0049D988 /* MSMoneySourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D99C1BAFB14C0049D988 /* MSMoneySourceModel.m */; };
+		6A85D9A31BAFB1850049D988 /* MSBaseClassViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85D9A21BAFB1850049D988 /* MSBaseClassViewModel.m */; };
+		6A894CCA1BBB8290009A7120 /* MSProjectListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A894CC51BBB8290009A7120 /* MSProjectListHeaderView.m */; };
+		6A894CCB1BBB8290009A7120 /* MSProjectListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A894CC71BBB8290009A7120 /* MSProjectListTableViewCell.m */; };
+		6A894CCC1BBB8290009A7120 /* MSProjectListTableViewCellTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A894CC91BBB8290009A7120 /* MSProjectListTableViewCellTypeView.m */; };
 		6A9095AC1BAF92D000672A05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9095AB1BAF92D000672A05 /* main.m */; };
 		6A9095AF1BAF92D000672A05 /* MSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9095AE1BAF92D000672A05 /* MSAppDelegate.m */; };
-		6A92B3891BB3F568001C7A87 /* UIColor+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92B3881BB3F568001C7A87 /* UIColor+MoneySaver.m */; settings = {ASSET_TAGS = (); }; };
-		6AAF992D1BBEB61B008D0805 /* UIImage+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF992C1BBEB61B008D0805 /* UIImage+MoneySaver.m */; settings = {ASSET_TAGS = (); }; };
-		6AAF99321BBEC038008D0805 /* MSBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF99311BBEC038008D0805 /* MSBarButtonItem.m */; settings = {ASSET_TAGS = (); }; };
-		6ABCE3E41BCE35C600582215 /* MTLModel+MSDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABCE3E31BCE35C600582215 /* MTLModel+MSDataBase.m */; settings = {ASSET_TAGS = (); }; };
-		6AD229BB1BBFFC52004DC5FC /* MSProjectValueHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD229BA1BBFFC52004DC5FC /* MSProjectValueHeaderView.m */; settings = {ASSET_TAGS = (); }; };
-		6AD7BD0B1BC112FC0098E1F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD7BD0A1BC112FC0098E1F0 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		6A92B3891BB3F568001C7A87 /* UIColor+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92B3881BB3F568001C7A87 /* UIColor+MoneySaver.m */; };
+		6AAF992D1BBEB61B008D0805 /* UIImage+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF992C1BBEB61B008D0805 /* UIImage+MoneySaver.m */; };
+		6AAF99321BBEC038008D0805 /* MSBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF99311BBEC038008D0805 /* MSBarButtonItem.m */; };
+		6ABCE3E41BCE35C600582215 /* MTLModel+MSDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABCE3E31BCE35C600582215 /* MTLModel+MSDataBase.m */; };
+		6AD229BB1BBFFC52004DC5FC /* MSProjectValueHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD229BA1BBFFC52004DC5FC /* MSProjectValueHeaderView.m */; };
+		6AD7BD0B1BC112FC0098E1F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD7BD0A1BC112FC0098E1F0 /* LaunchScreen.storyboard */; };
 		6AD7BD181BC155280098E1F0 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD7BD171BC155280098E1F0 /* LocalAuthentication.framework */; };
-		6AD7BD1F1BC223490098E1F0 /* MSProjectReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD7BD1E1BC223490098E1F0 /* MSProjectReportViewController.m */; settings = {ASSET_TAGS = (); }; };
-		6ADF5B251BC4CC3D00B41A7F /* MSChartDataItemAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF5B241BC4CC3D00B41A7F /* MSChartDataItemAdapter.m */; settings = {ASSET_TAGS = (); }; };
-		6AE69EE41BBE914500EB4CAD /* UILabel+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69EE31BBE914500EB4CAD /* UILabel+MoneySaver.m */; settings = {ASSET_TAGS = (); }; };
-		6AF225881BCB4457006A956E /* MSLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF225851BCB4457006A956E /* MSLaunchViewController.m */; settings = {ASSET_TAGS = (); }; };
-		6AF225891BCB4457006A956E /* MSMainNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF225871BCB4457006A956E /* MSMainNavViewController.m */; settings = {ASSET_TAGS = (); }; };
-		6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D891BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m */; settings = {ASSET_TAGS = (); }; };
-		6AF84D8D1BAFD71000B061A5 /* MSEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8C1BAFD71000B061A5 /* MSEncryptDatabase.m */; settings = {ASSET_TAGS = (); }; };
-		6AF84D901BAFD75100B061A5 /* MSEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8F1BAFD75100B061A5 /* MSEncryptHelper.m */; settings = {ASSET_TAGS = (); }; };
-		6AF84D9E1BB0053000B061A5 /* MSBmobObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D9D1BB0053000B061A5 /* MSBmobObjectAdapter.m */; settings = {ASSET_TAGS = (); }; };
+		6AD7BD1F1BC223490098E1F0 /* MSProjectReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD7BD1E1BC223490098E1F0 /* MSProjectReportViewController.m */; };
+		6ADF5B251BC4CC3D00B41A7F /* MSChartDataItemAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF5B241BC4CC3D00B41A7F /* MSChartDataItemAdapter.m */; };
+		6AE69EE41BBE914500EB4CAD /* UILabel+MoneySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69EE31BBE914500EB4CAD /* UILabel+MoneySaver.m */; };
+		6AF225881BCB4457006A956E /* MSLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF225851BCB4457006A956E /* MSLaunchViewController.m */; };
+		6AF225891BCB4457006A956E /* MSMainNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF225871BCB4457006A956E /* MSMainNavViewController.m */; };
+		6AF84D8A1BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D891BAFD6EA00B061A5 /* MSEncryptDatabaseQueue.m */; };
+		6AF84D8D1BAFD71000B061A5 /* MSEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8C1BAFD71000B061A5 /* MSEncryptDatabase.m */; };
+		6AF84D901BAFD75100B061A5 /* MSEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D8F1BAFD75100B061A5 /* MSEncryptHelper.m */; };
+		6AF84D9E1BB0053000B061A5 /* MSBmobObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF84D9D1BB0053000B061A5 /* MSBmobObjectAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,6 +294,7 @@
 		6A0D527B1BBE5DDC00D651B7 /* ProjectEditor */ = {
 			isa = PBXGroup;
 			children = (
+				6AEA639D1BE5B1AD0012F0ED /* ProjectDetail */,
 				6A0D528C1BBE88FA00D651B7 /* PrivateClass */,
 				6A0D527C1BBE5DDC00D651B7 /* PrivateView */,
 				6A0D52891BBE88A300D651B7 /* MSProjectEditorViewController.h */,
@@ -657,6 +658,13 @@
 				6AAF99311BBEC038008D0805 /* MSBarButtonItem.m */,
 			);
 			path = "MoneySaver+Views";
+			sourceTree = "<group>";
+		};
+		6AEA639D1BE5B1AD0012F0ED /* ProjectDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProjectDetail;
 			sourceTree = "<group>";
 		};
 		6AF84D871BAFD6C300B061A5 /* DatabaseEncrypt */ = {

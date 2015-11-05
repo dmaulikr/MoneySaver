@@ -42,7 +42,7 @@
         case MSProjectModelFitnessType:{return @"健身";}
         case MSProjectModelClothType:{return @"衣服";}
         case MSProjectModelMobileType:{return @"手机";}
-        default:return [MSProjectModelTypeHelper projectModelTypeToChinese:MSProjectModelUnkonwType];
+        case MSProjectModelCustomType:return [MSProjectModelTypeHelper projectModelTypeToChinese:MSProjectModelUnkonwType];
     }
 }
 
@@ -76,9 +76,7 @@
         case MSProjectModelFitnessType:{codeString = @"\uf1e3";}break;
         case MSProjectModelClothType:{codeString = @"\uf1e9";}break;
         case MSProjectModelMobileType:{codeString = @"\uf10b";}break;
-        default:{return [MSProjectModelTypeHelper projectModelTypeToImage:MSProjectModelUnkonwType
-                                                                     size:size
-                                                               hightlight:hightlight];}
+        case MSProjectModelCustomType:{return [MSProjectModelTypeHelper projectModelTypeToImage:MSProjectModelUnkonwType size:size hightlight:hightlight];}
     }
     FAKIcon *icon = [FAKFontAwesome iconWithCode:codeString size:fontSize];
     UIColor *iconColor = hightlight?[UIColor ms_DefaultColor]:[UIColor grayColor];

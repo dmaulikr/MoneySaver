@@ -15,8 +15,10 @@
 #import "MSAccountViewModel.h"
 
 #import "UIColor+MoneySaver.h"
+
 #import "MSLoginMainViewController.h"
 #import "MSProjectEditorViewController.h"
+#import "MSProjectReportViewController.h"
 #import "MSMainNavViewController.h"
 #import "MSLaunchViewController.h"
 
@@ -64,11 +66,19 @@
 - (void)configureViewController
 {
     @weakify(self);
+//    MSProjectManagerViewModel *manager = [MSProjectManagerViewModel currentProjectManager];
+//    MSProjectReportViewController *report = [[MSProjectReportViewController alloc] initWithViewModel:manager];
+    
+    
     MSProjectEditorViewController *editor = [MSProjectEditorViewController projectEditorViewControllerForQuickMode];
+//    MSMainNavViewController *editoerNav = [[MSMainNavViewController alloc] initWithRootViewController:editor];
+
     self.mainNavigation = [[MSMainNavViewController alloc] initWithRootViewController:editor];
+    
     MSLaunchViewController *launch = [[MSLaunchViewController alloc] initWithCompletionBlock:^{
         @strongify(self);
         self.window.rootViewController = self.mainNavigation;
+//        [self.mainNavigation presentViewController:editor animated:NO completion:nil];
     }];
     self.window.rootViewController = launch;
 }
@@ -83,7 +93,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [MSLoginMainViewController new];
     [self.window makeKeyAndVisible];
-
+    
     
     [self venderConfigure];
     [self apperanceConfigure];
@@ -97,8 +107,8 @@
     } error:^(NSError *error) {
         
     }];
-    
-    
+
+
     return YES;
 }
 

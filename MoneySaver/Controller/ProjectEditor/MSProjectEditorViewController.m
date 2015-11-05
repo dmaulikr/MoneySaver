@@ -7,6 +7,7 @@
 //
 
 #import "MSProjectEditorViewController.h"
+#import "MSProjectReportViewController.h"
 
 #import "MSProjectValueHeaderView.h"
 #import "MSProjectTypeCollectionViewCell.h"
@@ -92,8 +93,13 @@
         
         MSBarButtonItem *chartButton = [MSBarButtonItem chartButton];
         [chartButton setBarButtonActionBlock:^(id sender) {
-//            @strongify(self);
+            @strongify(self);
+            MSProjectManagerViewModel *manager = [MSProjectManagerViewModel currentProjectManager];
+            MSProjectReportViewController *vc = [[MSProjectReportViewController alloc] initWithViewModel:manager];
+            [self.navigationController popViewControllerAnimated:NO];
+            [self.navigationController pushViewController:vc animated:YES];
         }];
+        
         self.navigationItem.rightBarButtonItem = chartButton;
     } else {
         MSBarButtonItem *calendarButton = [MSBarButtonItem calendarButton];

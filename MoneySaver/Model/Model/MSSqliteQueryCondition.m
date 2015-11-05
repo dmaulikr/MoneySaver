@@ -15,7 +15,7 @@
 - (NSString *)createQueryCondition
 {
     NSMutableString *query = [NSMutableString new];
-    NSMutableString *where = [NSMutableString stringWithString:@"WHERE "];
+    NSMutableString *where = [NSMutableString stringWithString:@" "];
     BOOL whereNotNull = NO;
     if (self.likeName && self.likeValue) {
         [where appendFormat:@" %@ LIKE '%@' ",self.likeName,self.likeValue];

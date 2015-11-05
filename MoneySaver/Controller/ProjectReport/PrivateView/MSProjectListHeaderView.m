@@ -73,6 +73,7 @@
     CGFloat tipLableHeight   = 20;
     CGFloat valueLableHeight = 40;
     CGFloat commonSpace      = 8;
+    CGFloat chartSpace       = 40;
     CGFloat largSpace        = 10;
     
     [self addSubview:expenLableTip];
@@ -116,9 +117,21 @@
     
     [self.typePieChart mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.left.right.equalTo(self);
-        make.top.equalTo(self.balanceLable.mas_bottom).offset(commonSpace);
+        make.left.equalTo(self).offset(chartSpace);
+        make.right.equalTo(self).offset(-chartSpace);
+        make.top.equalTo(self).offset(chartSpace);
+        make.bottom.equalTo(self).offset(-chartSpace);
     }];
+    
+    
+    [self.legendViewForChart mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.left.equalTo(self).offset(8);
+        make.right.equalTo(self).offset(-8);
+        make.bottom.equalTo(self).offset(-8);
+        make.top.equalTo(self.typePieChart.mas_bottom).offset(8);
+    }];
+
     
 }
 
@@ -143,19 +156,7 @@
     }];
     
     
-    [[[RACObserve(self, legendViewForChart) filter:^BOOL(id value) {
-        return (value != nil);
-    }] deliverOnMainThread]
-     subscribeNext:^(UIView *x) {
-         @strongify(self);
-        [x mas_makeConstraints:^(MASConstraintMaker *make) {
-           @strongify(self);
-            make.left.equalTo(self).offset(8);
-            make.right.equalTo(self).offset(-8);
-            make.bottom.equalTo(self).offset(-8);
-            make.top.equalTo(self.typePieChart.mas_bottom).offset(8);
-        }];
-    }];
+
 }
 
 

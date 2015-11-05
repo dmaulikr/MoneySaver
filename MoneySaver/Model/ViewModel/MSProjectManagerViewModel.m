@@ -30,6 +30,7 @@
     dispatch_once(&onceToken, ^{
         if (!_projectManager) {
             _projectManager = [MSProjectManagerViewModel new];
+            [_projectManager selectCurrentMonth];
         }
     });
     return _projectManager;
@@ -107,7 +108,7 @@
 {
     NSString *date = [[NSDateFormatter commonDateFormatter] stringFromDate:[NSDate date]];
     NSArray  *dateComponentArray = [date componentsSeparatedByString:@"-"];
-    [self selectByYear:[dateComponentArray firstObject] month:dateComponentArray[2] day:nil];
+    [self selectByYear:[dateComponentArray firstObject] month:dateComponentArray[1] day:nil];
 }
 - (void)selectByDate:(NSDate *)date
 {

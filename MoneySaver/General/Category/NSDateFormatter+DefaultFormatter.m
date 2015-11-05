@@ -9,8 +9,8 @@
 #import "NSDateFormatter+DefaultFormatter.h"
 
 static NSDateFormatter *_defaultFormatter;
-static NSString *const kCommonDateFormatter = @"YYYY-MM-DD";
-static NSString *const kFullDateFormatter = @"YYYY-MM-DD hh:mm:ss";
+static NSString *const kCommonDateFormatter = @"yyyy-MM-dd";
+static NSString *const kFullDateFormatter = @"yyyy-MM-dd hh:mm:ss";
 
 
 @implementation NSDateFormatter (DefaultFormatter)

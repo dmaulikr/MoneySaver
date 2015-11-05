@@ -33,7 +33,7 @@
         if (!_dataBaseHelper) {
             _dataBaseHelper = [[LKDBHelper alloc] initWithDBName:@"MoneySaver"];
 #warning Block database encryption function and then in the Release version remember to open
-//TODO:屏蔽了数据库加密,再Release 版本中记得打开 (为什么要用英文呢,因为装逼)
+//TODO:屏蔽了数据库加密,在 Release 版本中记得打开
 //            [_dataBaseHelper setEncryptionKey:kDatabaseEncryptKey];
         }
     });
@@ -60,6 +60,4 @@
     }];
     return error;
 }
-
-
 @end
